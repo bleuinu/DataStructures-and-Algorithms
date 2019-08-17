@@ -11,10 +11,6 @@
 - <b>웹 서버</b>(Web Server)는 여러개의 웹 사이트로 이루어져 있다.
 - <b>웹 브라우저</b>(Web Browser)는 컴퓨터 프로그램으로 웹 서버의 주소와 웹 페이지들을 화면에 표현할 수 있다.
   * 현재 사용하고 있는 웹 브라우져 확인하기: http://www.thismachine.info
-
-### mkdir
-- `mkdir -p /a/b/c/` 
-  * 디렉토리를 중첩으로 만들수 있다.
   
 ### Rails 시작
  - <b>rbenv</b>로 ruby 설치: [Link](https://www.theodinproject.com/courses/web-development-101/lessons/installing-ruby?ref=lnav)
@@ -24,6 +20,10 @@
      + [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/your-first-rails-application?ref=lnav)가 새로 업데이트된 `Rails 6.0.0`과 맞지 않아서 문제가 생긴다. <br /> `rails 5.2.3`버젼을 사용하자: `rails _5.2.3_ new <app-name>`.
  - [Heroku](https://id.heroku.com/)에 deploy 하는 법
  
+### mkdir -p
+- `mkdir -p /a/b/c/` 
+  * 디렉토리를 중첩으로 만들수 있다.
+  
 ### 언어
  - **일본어**: <br />
  有益な（ゆうえきな）日だった。
