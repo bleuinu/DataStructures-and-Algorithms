@@ -1,0 +1,6 @@
+#!/bin/bash
+now=`date +'%m%d%y'`
+now2=`date +'%B %d, %Y'`
+
+mkdir "$now"
+echo "$now2" > "$now/README.md"

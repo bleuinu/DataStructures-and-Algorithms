@@ -1,4 +1,4 @@
-## August 17<sup>th</sup>, 2019
+## August 17, 2019
 
 ## Front-end
 - id
