@@ -8,3 +8,4 @@ year=`date +'%Y'`
 mkdir "$now"
 echo "## $now2" > "$now/README.md"
 echo "- [$month.$day.$year](https://github.com/myoiwritescode/TIL/tree/master/$now)" >> README.md
+echo "$now2 added"
