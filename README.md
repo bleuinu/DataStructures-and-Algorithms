@@ -24,7 +24,7 @@
 ┈  [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28.md)<br>
 
 ## Linux <a id="linux"></a>
-┈  [Crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md)<br>
+┈  [crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md)<br>
 ┈  [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16.md)<br>
 
 ## Rails <a id="rails"></a>
