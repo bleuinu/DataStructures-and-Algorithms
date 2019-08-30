@@ -18,7 +18,7 @@
 ┈  [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
 ┈  [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
 ┈  [User-agent stylesheet & resets.css](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)<br>
-┈  [Sprite Sheets & 가운데로 정렬](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
+┈  [Sprite Sheet & 가운데로 정렬](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
 
 ## JavaScript <a id="js"></a>
 ┈  [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28.md)<br>
