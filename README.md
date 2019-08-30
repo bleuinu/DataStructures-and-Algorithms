@@ -1,9 +1,25 @@
-# Today I learned :pencil:
-오늘 공부한 개발 관련 내용들을 정리해서 올립니다.
+# 오배것 :pencil:
+- 하루하루 공부한 개발 관련 내용들을 정리해서 올립니다.
+- 날짜 표시된 TIL은 [README-date.md](./README-date.md)에서 확인할 수 있습니다.
+- `오배것`은 `오늘 배운 것`을 의미한다. 
 
-날짜 표시된 TIL은 [여기](./day_record.md)서 확인하세요.
+[Namjun Kim](https://github.com/namjunemy/TIL)님의 TIL 구성을 참고하였습니다.
 
-## Contents
+## 커밋 메세지 규칙
+- `doc)` ┈┈┈┈┈ 새로운 문서를 추가할 때
+- `img)` ┈┈┈┈┈ 문서에 사용 할 이미지 관련 내용
+- `fixed)` ┈┈┈ 오탈자, 오류, 등등 잘못된 부분을 수정하였을 때
+- `update)` ┈┈ 내용을 수정하였을 때
+- examples:
+	```
+	"doc) ~~ 관련 문서 추가"
+
+	"doc-img) ~~ 문서와 이미지 추가"
+
+	"img-fixed) ~~ 에 문서에 사진 추가하고 코드 하이라이팅 수정"
+	```
+
+## 목록
 ┈  [HTML/CSS](#html-css) <br>
 ┈  [JavaScript](#js) <br>
 ┈  [Linux](#linux) <br>
