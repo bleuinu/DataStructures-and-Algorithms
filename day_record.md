@@ -2,8 +2,8 @@
 
 ## August 2019
 ┈ 16 (Web, Rails, Linux) <br>
-┈ 17 (Web) <br>
-┈ 18 (Web) <br>
+┈ 17 ([Web](https://github.com/myoiwritescode/TIL/blob/master/Frontend/2019/08/17.md)) <br>
+┈ 18 ([Web](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)) <br>
 ┈ 19 (Crontab, CSS) <br>
 ┈ 23 (Ubuntu)<br>
 ┈ 26 (Frontend)<br>
