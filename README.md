@@ -14,7 +14,7 @@
 <hr />
 
 ## HTML/CSS <a id="html-css"></a>
-┈  [id와 class의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
+┈  [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
 ┈  [Margin Collapse](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
 ┈  [User-agent selector & resets.css & Box Dimensions](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)<br>
 ┈  [Sprite Sheets & 가운데로 정렬하기](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
