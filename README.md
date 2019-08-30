@@ -15,15 +15,15 @@
 
 ## HTML/CSS <a id="html-css"></a>
 ┈  [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
-┈  [Margin Collapse](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
-┈  [User-agent selector & resets.css & Box Dimensions](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)<br>
-┈  [Sprite Sheets & 가운데로 정렬하기](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
+┈  [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
+┈  [User-agent stylesheet & resets.css](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)<br>
+┈  [Sprite Sheets & 가운데로 정렬](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
 
 ## JavaScript <a id="js"></a>
 ┈  [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28.md)<br>
 
 ## Linux <a id="linux"></a>
-┈  [crontab](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md)<br>
+┈  [Crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md)<br>
 ┈  [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16.md)<br>
 
 ## Rails <a id="rails"></a>
