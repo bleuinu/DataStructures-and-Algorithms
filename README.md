@@ -12,15 +12,6 @@
 - `update)` ┈┈ 내용을 수정하였을 때
 
 ## 목록
-┈  [HTML/CSS](#html-css) <br>
-┈  [JavaScript](#js) <br>
-┈  [Linux](#linux) <br>
-┈  [Rails](#rails) <br>
-┈  [Ruby](#ruby) <br>
-┈  [Web](#web) <br>
-
-<hr />
-
 ## HTML/CSS <a id="html-css"></a>
 ┈  [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
 ┈  [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
