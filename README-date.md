@@ -5,9 +5,8 @@
 
 ## August 2019
 ┈ 30 <br>
-┈ 29 ([Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/29.md))<br>
+┈ 29 ([Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/29.md))<br>
 ┈ 28 ([JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/JavaScript/2019/08/28.md))<br>
-┈ 27 (Frontend)<br>
 ┈ 26 ([Sprite Sheet & Center Align](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md))<br>
 ┈ 19 ([Crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md) | [User-agent stylsheet & resets.css](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)) <br>
 ┈ 18 ([Margin Collapsing](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)) <br>
