@@ -14,6 +14,9 @@
 <hr>
 
 ## 목록
+## Git <a id="git"></a>
+┈ [--amend 마지막 커밋 바꾸기](ttps://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31.md)<br>
+
 ## HTML/CSS <a id="html-css"></a>
 ┈ [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
 ┈ [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
@@ -31,8 +34,9 @@
 ┈ [Ralis 시작하기](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/081619-first-web-app-using-rails.md)<br>
 
 ## Ruby <a id="ruby"></a>
-┈ [루비 설치](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-ruby-basics-1.md)<br>
-┈ [루비 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
+┈ [Ruby 설치하기](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-ruby-basics-1.md)<br>
+┈ [Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
+┈ [Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
 
 ## Web <a id="web"></a>
 ┈ [인터넷 작동 원리 (1) & 용어 정리](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/16.md)<br>
