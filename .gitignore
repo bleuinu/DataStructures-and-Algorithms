@@ -1,0 +1,9 @@
+# crontab logs
+.cron*
+
+# swp files
+*.swp
+
+# crontab script
+update.rb
+
