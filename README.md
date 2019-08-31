@@ -28,11 +28,11 @@
 ┈ [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16.md)<br>
 
 ## Rails <a id="rails"></a>
-┈ [Ralis 설치 및 셋업](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/16.md)<br>
+┈ [Ralis 시작하기](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/081619-first-web-app-using-rails.md)<br>
 
 ## Ruby <a id="ruby"></a>
-┈ [루비 설치](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/16.md)<br>
-┈ [루비 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/29.md)<br>
+┈ [루비 설치](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-ruby-basics-1.md)<br>
+┈ [루비 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
 
 ## Web <a id="web"></a>
 ┈ [인터넷 작동 원리 (1) & 용어 정리](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/16.md)<br>
