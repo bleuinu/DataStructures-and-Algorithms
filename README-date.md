@@ -4,7 +4,7 @@
 주제별로 보고 싶다면  [README.md](./README.md)를 확인하세요.
 
 ## August 2019
-┈ 31: ([커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31.md))<br>
+┈ 31: ([커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/083119-amend.md))<br>
 ┈ 30: ([Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-ruby-basics-1.md))<br>
 ┈ 29: ([Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-ruby-basics-1.md))<br>
 ┈ 28: ([JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/JavaScript/2019/08/28.md))<br>
