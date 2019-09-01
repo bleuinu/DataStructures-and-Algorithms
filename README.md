@@ -12,7 +12,7 @@
 
 <hr>
 
-## 목록
+## 분류
 ## Git <a id="git"></a>
 ┈ [커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/083119-amend.md)<br>
 
