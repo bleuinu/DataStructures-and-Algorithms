@@ -34,9 +34,9 @@
 ┈ [Ralis 시작하기](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/081619-first-web-app-using-rails.md)<br>
 
 ## Ruby <a id="ruby"></a>
-┈ [Ruby 설치하기](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-ruby-basics-1.md)<br>
-┈ [Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
-┈ [Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-installing-ruby.md)<br>
+┈ [Ruby 설치하기](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-installing-ruby.md)<br>
+┈ [Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-ruby-basics-1.md)<br>
+┈ [Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/083019-ruby-basics-2.md)<br>
 
 ## Web <a id="web"></a>
 ┈ [인터넷 작동 원리 (1) & 용어 정리](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/16.md)<br>
