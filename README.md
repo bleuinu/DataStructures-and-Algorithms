@@ -15,7 +15,7 @@
 
 ## 목록
 ## Git <a id="git"></a>
-┈ [커밋 메세지 변경하기](ttps://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31.md)<br>
+┈ [커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31.md)<br>
 
 ## HTML/CSS <a id="html-css"></a>
 ┈ [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
