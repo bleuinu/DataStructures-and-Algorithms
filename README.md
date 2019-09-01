@@ -13,31 +13,31 @@
 <hr>
 
 ## 분류
-## Git <a id="git"></a>
-┈ [커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/083119-amend.md)<br>
+### Git <a id="git"></a>
+┈ [커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31-amend.md)<br>
 
-## HTML/CSS <a id="html-css"></a>
-┈ [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17.md)<br>
-┈ [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18.md)<br>
-┈ [User-agent stylesheet & resets.css](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19.md)<br>
-┈ [Sprite Sheet & Center Align](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26.md)<br>
+### HTML/CSS <a id="html-css"></a>
+┈ [Class와 ID 선택자의 차이](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/17-class-and-id.md)<br>
+┈ [Margin Collapsing & Box Dimension](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/18-margin-collapse.md)<br>
+┈ [User-agent stylesheet & reset.css](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/19-user-agent-ss.md)<br>
+┈ [Sprite Sheet & Center Align](https://github.com/myoiwritescode/TIL/tree/master/Frontend/2019/08/26-sprite-sheet-and-center-align.md)<br>
 
-## JavaScript <a id="js"></a>
-┈ [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28.md)<br>
+### JavaScript <a id="js"></a>
+┈ [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28-js-basics-1.md)<br>
 
-## Linux <a id="linux"></a>
-┈ [crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19.md)<br>
-┈ [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16.md)<br>
+### Linux <a id="linux"></a>
+┈ [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16-mkdir.md)<br>
+┈ [crontab 사용법](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/19-crontab.md)<br>
 
-## Rails <a id="rails"></a>
-┈ [Ralis 시작하기](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/081619-first-web-app-using-rails.md)<br>
+### Rails <a id="rails"></a>
+┈ [Ralis 시작하기](https://github.com/myoiwritescode/TIL/tree/master/Rails/2019/08/16-first-web-app-using-rails.md)<br>
 
-## Ruby <a id="ruby"></a>
-┈ [Ruby 설치하기](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/081619-installing-ruby.md)<br>
-┈ [Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/082919-ruby-basics-1.md)<br>
-┈ [Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/083019-ruby-basics-2.md)<br>
+### Ruby <a id="ruby"></a>
+┈ [Ruby 설치하기](https://github.com/myoiwritescode/TIL/tree/master/Ruby/2019/08/16-installing-ruby.md)<br>
+┈ [Ruby 기초 (1)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/29-ruby-basics-1.md)<br>
+┈ [Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/30-ruby-basics-2.md)<br>
 
-## Web <a id="web"></a>
-┈ [인터넷 작동 원리 (1) & 용어 정리](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/16.md)<br>
-┈ [인터넷 작동 원리 (2)](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/17.md)<br>
+### Web <a id="web"></a>
+┈ [인터넷 작동 원리 (1) & 용어 정리](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/16-net-basics-1.md)<br>
+┈ [인터넷 작동 원리 (2)](https://github.com/myoiwritescode/TIL/tree/master/Web/2019/08/17-net-basics-2.md)<br>
 
