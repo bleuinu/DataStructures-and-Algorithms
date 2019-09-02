@@ -3,6 +3,10 @@
 
 주제별로 보고 싶다면  [README.md](./README.md)를 확인하세요.
 
+## September 2019
+┈ 2: () <br>
+┈ 1: ([JavaScript 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/JavaScript/2019/09/1-js-basics-2.md))<br>
+
 ## August 2019
 ┈ 31: ([커밋 메세지 변경하기](https://github.com/myoiwritescode/TIL/tree/master/Git/2019/08/31-amend.md))<br>
 ┈ 30: ([Ruby 기초 (2)](https://github.com/myoiwritescode/TIL/blob/master/Ruby/2019/08/30-ruby-basics-2.md))<br>

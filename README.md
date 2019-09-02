@@ -24,6 +24,7 @@
 
 ### JavaScript <a id="js"></a>
 ┈ [JavaScript 기초 (1)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28-js-basics-1.md)<br>
+┈ [JavaScript 기초 (2)](https://github.com/myoiwritescode/TIL/tree/master/JavaScript/2019/08/28-js-basics-2.md)<br>
 
 ### Linux <a id="linux"></a>
 ┈ [mkdir -p](https://github.com/myoiwritescode/TIL/tree/master/Linux/2019/08/16-mkdir.md)<br>
