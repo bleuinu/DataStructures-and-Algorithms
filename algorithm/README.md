@@ -24,11 +24,11 @@
   * Binary Search
 
 - Sorting
-  * Bubble Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.c), [Python](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.py)]
-  * Selection Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.c), [Python](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.py)]
-  * Insertion Sort: [[[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.c)], [Python](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.py)]
-  * Merge Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.c), [Python](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.py)]
-  * Quick Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.c), [Python](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.py)]
+  * Bubble Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.rb)]
+  * Selection Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.rb)]
+  * Insertion Sort: [[[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.c)], [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.rb)]
+  * Merge Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.rb)]
+  * Quick Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.rb)]
   * Heap Sort: [C, Python]
   * Shell Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/shellSort.c), Python]
 
