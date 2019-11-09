@@ -25,13 +25,3 @@
 - **Graph**
   + [Adjacency List](https://github.com/myoiwritescode/coding/tree/master/data_structure/graph/adj-list)
   + [Adjacency Matrix](https://github.com/myoiwritescode/coding/tree/master/data_structure/graph/adj-matrix/adjmatrix.c)
-  
-  ## Reference
-  - [[그래프] 인접 행렬과 인접 리스트](https://sarah950716.tistory.com/12)
-  - [[자료구조] 그래프(Graph)란](https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html)
-  - [[자료구조] 힙(heap)이란](https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html)
-  - Fundamentals of Data Structure in C by Sahni & Anderson-Freed Horowitz (Author)
-  - https://www.geeksforgeeks.org/graph-and-its-representations/
-  - https://medium.freecodecamp.org/all-you-need-to-know-about-tree-data-structures-bceacb85490c
-  - https://www.techiedelight.com/graph-implementation-using-stl/
-  - https://algorithms.tutorialhorizon.com//introduction-to-threaded-binary-tree/
