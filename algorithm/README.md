@@ -21,7 +21,7 @@
 - Search Algorithm
   * [BFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
   * [DFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
-  * Binary Search
+  * [BinarySearch](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
 
 - Sorting
   * Bubble Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.rb)]

@@ -48,3 +48,29 @@ void Graph::BFS(int v)
 	cout << endl;
 }
 ```
+
+## Binary Search
+```c++
+int binarySearchRecursive(int *arr, const int val, const int low, const int high)
+{
+    if (low > high)
+    {
+        return -1;
+    }
+
+    int mid = low + (high - low) / 2;
+
+    if (arr[mid] == val)
+    {
+        return mid;
+    }
+    else if (arr[mid] < val)
+    {
+        binarySearchRecursive(arr, val, mid + 1, high);
+    }
+    else
+    {
+        binarySearchRecursive(arr, val, low, mid - 1);
+    }
+}
+```
