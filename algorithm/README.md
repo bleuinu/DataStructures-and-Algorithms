@@ -12,11 +12,11 @@
   * [Permutation - DFS](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm-dfs.c)
   * [Permutation - Lexicographical](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm-lexico.c)
 
-- String Reverse
-  * [Array](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevindex.c)
-  * [Pointer](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevptr.c)
-  * [Queue](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevqueue.c)
-  * [Stack](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevstk.c)
+- String
+  * String Reverse
+    + [Array](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevindex.c) | [Pointer](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevptr.c) | [Queue](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevqueue.c) | [Stack](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevstk.c)
+   * Longest Palindrome
+     + [DP](https://github.com/muicode/coding/blob/master/algorithm/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](#)
 
 - Search Algorithm
   * [BFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
@@ -31,9 +31,3 @@
   * Quick Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.rb)]
   * Heap Sort: [C, Python]
   * Shell Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/shellSort.c), Python]
-
-## Reference
-  - [[알고리즘] 깊이 우선 탐색(DFS)이란](https://gmlwjd9405.github.io/2018/08/14/algorithm-dfs.html)
-  - [[알고리즘] 너비 우선 탐색(BFS)이란](https://gmlwjd9405.github.io/2018/08/14/algorithm-bfs.html)
-  - [Dijkstra Algorithm](https://hsp1116.tistory.com/42)
-  - [Dijkstra Algorithm: GeeksforGeeks](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
