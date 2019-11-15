@@ -13,12 +13,10 @@
   * [Permutation - Lexicographical](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm-lexico.c)
 
 - String
-  * String Reverse
-    + [Array](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevindex.c) | [Pointer](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevptr.c) | [Queue](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevqueue.cpp) | [Stack](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevstk.cpp)
+  * String Reverse: [Array](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevindex.c) | [Pointer](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevptr.c) | [Queue](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevqueue.cpp) | [Stack](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevstk.cpp)
    * Palindrome
        + [Palindrome](https://github.com/muicode/coding/blob/master/algorithm/palindrome/palindrome/palindrome.cpp)
-       + Longest Palindromic Substring
-         - [DP](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/manacher/manacher.rb)
+       + Longest Palindromic Substring: [DP](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/manacher/manacher.rb)
 
 - Search Algorithm
   * [BFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
