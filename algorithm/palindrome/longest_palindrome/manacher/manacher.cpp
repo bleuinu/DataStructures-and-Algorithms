@@ -35,7 +35,7 @@ int manacher(string s)
 
         if (i < r)
         {
-            min(r - i, p[mirror]);
+            p[i] = min(r - i, p[mirror]);
         }
         
         int a = i + (1 + p[i]);
