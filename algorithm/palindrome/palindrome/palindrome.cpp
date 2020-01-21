@@ -48,4 +48,5 @@ bool isPalindrome(string str)
         }
     }
 
+    return true;
 }
