@@ -8,8 +8,6 @@ class Node
 end
 
 class SinglyLinkedList
-  attr_reader :head, :length
-
   def initialize()
     @head = nil
     @length = 0
@@ -51,9 +49,9 @@ class SinglyLinkedList
       curr = get_node_at(pos-1)
       new_node.next = curr.next
       curr.next = new_node;
-    end
 
-    @length += 1
+      @length += 1
+    end
   end
 
   # first node => position 1
