@@ -48,7 +48,7 @@ class SinglyLinkedList
       insert_back(value)
       return
     else
-      curr = search_node_at(pos-1)
+      curr = get_node_at(pos-1)
       new_node.next = curr.next
       curr.next = new_node;
     end
@@ -57,9 +57,10 @@ class SinglyLinkedList
   end
 
   # first node => position 1
-  def remove(pos)
-    return if pos < 1 or pos > @length
-    if pos==1
+  def remove_at(pos)
+    pos = @length if pos > @length
+
+    if pos<=1
       @head = @head.next
     else
       curr = @head
@@ -73,8 +74,21 @@ class SinglyLinkedList
     @length -= 1
   end
 
+  def search_value(value)
+    curr = @head
+    index = 0
+    while curr != nil
+      return index if curr.data == value
+
+      curr = curr.next
+      index += 1
+    end
+
+    return -1
+  end
+
   # first node => position 1
-  def search_node_at(pos)
+  def get_node_at(pos)
     if @head == nil
       puts "---- list is empty"
       return 
@@ -117,6 +131,15 @@ end
 puts "len: #{root.length}"
 root.print_list
 
-root.insert_at(10, gets.to_i)
-puts "len: #{root.length}"
+root.remove_at(5)
 root.print_list
+root.remove_at(5)
+root.print_list
+root.remove_at(5)
+root.print_list
+
+if root.search_value(5) >= 0
+  puts "exist"
+else
+  puts "DNE"
+end
