@@ -86,14 +86,16 @@ class CircularSLL
 
     @last.next = @last.next.next
     @length -= 1
+
   end
 
   def remove_back()
     return if @length == 0
+
     if @last.next == @last
       @last = nil
       @length = 0
-      return
+      return nil
     end
 
     curr = @last.next
@@ -103,7 +105,6 @@ class CircularSLL
 
     curr.next = @last.next
     @last = curr
-    
     @length -= 1
   end
 
@@ -132,7 +133,6 @@ class CircularSLL
   end
 
   def print_list()
-    puts "Length: #{@length}"
     return if @length == 0
 
     curr = @last.next
@@ -158,9 +158,13 @@ class CircularSLL
 end
 
 list = CircularSLL.new()
-
-5.upto(10) { |x| list.insert_back(x) }
-4.downto(1) { |x| list.insert_front(x) }
+5.upto(10) {|x| list.insert_back(x)}
 list.print_list
-list.traverse_from(list.find_node_by_value(9))
-list.traverse_from(list.find_node_by_value(5))
+4.downto(1) {|x| list.insert_front(x)}
+list.print_list
+
+while list.length > 0
+  list.print_list
+  list.remove_at(list.length / 2)
+end
+list.print_list
