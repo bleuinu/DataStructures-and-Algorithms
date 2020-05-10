@@ -15,7 +15,14 @@ class SinglyLinkedList
     @length = 0
   end
 
-  def add(value)
+  def insert_front(value)
+    new_node = Node.new(value)
+    new_node.next = @head
+    @head = new_node
+    @length += 1
+  end
+
+  def insert_back(value)
     new_node = Node.new(value)
     if @head == nil
       @head = new_node
@@ -31,8 +38,27 @@ class SinglyLinkedList
   end
 
   # first node => position 1
+  def insert_at(value, pos)
+    new_node = Node.new(value)
+
+    if pos <= 1
+      insert_front(value)
+      return
+    elsif pos >= @length
+      insert_back(value)
+      return
+    else
+      curr = search_node_at(pos-1)
+      new_node.next = curr.next
+      curr.next = new_node;
+    end
+
+    @length += 1
+  end
+
+  # first node => position 1
   def remove(pos)
-    return -1 if pos < 1 or pos > @length
+    return if pos < 1 or pos > @length
     if pos==1
       @head = @head.next
     else
@@ -80,13 +106,17 @@ end
 
 root = SinglyLinkedList.new()
 1.upto(5) do |x|
-  root.add(x)
+  root.insert_back(x)
 end
 puts "len: #{root.length}"
 root.print_list
 
-root.remove(gets.to_i)
+0.downto(-5) do |x|
+  root.insert_front(x)
+end
 puts "len: #{root.length}"
 root.print_list
 
-puts "search_node_at(2): #{root.search_node_at(2).data}"
+root.insert_at(10, gets.to_i)
+puts "len: #{root.length}"
+root.print_list
