@@ -1,4 +1,4 @@
-# Data Structure [![Language](https://img.shields.io/badge/language-C%20%2F%20C%2B%2B-red.svg)](#)
+# Data Structure [![Language](https://img.shields.io/badge/language-C%20%2F%20C%2B%2B-blue.svg)](#) [![ruby](https://img.shields.io/badge/Ruby-2.7.0-red)](#)
 
 ## Topic
 - **Stack**
