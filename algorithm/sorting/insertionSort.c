@@ -9,19 +9,18 @@
  */
 void insertionSort(int arr[])
 {
-	for(int i=1; i<SIZE; ++i)
-	{
-		int index = i;
-		int key = arr[index];
+  for(int i=1; i<SIZE; ++i)
+  {
+    int index = i;
+    int key = arr[index];
+    while(index>0 && key < arr[index-1])
+    {
+      arr[index] = arr[index-1];
+      --index;
+    }
 
-		while(index > 0 && key < arr[index-1])
-		{
-			arr[index] = arr[index-1];
-			--index;
-		}
-
-		arr[index] = key;
-	}
+    arr[index] = key;
+  }
 }
 
 void print(int arr[])
