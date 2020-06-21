@@ -2,28 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 100
+#define SIZE 10
 
 /*
 	best = avg = worst = O(n^2)
  */
 void selectionSort(int arr[])
 {
-	for(int i=0; i<SIZE-1; ++i)
-	{
-		int min = i;
-		for(int j=i+1; j<SIZE; ++j)
-		{
-			if(arr[min] > arr[j])
-			{
-				min = j;
-			}
-		}
+  for(int i=0; i<SIZE; ++i)
+  {
+    int pos = i;
 
-		int temp = arr[min];
-		arr[min] = arr[i];
-		arr[i] = temp;
-	}
+    for(int j=i+1; j<SIZE; ++j) 
+    {
+      if(arr[j] < arr[pos])
+      {
+        pos = j;
+      }
+    }
+
+    int temp = arr[pos];
+    arr[pos] = arr[i];
+    arr[i] = temp;
+  }
 }
 
 void print(int arr[])
