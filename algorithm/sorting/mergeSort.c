@@ -11,9 +11,7 @@ void print(int arr[])
 		printf("%d ", arr[i]);
 
 		if((i+1)%15==0)
-		{
 			printf("\n");
-		}
 	}
 
 	printf("\n");
@@ -30,27 +28,19 @@ void merge(int arr[], int left, int mid, int right)
 	while(L <= mid && R <= right)
 	{
 		if(arr[L] < arr[R])
-		{
 			sortedArr[K++] = arr[L++];
-		}
 		else
-		{
 			sortedArr[K++] = arr[R++];
-		}
 	}
 
 	// Read all remaining data on the left
 	while(L <= mid)
-	{
 		sortedArr[K++] = arr[L++];
-	}
 	
 	// Right is already sorted; no need to copy again
 	// copy over the data
 	for(int i=left; i<K; ++i)
-	{
 		arr[i] = sortedArr[i];
-	}
 }
 
 void mergeSort(int arr[], int left, int right)
@@ -75,9 +65,7 @@ int main(void)
 	srand(seed);
 
 	for(size_t i=0; i<SIZE; ++i)
-	{
 		arr[i] = rand()%SIZE+1;
-	}
 
 	printf("Before Sorting\n");
 	print(arr);
