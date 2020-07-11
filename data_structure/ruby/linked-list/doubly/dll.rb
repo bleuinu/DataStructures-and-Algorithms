@@ -123,6 +123,11 @@ class DoublyLinkedList
   end
 
   def print_list
+    if @length <= 0
+      puts "list is empty"
+      return
+    end
+
     curr = @head
     for i in 0...@length-1
       print "#{curr.data} -> "
@@ -169,7 +174,13 @@ list.search(77)
 puts "print list's size"
 puts list.length
 
-
 puts "insert 123 at index 10"
 list.insert_at(11, 123)
 list.print_list
+
+puts "delete the last element"
+while list.length > 0 do
+  list.print_list
+  list.remove_at(list.length-1)
+end
+list.print_list # list is empty
