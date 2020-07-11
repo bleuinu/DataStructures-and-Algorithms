@@ -45,6 +45,10 @@ class DoublyLinkedList
         @head = new_node
         @tail = @head
       end
+
+      @length += 1
+    elsif index == @length
+      insert(value)
     else
       new_node = Node.new(value)
       curr = get_node_at(index-1)
@@ -53,9 +57,10 @@ class DoublyLinkedList
       new_node.prev = curr
       curr.next.prev = new_node
       curr.next = new_node
+
+      @length += 1
     end
 
-    @length += 1
   end
 
   def get_node_at(index)
@@ -160,3 +165,11 @@ list.search(6)
 
 puts "search for the data '77'"
 list.search(77)
+
+puts "print list's size"
+puts list.length
+
+
+puts "insert 123 at index 10"
+list.insert_at(11, 123)
+list.print_list
