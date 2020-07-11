@@ -15,27 +15,8 @@ class DoublyLinkedList
     @length = 0
   end
 
-  def insert_front(value)
-    new_node = Node.new(value)
-    new_node.next = @head
-    new_node.prev = nil
-
-    if @head != nil
-      @head.prev = new_node
-      new_node.next = @head
-      @head = new_node
-    else
-      @head = new_node
-      @tail = @head
-    end
-
-    @length += 1
-  end
-
-  def insert_back(value)
-    new_node = Node.new(value)
-    new_node.next = nil
-    new_node.prev = @tail
+  def insert(value)
+    new_node = Node.new(value, @tail)
 
     if @tail != nil
       @tail.next = new_node
@@ -49,73 +30,63 @@ class DoublyLinkedList
     @length += 1
   end
 
-  # position 1 == first node
-  def insert_at(value, pos)
-    if pos <= 1
-      insert_front(value)
-    elsif pos >= @length
-      insert_back(value)
+  def insert_at(index, value)
+    if index < 0 or index > @length
+      puts "... failed to insert #{value} at index #{index}"
+      return nil
+    elsif index == 0
+      new_node = Node.new(value, nil, @head)
+
+      if @head != nil
+        @head.prev = new_node
+        new_node.next = @head
+        @head = new_node
+      else
+        @head = new_node
+        @tail = @head
+      end
     else
       new_node = Node.new(value)
-      curr = get_node_at(pos-1)
-      insert_after(curr, value)
+      curr = get_node_at(index-1)
+
+      new_node.next = curr.next
+      new_node.prev = curr
+      curr.next.prev = new_node
+      curr.next = new_node
     end
+
+    @length += 1
   end
 
-  # position 1 == first node
-  def get_node_at(pos)
-    return nil if pos < 1 or pos > @length
-    return get_head_node if pos == 1
-    return get_tail_node if pos == @length
+  def get_node_at(index)
+    return nil if index < 0 or index >= @length
+    return @head if index == 0
+    return @tail if index+1 == @length
 
     curr = @head
-    for i in 1...pos
+    for i in 0...index
       curr = curr.next
     end
 
     curr
   end
 
-  def insert_after(node, value)
-    return nil if node == nil
-    return insert_back(value) if node == @tail
+  def remove_at(index)
+    if index < 0 or index >= @length
+      puts ".. failed to remove a node at #{index}"
+      return nil
+    end
 
-    new_node = Node.new(value)
-    new_node.next = node.next
-    new_node.prev = node
-    node.next.prev = new_node
-    node.next = new_node
-
-    @length += 1
-  end
-
-  def insert_before(node, value)
-    return nil if node == nil
-    return insert_front(value) if node == @head
-
-    new_node = Node.new(value)
-    new_node.next = node
-    new_node.prev = node.prev
-    node.prev.next = new_node
-    node.prev = new_node
-
-    @length += 1
-  end
-
-  def remove_at(pos)
-    pos = 1 if pos <= 1
-    pos = @length if pos >= @length
-
-    if pos == 1
+    if index == 0
       data = @head.data
       @head = @head.next
       @head.prev = nil if @head
-    elsif  pos == @length
+    elsif  index == @length-1
       data = @tail.data
       @tail = @tail.prev
       @tail.next = nil if @tail
     else
-      curr = get_node_at(pos)
+      curr = get_node_at(index)
       data = curr.data
 
       curr.prev.next = curr.next
@@ -127,44 +98,65 @@ class DoublyLinkedList
     return data
   end
 
-  def get_head_node()
-    return @head
-  end
+  def search(data)
+    curr = @head
+    for i in 0...@length
+      # data found 
+      if curr.data == data
+        puts "'#{data}' is located at index '#{i}'"
+        return i
+      end
+      curr = curr.next
+    end
 
-  def get_tail_node()
-    return @tail
+    puts "'#{data}' is not in the list"
+    return false
   end
 
   def length()
     @length
   end
 
-  def print_list(reverse = false)
-    curr = reverse ? @tail : @head
-    for i in 0...@length
-      print "#{curr.data} "
-      curr = reverse ? curr.prev : curr.next
+  def print_list
+    curr = @head
+    for i in 0...@length-1
+      print "#{curr.data} -> "
+      curr = curr.next
     end
-    puts
+    puts "#{curr.data}"
   end
 end
 
 list = DoublyLinkedList.new()
-0.upto(3) {|x| list.insert_front(x)}
-list.print_list()
-
-4.upto(7) {|x| list.insert_back(x)}
-list.print_list()
-
-list.insert_at(50, 5)
-list.print_list
-
-list.insert_before(list.get_head_node(), 77)
-list.insert_after(list.get_tail_node(), 77)
-list.print_list
-list.print_list true
-
-while list.length > 0
-  puts "deleted value: #{list.remove_at(list.length/2)}"
+puts "Insert 1 to 5 at index 0"
+1.upto(5) do |i|
+  list.insert_at(0,i)
 end
+list.print_list
 
+puts "insert 0 at the front"
+list.insert_at(0, 0)
+list.print_list
+
+puts "insert 6 to 10 at the back"
+6.upto(10) do |i|
+  list.insert(i)
+end
+list.print_list
+
+puts "insert 100 at index 5"
+list.insert_at(5, 100)
+list.print_list
+
+puts "remove a node at index 3"
+list.remove_at(3)
+list.print_list
+
+puts "print list's size"
+puts list.length
+
+puts "search for the data '6'"
+list.search(6)
+
+puts "search for the data '77'"
+list.search(77)
