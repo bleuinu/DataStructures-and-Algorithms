@@ -69,7 +69,7 @@ class DoublyLinkedList
     return @tail if index+1 == @length
 
     curr = @head
-    for i in 0...index
+    index.times do
       curr = curr.next
     end
 
@@ -96,16 +96,19 @@ class DoublyLinkedList
 
       curr.prev.next = curr.next
       curr.next.prev = curr.prev
-      curr = nil
+      curr = curr.prev = curr.next = nil
     end
 
     @length -= 1
+
+    @head = @tail = nil if  @length == 0
+
     return data
   end
 
   def search(data)
     curr = @head
-    for i in 0...@length
+    @length.times do |i|
       # data found 
       if curr.data == data
         puts "'#{data}' is located at index '#{i}'"
@@ -129,7 +132,7 @@ class DoublyLinkedList
     end
 
     curr = @head
-    for i in 0...@length-1
+    (@length-1).times do 
       print "#{curr.data} -> "
       curr = curr.next
     end
@@ -171,9 +174,7 @@ list.search(6)
 puts "search for the data '77'"
 list.search(77)
 
-puts "print list's size"
-puts list.length
-
+puts "insert 123 at index 10"
 puts "insert 123 at index 10"
 list.insert_at(11, 123)
 list.print_list
@@ -184,3 +185,6 @@ while list.length > 0 do
   list.remove_at(list.length-1)
 end
 list.print_list # list is empty
+
+list.insert(10)
+list.print_list
