@@ -86,7 +86,7 @@ module CircularLinkedList
         # remove the head node
         data = @last.next.data
         @last.next = @last.next.next
-      elsif index == @length
+      elsif index == @length-1
         # remove the last node
         data = @last.data
         curr = get_node_at(index-1)
@@ -134,6 +134,10 @@ module CircularLinkedList
         puts "list is empty.."
       end
     end
+
+    def length
+      @length
+    end
   end
 
   class Doubly
@@ -179,10 +183,9 @@ module CircularLinkedList
 
         @length += 1
       else
-        curr = get_node_at(index-1)
-        new_node = Node.new(data, curr, curr.next)
-        curr.next = new_node
-        curr.next.prev = new_node
+        curr = get_node_at(index)
+        new_node = Node.new(data, curr.prev, curr)
+        curr.prev.next = curr.prev = new_node
 
         @length += 1
       end
@@ -196,6 +199,16 @@ module CircularLinkedList
       end
 
       curr
+    end
+
+    def remove_last
+      data = @head.prev.data
+        
+      @head.prev.prev.next = @head
+      @head.prev = @head.prev.prev
+
+      @length -= 1
+      data
     end
 
     def remove_at(index)
@@ -213,20 +226,17 @@ module CircularLinkedList
         @head.next.prev = @head.prev
         @head.prev.next = @head.next
         @head = @head.next
-      elsif index == @length-1
-        data = @head.prev.data
 
-        @head.prev.prev.next = @head
-        @head.prev = @head.prev.prev
+        @length -= 1
+      elsif index == @length-1
+        data = remove_last
       else
         curr = get_node_at(index)
         curr.prev.next = curr.next
         curr.next.prev = curr.prev
+
+        @length -= 1
       end
-
-      @length -= 1
-
-      puts "index(#{index})  len(#{@length})"
 
       data
     end
@@ -248,21 +258,21 @@ module CircularLinkedList
       return @length == 0
     end
 
-    def print_list(n=@length)
-      if @length != 0 
-        curr = @head
-        1.upto n do |i|
+    def print_list
+      if @head != nil 
+        print "#{@head.data} "
+        curr = @head.next
+        while curr != @head
           print "#{curr.data} "
           curr = curr.next
-          puts if (i % @length) == 0
         end
-        puts
+        puts " ( len: #{@length} )"
       else
         puts "list is empty.."
       end
     end
 
-    def len
+    def length
       @length
     end
   end
@@ -270,23 +280,114 @@ end
 
 #list = CircularLinkedList::Singly.new
 list = CircularLinkedList::Doubly.new
-puts "insert 10 at 0"
-list.insert_at(0, 10)
+
+puts "Insert at the back [1, 2, 3]"
+list.insert(1)
 list.print_list
-puts "insert 15 at 1"
-list.insert_at(1, 15)
+list.insert(2)
 list.print_list
-puts "isert 12 at 1"
-list.insert_at(1, 12)
-list.print_list
-puts "insert 70"
-list.insert(70)
+list.insert(3)
 list.print_list
 
-puts "removing at 0 (len: #{list.len})"
-list.remove_at(0)
+puts "================================"
+
+puts "Insert at the front [4, 5, 6]"
+list.insert_at(0, 4)
+list.print_list
+list.insert_at(0, 5)
+list.print_list
+list.insert_at(0, 6)
 list.print_list
 
-puts "removing at 1 (len: #{list.len})"
-list.remove_at(1)
-list.print_list(5)
+puts "================================"
+
+puts "Insert 10 at index 3"
+list.insert_at(3, 10)
+list.print_list
+puts "Insert 20 at index 6"
+list.insert_at(6, 20)
+list.print_list
+puts "Insert 30 at index 8"
+list.insert_at(8, 30)
+list.print_list
+
+puts "================================"
+
+puts "remove front"
+puts "removed #{list.remove_at(0)}"
+list.print_list
+
+puts "removed #{list.remove_at(0)}"
+list.print_list
+
+puts "removed #{list.remove_at(0)}"
+list.print_list
+
+puts "================================"
+
+puts "remove last"
+puts "removed #{list.remove_last}"
+list.print_list
+puts "removed #{list.remove_last}"
+list.print_list
+puts "removed #{list.remove_last}"
+list.print_list
+puts "removed #{list.remove_last}"
+list.print_list
+puts "removed #{list.remove_last}"
+list.print_list
+
+puts "================================"
+
+puts "insert 9 at the back"
+list.insert(9)
+list.print_list
+
+puts "================================"
+
+puts "insert 99 at the front"
+list.insert_at(0, 99)
+list.print_list
+
+puts "================================"
+
+puts "insert 999 at index 1"
+list.insert_at(1, 999)
+list.print_list
+
+puts "================================"
+
+puts "remove at index 2"
+list.remove_at(2)
+list.print_list
+
+puts "================================"
+
+while !list.empty? do
+  puts "removed #{list.remove_at(0)}"
+  list.print_list
+end
+
+puts "================================"
+
+puts "insert 7 at index 1"
+list.insert_at(1, 7)
+list.print_list
+puts "insert 7 at index 0"
+list.insert_at(0, 7)
+list.print_list
+
+puts "insert 77 at index 1"
+list.insert_at(1, 77)
+list.print_list
+
+puts "insert 5 at the back"
+list.insert(5)
+list.print_list
+
+puts "================================"
+
+while !list.empty? do
+  puts "removed #{list.remove_at(0)}"
+  list.print_list
+end
