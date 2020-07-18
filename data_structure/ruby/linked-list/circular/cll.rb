@@ -72,6 +72,17 @@ module CircularLinkedList
       return curr
     end
 
+    def remove_last
+      data = @last.data
+
+      curr = get_node_at(@length-2)
+      curr.next = @last.next
+      @last = curr
+
+      @length -= 1
+      data
+    end
+
     # removes a node at 'index' from the list  
     def remove_at(index)
       data = nil
@@ -82,24 +93,25 @@ module CircularLinkedList
         # remove the only node
         data = @last.data
         @last = nil
+        @length = 0
       elsif index == 0
         # remove the head node
         data = @last.next.data
         @last.next = @last.next.next
+
+        @length -= 1
       elsif index == @length-1
         # remove the last node
-        data = @last.data
-        curr = get_node_at(index-1)
-        curr.next = @last.next
-        @last = curr
+        data = remove_last
       else
         # remove a node in between nodes
         curr = get_node_at(index-1)
         data = curr.next.data
         curr.next = curr.next.next
+
+        @length -= 1
       end
 
-      @length -= 1
       return data
     end
 
@@ -121,15 +133,14 @@ module CircularLinkedList
       return @length == 0
     end
 
-    def print_list(n=@length)
-      if @length != 0 
+    def print_list
+      if @last != nil
         curr = @last.next
-        1.upto n do |i|
+        while curr != @last do
           print "#{curr.data} "
           curr = curr.next
-          puts if (i % @length) == 0
         end
-        puts
+        puts curr.data
       else
         puts "list is empty.."
       end
