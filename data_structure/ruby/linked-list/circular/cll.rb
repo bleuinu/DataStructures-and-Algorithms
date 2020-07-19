@@ -167,8 +167,7 @@ module CircularLinkedList
     # inserts a node at the end
       if @head == nil
         @head = Node.new(data)
-        @head.prev = @head
-        @head.next = @head
+        @head.prev = @head.next = @head
       else
         new_node = Node.new(data, @head.prev, @head)
         @head.prev.next = @head.prev = new_node
