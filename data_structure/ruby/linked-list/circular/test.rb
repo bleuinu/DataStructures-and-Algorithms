@@ -1,14 +1,24 @@
 require './cll.rb'
 
+=begin
+How to run the code:
+
+$ ruby test.rb singly
+
+or
+
+$ ruby test.rb doubly
+=end
+
 list = nil
 
 case ARGV[0]
 when 'singly' then
   list = CircularLinkedList::Singly.new
-  puts "Testing Circular Singly Linked List.... press enter"
+  puts "Testing Circular Singly Linked List..."
 when 'doubly' then
   list = CircularLinkedList::Doubly.new
-  puts "Testing Circular Doubly Linked List.... press enter"
+  puts "Testing Circular Doubly Linked List..."
 else
   puts "$ ruby test.rb [singly | doubly]"
   return
