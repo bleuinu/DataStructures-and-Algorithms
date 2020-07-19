@@ -251,6 +251,7 @@ module CircularLinkedList
       else
       # removes a node in between nodes
         curr = get_node_at(index)
+        data = curr.data
         curr.prev.next = curr.next
         curr.next.prev = curr.prev
 
