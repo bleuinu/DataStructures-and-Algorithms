@@ -65,7 +65,10 @@ module CircularLinkedList
 
     def remove_front
       data = @last.next.data
+
+      temp = @last.next
       @last.next = @last.next.next
+      temp = temp.next = nil
 
       @length -= 1
       data
@@ -75,8 +78,10 @@ module CircularLinkedList
       data = @last.data
 
       curr = get_node_at(@length-2)
+      temp = curr.next
       curr.next = @last.next
       @last = curr
+      temp = temp.next = nil
 
       @length -= 1
       data
@@ -212,9 +217,11 @@ module CircularLinkedList
     def remove_front
       data = @head.data
 
+      temp = @head
       @head.next.prev = @head.prev
       @head.prev.next = @head.next
       @head = @head.next
+      temp = temp.next = temp.prev = nil
 
       @length -= 1
       data
@@ -223,8 +230,10 @@ module CircularLinkedList
     def remove_last
       data = @head.prev.data
         
+      temp = @head.prev
       @head.prev.prev.next = @head
       @head.prev = @head.prev.prev
+      temp = temp.prev = temp.next = nil
 
       @length -= 1
       data
