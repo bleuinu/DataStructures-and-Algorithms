@@ -2,32 +2,34 @@
 
 ## Topic
 - Graph
-  * [Dijkstra](https://github.com/myoiwritescode/coding/blob/master/algorithm/graph/dijkstra/graph.cpp)
-  * [Kruskal](https://github.com/myoiwritescode/coding/blob/master/algorithm/graph/kruskal/graph.cpp)
-  * [Prim](https://github.com/myoiwritescode/coding/blob/master/algorithm/graph/prim/graph.cpp)
-  * [Union and Find](https://github.com/myoiwritescode/coding/blob/master/algorithm/graph/union_find/)
+  * [Dijkstra](./graph/dijkstra/graph.cpp)
+  * [Kruskal](./graph/kruskal/graph.cpp)
+  * [Prim](./graph/prim/graph.cpp)
+  * [Union and Find](./graph/union_find/)
 
 - Permutation
-  * [Permutation](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm.c)
-  * [Permutation - DFS](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm-dfs.c)
-  * [Permutation - Lexicographical](https://github.com/myoiwritescode/coding/blob/master/algorithm/permutation/perm-lexico.c)
+  * [Permutation](./permutation/perm.c)
+  * [Permutation - DFS](./permutation/perm-dfs.c)
+  * [Permutation - Lexicographical](./permutation/perm-lexico.c)
 
 - String
-  * String Reverse: [Array](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevindex.c) | [Pointer](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevptr.c) | [Queue](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevqueue.cpp) | [Stack](https://github.com/myoiwritescode/coding/blob/master/algorithm/string-reverse/strrevstk.cpp)
+  * String Reverse: [Array](./string-reverse/strrevindex.c) | [Pointer](./string-reverse/strrevptr.c) | [Queue](./string-reverse/strrevqueue.cpp) | [Stack](./string-reverse/strrevstk.cpp)
    * Palindrome
-       + [Palindrome](https://github.com/muicode/coding/blob/master/algorithm/palindrome/palindrome/palindrome.cpp)
-       + Longest Palindromic Substring: [DP](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](https://github.com/muicode/coding/blob/master/algorithm/palindrome/longest_palindrome/manacher/manacher.rb)
+       + [Palindrome](./palindrome/palindrome/palindrome.cpp)
+       + Longest Palindromic Substring: [DP](./palindrome/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](./palindrome/longest_palindrome/manacher/manacher.rb)
+   * Suffix Array
+       + [Manber Meyer's Algorithm](./manber-meyer/manber-meyer.cpp)
 
 - Search Algorithm
-  * [BFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
-  * [DFS](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
-  * [BinarySearch](https://github.com/myoiwritescode/coding/tree/master/algorithm/search)
+  * [BFS](./search)
+  * [DFS](./search)
+  * [BinarySearch](./search)
 
 - Sorting
-  * Bubble Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/bubbleSort.rb)]
-  * Selection Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/selectionSort.rb)]
-  * Insertion Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/insertionSort.rb)]
-  * Merge Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/mergeSort.rb)]
-  * Quick Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.c), [Ruby](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/quickSort.rb)]
+  * Bubble Sort: [[C](./sorting/bubbleSort.c), [Ruby](./sorting/bubbleSort.rb)]
+  * Selection Sort: [[C](./sorting/selectionSort.c), [Ruby](./sorting/selectionSort.rb)]
+  * Insertion Sort: [[C](./sorting/insertionSort.c), [Ruby](./sorting/insertionSort.rb)]
+  * Merge Sort: [[C](./sorting/mergeSort.c), [Ruby](./sorting/mergeSort.rb)]
+  * Quick Sort: [[C](./sorting/quickSort.c), [Ruby](./sorting/quickSort.rb)]
   * Heap Sort: [C, Python]
-  * Shell Sort: [[C](https://github.com/myoiwritescode/coding/blob/master/algorithm/sorting/shellSort.c), Python]
+  * Shell Sort: [[C](./sorting/shellSort.c), Python]
