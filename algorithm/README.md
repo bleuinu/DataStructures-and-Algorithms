@@ -18,7 +18,7 @@
        + [Palindrome](./palindrome/palindrome/palindrome.cpp)
        + Longest Palindromic Substring: [DP](./palindrome/longest_palindrome/dp/mydp.cpp) | [Manacher's Algorithm](./palindrome/longest_palindrome/manacher/manacher.rb)
    * Suffix Array
-       + [Manber Meyer's Algorithm](./manber-meyer/manber-meyer.cpp)
+       + [Manber & Myers Algorithm](./manber-myers/)
 
 - Search Algorithm
   * [BFS](./search)
