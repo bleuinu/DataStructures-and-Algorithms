@@ -26,12 +26,12 @@ def merge(arr, left, mid, right)
   end
 end
 
-def merge_sort (arr, left, right)
+def mergesort (arr, left, right)
   mid = 0
   if left < right
     mid = left + (right - left) / 2;
-    merge_sort(arr, left, mid)
-    merge_sort(arr, mid+1, right)
+    mergesort(arr, left, mid)
+    mergesort(arr, mid+1, right)
     merge(arr, left, mid, right)
   end
 end
@@ -41,5 +41,5 @@ bound = 100
 
 a = Array.new(size) { rand(bound) }
 p a
-merge_sort(a, 0, size-1)
+mergesort(a, 0, size-1)
 p a
