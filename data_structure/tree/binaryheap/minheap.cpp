@@ -2,7 +2,7 @@
 #include <climits> 
 using namespace std;
 
-void swap( int *x, int *y) {
+static void swap( int *x, int *y) {
   int temp = *x;
   *x = *y;
   *y = temp;
@@ -20,9 +20,9 @@ class MinHeap {
     // to heapify a subtree with the root 
     void MinHeapify(int);
 
-    int parent(int i) { return (i-1)/2; }
-    int left(int i) { return (2*i + 1); }
-    int right(int i) { return (2*i + 2); }
+    static int parent(int i) { return (i-1)/2; }
+    static int left(int i) { return (2*i + 1); }
+    static int right(int i) { return (2*i + 2); }
 
     // returns the root at the min heap
     int getMin() { return harr[0]; }
