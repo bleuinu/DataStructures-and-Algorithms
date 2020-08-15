@@ -113,7 +113,7 @@ void MinHeap::MinHeapify(int i)
   int r = right(i);
   int smallest = i; // parent which is the smallest in min heap
 
-  if (l <  heap_size && harr[i] < harr[i])
+  if (l <  heap_size && harr[l] < harr[i])
     smallest = l; 
   if (r < heap_size && harr[r] < harr[smallest])
     smallest = r; 
