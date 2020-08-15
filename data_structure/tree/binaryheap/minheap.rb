@@ -5,27 +5,27 @@ class Integer
   MIN = -MAX - 1
 end
 
-class MaxHeap
+class MinHeap
   def initialize(cap)
     @harr = [0] * cap
     @heap_size = 0
     @capacity = 10
   end
   
-  def max_heapify(index)
+  def min_heapify(index)
     l = left(index) 
     r = right(index)
-    largest = index 
+    smallest = index 
 
-    if l < @heap_size and @harr[l] > @harr[index] 
-      largest = l 
+    if l < @heap_size and @harr[l] < @harr[index] 
+      smallest = l 
     end
-    if r < @heap_size and @harr[r] > @harr[largest] 
-      largest = r
+    if r < @heap_size and @harr[r] < @harr[smallest] 
+      smallest = r
     end
-    if largest != index 
-      @harr[index], @harr[largest] = @harr[largest], @harr[index] 
-      max_heapify(largest)
+    if smallest != index 
+      @harr[index], @harr[smallest] = @harr[smallest], @harr[index] 
+      min_heapify(smallest)
     end
   end 
 
@@ -41,12 +41,12 @@ class MaxHeap
     return (2*index) + 2
   end
 
-  def get_max 
+  def get_min 
     return @harr[0]
   end
 
-  def extract_max
-    return Integer::MIN if @heap_size <= 0 
+  def extract_min
+    return Integer::MAX if @heap_size <= 0 
     if @heap_size == 1 
       @heap_size -= 1 
       return harr[0]
@@ -55,22 +55,22 @@ class MaxHeap
     root = @harr[0] 
     @harr[0] = @harr[@heap_size - 1]
     @heap_size -= 1 
-    max_heapify(0)
+    min_heapify(0)
 
     return root
   end
 
-  def increase_key(index, new_val) 
+  def decrease_key(index, new_val) 
     @harr[index] = new_val 
-    while index != 0 and @harr[index] > @harr[parent(index)]
+    while index != 0 and @harr[index] < @harr[parent(index)]
       @harr[index], @harr[parent(index)] = @harr[parent(index)], @harr[index]
       index = parent(index)
     end
   end 
 
   def delete_key(index) 
-    increase_key(index, Integer::MAX) 
-    extract_max();
+    decrease_key(index, Integer::MIN) 
+    extract_min();
   end 
 
   def insert_key(k)
@@ -83,7 +83,7 @@ class MaxHeap
     @heap_size += 1 
     @harr[index] = k 
 
-    while index != 0 and @harr[index] > @harr[parent(index)]
+    while index != 0 and @harr[index] < @harr[parent(index)]
       @harr[index], @harr[parent(index)] = @harr[parent(index)], @harr[index]
       index = parent(index)
     end
@@ -97,20 +97,18 @@ class MaxHeap
   end
 end
 
-h = MaxHeap.new(10) 
-h.insert_key(1)
-h.insert_key(5)
-h.insert_key(2)
-h.insert_key(7)
-h.insert_key(3)
-h.insert_key(8)
-h.insert_key(4)
-h.insert_key(9)
-h.insert_key(6)
+h = MinHeap.new(10) 
+h.insert_key(10)
+h.insert_key(15)
+h.insert_key(30)
+h.insert_key(40)
+h.insert_key(50)
+h.insert_key(100)
+h.insert_key(40)
 h.print_heap
 
-h.extract_max
+puts h.extract_min
 h.print_heap
 
-h.delete_key(5) 
+h.decrease_key(3, 2)
 h.print_heap
