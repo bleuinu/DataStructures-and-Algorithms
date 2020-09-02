@@ -1,133 +1,190 @@
-class Node
-  attr_accessor :value, :left, :right, :parent
-  def initialize(value)
-    @value = value 
-    @left = nil
-    @right = nil 
-    @parent = nil
+class Node 
+  attr_accessor :left, :right, :data
+
+  def initialize(data, left=nil, right=nil) 
+    @left = left 
+    @right = right 
+    @data = data
   end
 end
 
-class BST
-  attr_accessor :root
-  def initialize(value)
-    @root = Node.new(value)
-    @left = nil 
-    @right = nil 
-    @parent = nil
+class BinaryTree 
+  def initialize(data)
+    @root  = Node.new(data)
   end
 
-  def insert(value, node=@root, parent=nil)
-    if value < node.value
-      if node.left 
-        insert(value, node.left, parent)
-      else 
-        node.left = Node.new(value)
-        node.left.parent = (parent==nil) ? node : parent
-      end
+  def insert(data) 
+    @root = insertRecursive(@root, data)
+  end
+
+  def insertRecursive(node, data) 
+    return Node.new(data) if (node == nil) 
+
+    if data > node.data 
+      node.right = insertRecursive(node.right, data)
+    elsif data < node.data
+      node.left = insertRecursive(node.left, data) 
     else 
-      if node.right 
-        insert(value, node.right, parent) 
-      else 
-        node.right = Node.new(value)
-        node.right.parent = (parent==nil) ? node : parent
-      end
+      return node 
     end
-  end
 
-  def exist?(value, node=@root)
-    return nil if node == nil
-    return node if node.value == value 
-
-    if value > node.value
-      exist?(value, node.right)
-    else
-      exist?(value, node.left)
-    end
+    return node
   end
 
   def find_min(node)
-    return node if node.left == nil
+    return node.data if node.left == nil
     find_min(node.left)
   end
 
-  def delete(value)
-    node = exist? value
-    return nil if node == nil
+  def delete(data) 
+    @root = deleteRecursive(@root, data)
+  end
 
-    if node.left == nil and node.right == nil 
-      # scenario 1
-      (node.parent.left == node) ? node.parent.left = nil : node.parent.right = nil
-    elsif node.left && node.right
-      # scenario 3
-      min = node.right
-      x = find_min(node.right)
-      min = x if x != nil
+  def deleteRecursive(curr, data) 
+    return nil if curr == nil 
+  
+    if data == curr.data 
+      return nil if curr.left == nil and curr.right == nil 
+      return curr.left if curr.right == nil  
+      return curr.right if curr.left == nil 
 
-      if x != nil
-        node.value = min.value
-      end
+      smallest_data = find_min(curr.right)
+      curr.data = smallest_data  
+      curr.right = deleteRecursive(curr.right, smallest_data) 
+      return curr
+    end
 
-      min.parent.left = nil if min.parent.left == min 
-      min.parent.right = nil if min.parent.right == min 
+    if data < curr.data
+      curr.left = deleteRecursive(curr.left, data)
+      return curr
+    end
 
-    else 
-      # scenario 2
-      if node.parent.left == node 
-        if node.left 
-          node.left.parent = node.parent
-          node.parent.left = node.left
-        else 
-          node.right.parent = node.parent
-          node.parent.left = node.right
-        end
-      else
-        if node.left 
-          node.left.parent = node.parent
-          node.parent.right = node.left
-        else 
-          node.right.parent = node.parent
-          node.parent.right = node.right
-        end
+    curr.right = deleteRecursive(curr.right, data) 
+    return curr
+  end
+
+  def search(value) 
+    node = @root 
+
+    while true 
+      return nil if node == nil 
+      return node if node.data == value
+
+      if value > node.data 
+        node = node.right
+      else 
+        node = node.left
       end
     end
   end
 
-  def dfs
-    dfs_helper(@root)
+  def preorder(node = @root)
+    return if (node == nil) 
+    print "#{node.data} "
+    preorder(node.left)
+    preorder(node.right)
   end
 
-  def dfs_helper(node)
-    return if node==nil 
+  def inorder(node = @root) 
+    return if node == nil 
+    inorder(node.left)
+    print "#{node.data} "
+    inorder(node.right)
+  end
 
-    puts node.value
-    dfs_helper(node.left)
-    dfs_helper(node.right)
+  def postorder(node = @root) 
+    return if node == nil 
+    postorder(node.left)
+    postorder(node.right)
+    print "#{node.data} "
+  end
+
+  def bfs
+    return nil if @root == nil
+    q = [@root]
+
+    while !q.empty? 
+      neighbor = q.shift
+      print "#{neighbor.data} "
+
+      (q << neighbor.left) if neighbor.left != nil 
+      (q << neighbor.right) if neighbor.right != nil 
+    end
   end
 end
 
-bst = BST.new(15)
-bst.insert(10)
-bst.insert(8)
-bst.insert(12)
-bst.insert(20)
-bst.insert(17)
-bst.insert(25)
-bst.insert(19)
-bst.dfs
+tree = BinaryTree.new(6)
+tree.insert(4)
+tree.insert(8)
+tree.insert(3)
+tree.insert(5)
+tree.insert(7)
+tree.insert(9)
+
+print "Preorder: " 
+tree.preorder
 puts
 
-puts "delete 8"
-bst.delete(8)
-bst.dfs
+print "Inorder: "
+tree.inorder 
 puts
 
-puts "delete 17"
-bst.delete(17)
-bst.dfs
+print "Postorder: "
+tree.postorder
 puts
 
-puts "delete 15"
-bst.delete(15)
-bst.dfs
+print "BFS: " 
+tree.bfs 
+puts
+
+print "Search 5: #{!!tree.search(5)}"
+puts
+print "Search 2: #{!!tree.search(2)}"
+puts
+print "Search 1: #{!!tree.search(1)}"
+puts
+print "Search 9: #{!!tree.search(9)}"
+puts
+puts
+
+puts "Delete 5"
+tree.delete(5)
+print "DFS: " 
+tree.preorder
+puts
+
+puts "Delete 4"
+tree.delete(4)
+print "DFS: " 
+tree.preorder
+puts
+
+puts "Delete 8"
+tree.delete(8)
+print "DFS: " 
+tree.preorder
+puts
+
+puts "Delete 6"
+tree.delete(6)
+print "DFS: " 
+tree.preorder 
+puts
+
+puts "Delete 7"
+tree.delete(7)
+print "DFS: " 
+tree.preorder 
+puts
+
+puts "Delete 9"
+tree.delete(9)
+print "DFS: " 
+tree.preorder 
+puts
+
+puts "Delete 3"
+tree.delete(3)
+print "DFS: " 
+tree.preorder 
 puts
