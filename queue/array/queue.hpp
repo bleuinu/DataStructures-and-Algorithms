@@ -56,7 +56,7 @@ void Queue<T>::enqueue(T val)
 template <class T> 
 void Queue<T>::dequeue() 
 {
-  if(tail == 0)
+  if(empty())
   {
     cout << "underflow.." << endl;
     return;
