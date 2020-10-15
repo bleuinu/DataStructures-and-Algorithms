@@ -30,7 +30,7 @@ class Deque
     void print();
 };
 
-template <class T>
+  template <class T>
 Deque<T>::Deque(int size) 
 {
   queue = new T[size];
@@ -40,13 +40,13 @@ Deque<T>::Deque(int size)
   capacity = size;
 }
 
-template <class T>
+  template <class T>
 Deque<T>::~Deque()
 {
   delete queue;
 }
 
-template <class T> 
+  template <class T> 
 void Deque<T>::push_front(T val) 
 {
   if (nElems == capacity) 
@@ -66,7 +66,7 @@ void Deque<T>::push_front(T val)
   ++nElems;
 }
 
-template <class T> 
+  template <class T> 
 void Deque<T>::push_back(T val) 
 {
   if (nElems == capacity) 
@@ -86,7 +86,7 @@ void Deque<T>::push_back(T val)
   ++nElems;
 }
 
-template <class T> 
+  template <class T> 
 void Deque<T>::pop_front() 
 {
   if(empty())
@@ -104,7 +104,7 @@ void Deque<T>::pop_front()
   }
 }
 
-template <class T> 
+  template <class T> 
 void Deque<T>::pop_back() 
 {
   if(empty())
@@ -122,7 +122,7 @@ void Deque<T>::pop_back()
   }
 }
 
-template <class T> 
+  template <class T> 
 T Deque<T>::front() 
 {
   int i = head + 1;
@@ -130,7 +130,7 @@ T Deque<T>::front()
   return queue[i];
 }
 
-template <class T> 
+  template <class T> 
 T Deque<T>::back() 
 {
   int i = tail - 1;
@@ -138,20 +138,19 @@ T Deque<T>::back()
   return queue[i];
 }
 
-template <class T>
+  template <class T>
 bool Deque<T>::empty()
 {
   return nElems == 0;
 }
 
-template <class T> 
+  template <class T> 
 void Deque<T>::print()
 {
   int i = head+1;
   int j = tail;
 
   if (i == capacity) i = 0;
-#if 1
   do
   {
     if (i == capacity)
@@ -162,5 +161,4 @@ void Deque<T>::print()
     ++i;
   } while(i != j);
   cout << endl;
-#endif
 }
