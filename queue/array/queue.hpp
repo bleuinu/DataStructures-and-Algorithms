@@ -37,7 +37,7 @@ Queue<T>::Queue(int size)
 template <class T>
 Queue<T>::~Queue()
 {
-  delete queue;
+  delete [] queue;
 }
 
 template <class T> 
