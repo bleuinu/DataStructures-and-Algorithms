@@ -5,18 +5,20 @@
 using std::cout;
 using std::endl;
 
+#define SIZE 10
+
 template <class T>
 class Queue
 {
   private:
-    T *queue;
+    T queue[SIZE];
     int head;
     int tail;
     int capacity;
 
   public:
-    Queue(int size);
-    ~Queue();
+    Queue();
+    ~Queue() = default;
 
     void enqueue(T val);
     void dequeue();
@@ -27,17 +29,10 @@ class Queue
 };
 
 template <class T>
-Queue<T>::Queue(int size) 
+Queue<T>::Queue()
 {
-  queue = new T[size];
   head = tail = 0;
-  capacity = size;
-}
-
-template <class T>
-Queue<T>::~Queue()
-{
-  delete [] queue;
+  capacity = SIZE;
 }
 
 template <class T> 

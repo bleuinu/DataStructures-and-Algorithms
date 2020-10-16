@@ -13,7 +13,7 @@ int main()
   unsigned seed = time(0);
   srand(seed);
 
-  Queue<int> queue(10);
+  Queue<int> queue;
   for(int i=0; i<SIZE; ++i) 
   {
     queue.enqueue(rand() % 100);
