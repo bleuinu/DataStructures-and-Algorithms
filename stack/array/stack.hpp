@@ -38,7 +38,7 @@ template <class T>
 Stack<T>::~Stack() 
 {
   capacity = top = 0;
-  delete stack;
+  delete [] stack;
 }
 
 template <class T>

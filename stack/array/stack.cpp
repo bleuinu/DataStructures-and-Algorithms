@@ -15,7 +15,7 @@ int main()
 
   for(int i=0; i<SIZE; ++i) 
   {
-    stack.push(rand() % 100;
+    stack.push(rand() % 100);
   }
 
   stack.print();
