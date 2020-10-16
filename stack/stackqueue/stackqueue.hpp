@@ -19,8 +19,6 @@ class StackQueue
     void dequeue();
     bool empty();
     T peek();
-
-    void print();
 };
 
 template <class T> 
@@ -80,27 +78,4 @@ T StackQueue<T>::peek()
   }
 
   return stackB.peek();
-}
-
-template <class T> 
-void StackQueue<T>::print()
-{
-  Stack temp(capacity);
-  while (!stackB.empty())
-  {
-    temp.push(stackB.peek());
-    stackB.pop();
-  }
-  while (!stackA.empty())
-  {
-    temp.push(stackA.peek());
-    stackA.pop();
-  }
-
-  for(int i=0; i<nElems; ++i)
-  {
-    cout << temp[i] << ' ';
-  }
-  // I might need to push temp back to StackA
-  cout << endl;
 }
