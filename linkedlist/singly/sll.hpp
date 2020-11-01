@@ -52,7 +52,7 @@ template <class T>
 SinglyLinkedList<T>::SinglyLinkedList(T data)
 {
   head = new Node(data);
-  tail = nullptr;
+  tail = head;
   size = 1;
 }
 

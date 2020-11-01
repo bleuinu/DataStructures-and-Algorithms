@@ -2,8 +2,8 @@
 
 int main()
 {
-  SinglyLinkedList<int> sll;
-  for (int i=1; i<=10; ++i)
+  SinglyLinkedList<int> sll(2);
+  for (int i=2; i<=10; ++i)
   {
     sll.push_front(2*i);
     cout << "first( " << sll.peek_first() << ")   \
