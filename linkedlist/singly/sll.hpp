@@ -171,11 +171,9 @@ void SinglyLinkedList<T>::pop_back()
   Node<T> *temp = head;
   for (int i=1; i<size-1; ++i)
   {
-    cout << "here" << endl;
     temp = temp->next;
   }
 
-  cout << "temp; " << temp->data << endl;
   delete temp->next;
   temp->next = nullptr;
   tail = temp;
@@ -244,9 +242,6 @@ void SinglyLinkedList<T>::traverse()
   Node<T> *temp = head;
   while(temp->next != nullptr) 
   {
-    cout << temp->data << ' ';
     temp = temp->next;
   }
-
-  cout << temp->data << endl;
 }
