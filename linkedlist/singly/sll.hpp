@@ -32,8 +32,12 @@ class SinglyLinkedList
 
     void push_front(T data);
     void push_back(T data);
+    void push_at(int index, T data);
+
     void pop_front();
     void pop_back();
+    void pop_at(int index);
+
     T peek_first();
     T peek_last();
 
@@ -76,46 +80,71 @@ template <class T>
 void SinglyLinkedList<T>::push_front(T data) 
 {
   Node<T> *temp = new Node<T>(data);
-  ++(this->size);
   temp->next = head;
   head = temp;
 
-  if (!tail)
+  if (tail == nullptr)
   {
     tail = head;
     tail->next = nullptr;
   }
+
+  ++size;
 }
 
 template <class T>
 void SinglyLinkedList<T>::push_back(T data) 
 {
-  Node<T> *temp = new Node<T>(data);
-  ++(this->size);
-
-  if (tail == nullptr) 
+  if (size == 0) 
   {
-    head = tail = temp;
-    tail->next = nullptr;
-  } 
+    push_front(data);
+    return;
+  }
+
+  Node<T> *temp = new Node<T>(data);
+  tail->next = temp;
+  tail = temp;
+  tail->next = nullptr;
+
+  ++size;
+}
+
+template <class T>
+void SinglyLinkedList<T>::push_at(int index, T data)
+{
+  if (index <= 0) 
+  {
+    push_front(data);
+  }
+  else if (index >= size) 
+  {
+    push_back(data);
+  }
   else 
   {
-    tail->next = temp;
-    tail = temp;
-    tail->next = nullptr;
+    Node<T> *temp = head;
+    for (int i=0; i<index-1; ++i)
+    {
+      temp = temp->next;
+    }
+
+    Node<T> *newNode = new Node<T>(data);
+    newNode->next = temp->next;
+    temp->next = newNode;
+    ++size;
   }
 }
 
 template <class T>
 void SinglyLinkedList<T>::pop_front()
 {
-  if (this->size == 0)
+  if (size == 0)
   {
     cerr << "pop_front(): List is empty" << endl;
     return;
   }
 
-  --(this->size);
+  --size;
   Node<T> *temp = head;
   head = head->next;
   delete temp;
@@ -124,33 +153,58 @@ void SinglyLinkedList<T>::pop_front()
 template <class T>
 void SinglyLinkedList<T>::pop_back()
 {
-  if (this->size == 0)
+  if (size == 0)
   {
     cerr << "pop_front(): List is empty" << endl;
     return;
   }
 
-  --(this->size);
-
-  if (this->size == 0)
+  if (size == 1)
   {
+    size = 0;
     delete head;
-    delete tail;
     head = tail = nullptr;
+    size = 0;
     return;
   }
 
   Node<T> *temp = head;
-  while (temp && temp->next != tail) 
+  for (int i=1; i<size-1; ++i)
   {
+    cout << "here" << endl;
     temp = temp->next;
   }
 
-  delete tail;
+  cout << "temp; " << temp->data << endl;
+  delete temp->next;
+  temp->next = nullptr;
   tail = temp;
-  if (tail)
+
+  --size;
+}
+
+template <class T>
+void SinglyLinkedList<T>::pop_at(int index)
+{
+  if (index <= 0) 
   {
-    tail->next = nullptr;
+    pop_front();
+  }
+  else if (index >= size)
+  {
+    pop_back();
+  }
+  else 
+  {
+    Node<T> *temp = head;
+    for (int i=0; i<index-1; ++i)
+    {
+      temp = temp->next;
+    }
+    Node<T> *temp2 = temp->next;
+    temp->next = temp->next->next;
+    --size;
+    delete temp2;
   }
 }
 

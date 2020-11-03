@@ -1,32 +1,68 @@
 #include "sll.hpp"
 
+using std::cin;
+
 int main()
 {
-  SinglyLinkedList<int> sll(2);
-  for (int i=2; i<=10; ++i)
-  {
-    sll.push_front(2*i);
-    cout << "first( " << sll.peek_first() << ")   \
-      last( " << sll.peek_last() << ")\t";
-    sll.traverse();
-  }
+  SinglyLinkedList<int> sll;
+  int choice;
 
-  for (int i=1; i<=10; ++i)
+  while(true)
   {
-    sll.push_back(i*2+1);
-    cout << "first( " << sll.peek_first() << ")   \
-      last( " << sll.peek_last() << ")\t";
-    sll.traverse();
-  }
+    cout << "=================================================" << endl;
+    cout << "1. push_front    2. push_back     3. push_at" << endl;
+    cout << "4. pop_front     5. pop_back      6. pop_at" << endl;
+    cout << "7. traverse      8. peek_front    9. peek_last" << endl;
+    cout << "0. exit" << endl;
+    cout << "> ";
+    cin >> choice;
+    cout << "=================================================" << endl;
 
-  for (int i=0; i<10; ++i)
-  {
-    sll.pop_back();
-    sll.pop_front();
-    cout << "first( " << sll.peek_first() << ")   \
-      last( " << sll.peek_last() << ")\t";
-    sll.traverse();
+    int data, index;
+    switch(choice)
+    {
+      case 1: 
+        cout << "Enter the data to insert: ";
+        cin >> data;
+        sll.push_front(data);
+        break;
+      case 2:
+        cout << "Enter the data to insert: ";
+        cin >> data;
+        sll.push_back(data);
+        break;
+      case 3: 
+        cout << "enter the index and data: ";
+        cin >> index >> data;
+        sll.push_at(index, data);
+        break;
+      case 4: 
+        sll.pop_front(); 
+        break;
+      case 5: 
+        sll.pop_back(); 
+        break;
+      case 6: 
+        cout << "Pop the element located at: ";
+        cin >> index;
+        sll.pop_at(index); 
+        break;
+      case 7:
+        sll.traverse();
+        break;
+      case 8:
+        cout << "front: " << sll.peek_first() << endl;
+        break;
+      case 9:
+        cout << "back: " << sll.peek_last() << endl;
+        break;
+      case 0:
+        // fallthrough
+      default:
+        cout << "Exit" << endl;
+        goto Loop;
+    }
   }
-
+Loop:
   return 0;
 }
