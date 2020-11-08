@@ -39,5 +39,15 @@ int main()
 
   cll.insert_front(5);
   cll.print();
+
+  cll.remove_front();
+  cll.print();
+  cll.remove_front();
+  cll.print();
+
+  cll.remove_back();
+  cll.print();
+  cll.remove_back();
+  cll.print();
   return 0;
 }

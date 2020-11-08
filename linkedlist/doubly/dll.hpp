@@ -22,13 +22,13 @@ class DoublyLinkedList
 {
   private: 
     Node<T> *head;
-    Node<T> *last;
     int capacity;
 
   public: 
     DoublyLinkedList(int val);
     ~DoublyLinkedList();
 
+    void init(T val);
     void insert_back(int val);
     void insert_front(int val);
     void insert_at(int index, int val);
@@ -45,10 +45,7 @@ class DoublyLinkedList
 DoublyLinkedList<T>::DoublyLinkedList(int val)
 {
   head = new Node(val);
-  last = head;
-
   head->next = head->prev = head;
-  last = nullptr;
   capacity = 1;
 }
 
@@ -61,6 +58,14 @@ DoublyLinkedList<T>::~DoublyLinkedList()
     delete temp;
     head = head->next;
   }
+}
+
+  template <class T>
+void DoublyLinkedList<T>::init(T val)
+{
+  head = new Node<T>(val);
+  head->next = head->prev = head;
+  capacity = 1;
 }
 
   template <class T>
@@ -77,22 +82,12 @@ void DoublyLinkedList<T>::insert_back(int val)
 {
   if (capacity == 0) 
   {
-    head = new Node<T>(val);
-    head->next = head->prev = head;
-    last = nullptr;
-    capacity = 1;
+    init(val);
     return;
   }
 
   Node<T> *newNode = new Node(val);
-  if (last == nullptr) 
-  {
-    last = newNode;
-    link(head, last);
-  } else {
-    link(last, newNode);
-    last = last->next;
-  }
+  link(head->prev, newNode);
 
   ++capacity;
 }
@@ -102,16 +97,12 @@ void DoublyLinkedList<T>::insert_front(int val)
 {
   if (capacity == 0) 
   {
-    insert_back(val);
+    init(val);
     return;
   }
 
   Node<T> *newNode = new Node(val);
-  //  link(head, newNode);
-  head->prev->next = newNode;
-  newNode->next = head;
-  newNode->prev = head->prev;
-  head->prev = newNode;
+  link(head->prev, newNode);
   head = newNode;
 
   ++capacity;
@@ -124,7 +115,7 @@ void DoublyLinkedList<T>::insert_at(int index, int val)
   else if (index >= capacity) insert_back(val);
   else 
   {
-    Node<T> *temp = last;
+    Node<T> *temp = head->prev;
     for (int i=0; i<index; ++i) 
     {
       temp = temp->next;
@@ -143,21 +134,23 @@ void DoublyLinkedList<T>::remove_front()
   if (capacity == 0) 
   {
     cerr << "List is empty..." << endl;
-    return;
   }
-  if (capacity == 1)
+  else if (capacity == 1)
   {
-    if (head) delete head;
-    if (last) delete last;
+    delete head;
+    head = nullptr;
     capacity = 0;
-    return;
   }
+  else
+  {
+    Node<T> *temp = head->next;
+    head->next->prev = head->prev;
+    head->prev->next = head->next;
+    delete head;
+    head = temp;
 
-  head->next->prev = head->prev;
-  head->prev->next = head->next;
-
-  delete head;
-  --capacity;
+    --capacity;
+  }
 }
 
   template <class T>
@@ -166,23 +159,22 @@ void DoublyLinkedList<T>::remove_back()
   if (capacity == 0) 
   {
     cerr << "List is empty..." << endl;
-    return;
   }
   if (capacity == 1)
   {
     delete head;
-    head = last = nullptr;
+    head = nullptr;
     capacity = 0;
-    return;
   }
+  else
+  {
+    Node<T> *temp = head->prev;
+    head->prev->prev->next = head;
+    head->prev = head->prev->prev;
+    delete temp;
 
-  Node<T> *temp = last->prev;
-  last->prev->next = last->next;
-  last->next->prev = last->prev;
-  delete last;
-  last = temp;
-
-  --capacity;
+    --capacity;
+  }
 }
 
   template <class T>
@@ -200,9 +192,11 @@ void DoublyLinkedList<T>::remove_at(int index)
     remove_back();
   else 
   {
-    // 555 222   delete 222
     Node<T> *temp = head;
-    for(int i=0; i<index; ++i) temp = temp->next;
+    for(int i=0; i<index; ++i) 
+    {
+      temp = temp->next;
+    }
 
     temp->prev->next = temp->next;
     temp->next->prev = temp->prev;
@@ -219,18 +213,19 @@ void DoublyLinkedList<T>::print()
   if (capacity == 0) 
   {
     cerr << "List is empty" << endl;
-    return;
   }
-  if (capacity == 1) 
+  else if (capacity == 1) 
   {
     cout << head->data << endl;
-    return;
   }
-  Node<T> *temp = head;
-  while(temp->next != head)
+  else 
   {
-    cout << temp->data << ' ';
-    temp = temp->next;
+    Node<T> *temp = head;
+    while(temp->next != head)
+    {
+      cout << temp->data << ' ';
+      temp = temp->next;
+    }
+    cout << temp->data << endl;
   }
-  cout << temp->data << endl;
 }
