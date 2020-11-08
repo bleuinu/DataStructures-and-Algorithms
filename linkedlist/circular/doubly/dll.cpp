@@ -2,11 +2,11 @@
 
 using namespace std;
 
-#include "cll.hpp"
+#include "dll.hpp"
 
 int main()
 {
-  CircularLinkedList<int> cll(1);
+  DoublyLinkedList<int> cll(1);
   cll.print();
 
   for (int i=2; i<6; ++i)
@@ -30,12 +30,24 @@ int main()
   cll.insert_at(7, 7777);
   cll.print();
 
-
   cout << endl;
-  for(int i=0; i<13; ++i) 
+  for(int i=0; i<7; ++i) 
   {
     cll.remove_at(1);
     cll.print();
   }
+
+  cll.insert_front(5);
+  cll.print();
+
+  cll.remove_front();
+  cll.print();
+  cll.remove_front();
+  cll.print();
+
+  cll.remove_back();
+  cll.print();
+  cll.remove_back();
+  cll.print();
   return 0;
 }
