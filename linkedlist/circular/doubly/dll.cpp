@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  DoublyLinkedList<int> cll(1);
+  CircularDoublyLinkedList<int> cll(1);
   cll.print();
 
   for (int i=2; i<6; ++i)

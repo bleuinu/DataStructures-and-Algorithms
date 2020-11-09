@@ -18,15 +18,15 @@ class Node
 };
 
 template <class T>
-class DoublyLinkedList 
+class CircularDoublyLinkedList 
 {
   private: 
     Node<T> *head;
     int capacity;
 
   public: 
-    DoublyLinkedList(int val);
-    ~DoublyLinkedList();
+    CircularDoublyLinkedList(int val);
+    ~CircularDoublyLinkedList();
 
     void init(T val);
     void insert_back(int val);
@@ -42,7 +42,7 @@ class DoublyLinkedList
 };
 
   template <class T>
-DoublyLinkedList<T>::DoublyLinkedList(int val)
+CircularDoublyLinkedList<T>::CircularDoublyLinkedList(int val)
 {
   head = new Node(val);
   head->next = head->prev = head;
@@ -50,7 +50,7 @@ DoublyLinkedList<T>::DoublyLinkedList(int val)
 }
 
   template <class T> 
-DoublyLinkedList<T>::~DoublyLinkedList() 
+CircularDoublyLinkedList<T>::~CircularDoublyLinkedList() 
 {
   while(capacity--)
   {
@@ -61,7 +61,7 @@ DoublyLinkedList<T>::~DoublyLinkedList()
 }
 
   template <class T>
-void DoublyLinkedList<T>::init(T val)
+void CircularDoublyLinkedList<T>::init(T val)
 {
   head = new Node<T>(val);
   head->next = head->prev = head;
@@ -69,7 +69,7 @@ void DoublyLinkedList<T>::init(T val)
 }
 
   template <class T>
-void DoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
+void CircularDoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
 {
   newNode->next = curr->next;
   curr->next->prev = newNode;
@@ -78,7 +78,7 @@ void DoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
 }
 
   template <class T>
-void DoublyLinkedList<T>::insert_back(int val) 
+void CircularDoublyLinkedList<T>::insert_back(int val) 
 {
   if (capacity == 0) 
   {
@@ -93,7 +93,7 @@ void DoublyLinkedList<T>::insert_back(int val)
 }
 
   template <class T>
-void DoublyLinkedList<T>::insert_front(int val) 
+void CircularDoublyLinkedList<T>::insert_front(int val) 
 {
   if (capacity == 0) 
   {
@@ -109,7 +109,7 @@ void DoublyLinkedList<T>::insert_front(int val)
 }
 
   template <class T>
-void DoublyLinkedList<T>::insert_at(int index, int val) 
+void CircularDoublyLinkedList<T>::insert_at(int index, int val) 
 {
   if (index <= 0) insert_front(val);
   else if (index >= capacity) insert_back(val);
@@ -129,7 +129,7 @@ void DoublyLinkedList<T>::insert_at(int index, int val)
 }
 
   template <class T>
-void DoublyLinkedList<T>::remove_front()
+void CircularDoublyLinkedList<T>::remove_front()
 {
   if (capacity == 0) 
   {
@@ -154,7 +154,7 @@ void DoublyLinkedList<T>::remove_front()
 }
 
   template <class T>
-void DoublyLinkedList<T>::remove_back()
+void CircularDoublyLinkedList<T>::remove_back()
 {
   if (capacity == 0) 
   {
@@ -178,7 +178,7 @@ void DoublyLinkedList<T>::remove_back()
 }
 
   template <class T>
-void DoublyLinkedList<T>::remove_at(int index)
+void CircularDoublyLinkedList<T>::remove_at(int index)
 {
   if (capacity == 0) 
   {
@@ -208,7 +208,7 @@ void DoublyLinkedList<T>::remove_at(int index)
 }
 
   template <class T> 
-void DoublyLinkedList<T>::print()
+void CircularDoublyLinkedList<T>::print()
 {
   if (capacity == 0) 
   {
