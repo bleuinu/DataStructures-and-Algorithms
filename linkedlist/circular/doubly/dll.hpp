@@ -72,9 +72,9 @@ void CircularDoublyLinkedList<T>::init(T val)
 void CircularDoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
 {
   newNode->next = curr->next;
+  newNode->prev = curr;
   curr->next->prev = newNode;
   curr->next = newNode;
-  newNode->prev = curr;
 }
 
   template <class T>
@@ -160,7 +160,7 @@ void CircularDoublyLinkedList<T>::remove_back()
   {
     cerr << "List is empty..." << endl;
   }
-  if (capacity == 1)
+  else if (capacity == 1)
   {
     delete head;
     head = nullptr;
