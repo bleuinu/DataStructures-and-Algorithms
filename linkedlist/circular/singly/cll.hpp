@@ -24,12 +24,12 @@ class CircularSinglyLinkedList
     int capacity;
 
   public: 
-    CircularSinglyLinkedList(int val);
+    CircularSinglyLinkedList(T val);
     ~CircularSinglyLinkedList();
 
-    void insert_back(int val);
-    void insert_front(int val);
-    void insert_at(int index, int val);
+    void insert_back(T val);
+    void insert_front(T val);
+    void insert_at(int index, T val);
 
     void remove_back();
     void remove_front();
@@ -40,7 +40,7 @@ class CircularSinglyLinkedList
 };
 
   template <class T>
-CircularSinglyLinkedList<T>::CircularSinglyLinkedList(int val)
+CircularSinglyLinkedList<T>::CircularSinglyLinkedList(T val)
 {
   last = new Node(val);
   last->next = last;
@@ -66,7 +66,7 @@ void CircularSinglyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
 }
 
   template <class T>
-void CircularSinglyLinkedList<T>::insert_back(int val) 
+void CircularSinglyLinkedList<T>::insert_back(T val) 
 {
   if (capacity == 0) 
   {
@@ -83,7 +83,7 @@ void CircularSinglyLinkedList<T>::insert_back(int val)
 }
 
   template <class T>
-void CircularSinglyLinkedList<T>::insert_front(int val) 
+void CircularSinglyLinkedList<T>::insert_front(T val) 
 {
   if (capacity == 0) 
   {
@@ -99,7 +99,7 @@ void CircularSinglyLinkedList<T>::insert_front(int val)
 }
 
   template <class T>
-void CircularSinglyLinkedList<T>::insert_at(int index, int val) 
+void CircularSinglyLinkedList<T>::insert_at(int index, T val) 
 {
   if (capacity == 0) 
   {
