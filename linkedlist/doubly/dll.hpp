@@ -22,6 +22,7 @@ class DoublyLinkedList
 {
   private: 
     Node<T> *head;
+    Node<T> *tail;
     int capacity;
 
   public: 
@@ -44,35 +45,35 @@ class DoublyLinkedList
   template <class T>
 DoublyLinkedList<T>::DoublyLinkedList(int val)
 {
-  head = new Node(val);
-  head->next = head->prev = head;
+  init(val);
   capacity = 1;
 }
 
   template <class T> 
 DoublyLinkedList<T>::~DoublyLinkedList() 
 {
-  while(capacity--)
+  while(head != tail)
   {
     Node<T> *temp = head;
-    delete temp;
     head = head->next;
+    delete temp;
   }
+  delete tail;
 }
 
   template <class T>
 void DoublyLinkedList<T>::init(T val)
 {
   head = new Node<T>(val);
-  head->next = head->prev = head;
-  capacity = 1;
+  tail = head;
+  head->next = tail;
+  tail->prev = head;
+  head->prev = tail->next = nullptr;
 }
 
   template <class T>
 void DoublyLinkedList<T>::link(Node<T> *curr, Node<T> *newNode)
 {
-  newNode->next = curr->next;
-  curr->next->prev = newNode;
   curr->next = newNode;
   newNode->prev = curr;
 }
@@ -83,11 +84,19 @@ void DoublyLinkedList<T>::insert_back(int val)
   if (capacity == 0) 
   {
     init(val);
-    return;
   }
-
-  Node<T> *newNode = new Node(val);
-  link(head->prev, newNode);
+  else if (capacity == 1)
+  {
+    Node<T> *newNode = new Node(val);
+    link(head, newNode);
+    tail = newNode;
+  }
+  else 
+  {
+    Node<T> *newNode = new Node(val);
+    link(tail, newNode);
+    tail = newNode;
+  }
 
   ++capacity;
 }
@@ -98,12 +107,20 @@ void DoublyLinkedList<T>::insert_front(int val)
   if (capacity == 0) 
   {
     init(val);
-    return;
+  } 
+  else if (capacity == 1)
+  {
+    Node<T> *newNode = new Node(val);
+  //  tail = head;
+    link(newNode, tail);
+    head = newNode;
   }
-
-  Node<T> *newNode = new Node(val);
-  link(head->prev, newNode);
-  head = newNode;
+  else
+  {
+    Node<T> *newNode = new Node(val);
+    link(newNode, head);
+    head = newNode;
+  }
 
   ++capacity;
 }
@@ -111,18 +128,22 @@ void DoublyLinkedList<T>::insert_front(int val)
   template <class T>
 void DoublyLinkedList<T>::insert_at(int index, int val) 
 {
-  if (index <= 0) insert_front(val);
-  else if (index >= capacity) insert_back(val);
+  if (index <= 0) 
+    insert_front(val);
+  else if (index >= capacity) 
+    insert_back(val);
   else 
   {
-    Node<T> *temp = head->prev;
+    Node<T> *temp = head;
     for (int i=0; i<index; ++i) 
     {
       temp = temp->next;
     }
 
     Node<T> *newNode = new Node(val);
-    link(temp, newNode);
+    temp->prev->next = newNode;
+    newNode->prev = temp->prev;
+    link(newNode, temp);
 
     ++capacity;
   }
@@ -138,16 +159,15 @@ void DoublyLinkedList<T>::remove_front()
   else if (capacity == 1)
   {
     delete head;
-    head = nullptr;
+    head = tail = nullptr;
     capacity = 0;
   }
   else
   {
-    Node<T> *temp = head->next;
-    head->next->prev = head->prev;
-    head->prev->next = head->next;
-    delete head;
-    head = temp;
+    Node<T> *temp = head;
+    head = head->next;
+    delete temp;
+    head->prev = nullptr;
 
     --capacity;
   }
@@ -163,15 +183,15 @@ void DoublyLinkedList<T>::remove_back()
   if (capacity == 1)
   {
     delete head;
-    head = nullptr;
+    head = tail = nullptr;
     capacity = 0;
   }
   else
   {
-    Node<T> *temp = head->prev;
-    head->prev->prev->next = head;
-    head->prev = head->prev->prev;
+    Node<T> *temp = tail;
+    tail = tail->prev;
     delete temp;
+    tail->next = nullptr;
 
     --capacity;
   }
@@ -188,7 +208,7 @@ void DoublyLinkedList<T>::remove_at(int index)
 
   if (index <= 0) 
     remove_front();
-  else if (index >= capacity) 
+  else if (index >= (capacity-1)) 
     remove_back();
   else 
   {
@@ -201,7 +221,6 @@ void DoublyLinkedList<T>::remove_at(int index)
     temp->prev->next = temp->next;
     temp->next->prev = temp->prev;
     delete temp;
-    temp = nullptr;
 
     --capacity;
   }
@@ -221,7 +240,7 @@ void DoublyLinkedList<T>::print()
   else 
   {
     Node<T> *temp = head;
-    while(temp->next != head)
+    while (temp != tail)
     {
       cout << temp->data << ' ';
       temp = temp->next;
