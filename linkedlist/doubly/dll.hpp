@@ -84,19 +84,19 @@ void DoublyLinkedList<T>::insert_back(int val)
   if (capacity == 0) 
   {
     init(val);
+    return;
   }
-  else if (capacity == 1)
+
+  Node<T> *newNode = new Node(val);
+  if (capacity == 1)
   {
-    Node<T> *newNode = new Node(val);
     link(head, newNode);
-    tail = newNode;
   }
   else 
   {
-    Node<T> *newNode = new Node(val);
     link(tail, newNode);
-    tail = newNode;
   }
+  tail = newNode;
 
   ++capacity;
 }
@@ -107,20 +107,19 @@ void DoublyLinkedList<T>::insert_front(int val)
   if (capacity == 0) 
   {
     init(val);
+    return;
   } 
-  else if (capacity == 1)
+
+  Node<T> *newNode = new Node(val);
+  if (capacity == 1)
   {
-    Node<T> *newNode = new Node(val);
-  //  tail = head;
     link(newNode, tail);
-    head = newNode;
   }
   else
   {
-    Node<T> *newNode = new Node(val);
     link(newNode, head);
-    head = newNode;
   }
+  head = newNode;
 
   ++capacity;
 }
@@ -129,9 +128,13 @@ void DoublyLinkedList<T>::insert_front(int val)
 void DoublyLinkedList<T>::insert_at(int index, int val) 
 {
   if (index <= 0) 
+  {
     insert_front(val);
+  }
   else if (index >= capacity) 
+  {
     insert_back(val);
+  }
   else 
   {
     Node<T> *temp = head;
@@ -180,7 +183,7 @@ void DoublyLinkedList<T>::remove_back()
   {
     cerr << "List is empty..." << endl;
   }
-  if (capacity == 1)
+  else if (capacity == 1)
   {
     delete head;
     head = tail = nullptr;
@@ -207,9 +210,13 @@ void DoublyLinkedList<T>::remove_at(int index)
   }
 
   if (index <= 0) 
+  {
     remove_front();
+  }
   else if (index >= (capacity-1)) 
+  {
     remove_back();
+  }
   else 
   {
     Node<T> *temp = head;
