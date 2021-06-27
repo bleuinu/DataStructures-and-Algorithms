@@ -1,6 +1,7 @@
 #include <iostream>
+#include <queue>
 using namespace std;
-
+  
 class Node {
   private:
   public:
@@ -9,6 +10,7 @@ class Node {
     Node *right;
 
     Node(int _data) : data(_data), left(nullptr), right(nullptr) {;} 
+    ~Node() = default;
 
     void preorder(Node *root) {
       if(!root) return;
@@ -18,6 +20,19 @@ class Node {
     }
 };
 
+void deleteTree(Node *root) {
+  queue<Node *> q;
+  q.push(root);
+
+  while(!q.empty()) {
+    Node *temp = q.front();
+    q.pop();
+    if(temp->left) q.push(temp->left);
+    if(temp->right) q.push(temp->right);
+    delete temp;
+  }
+}
+
 int main() {
   Node *root = new Node(10);
   root->left = new Node(20);
@@ -25,7 +40,9 @@ int main() {
   root->right->left = new Node(55);
   root->right->right = new Node(70);
   root->left->left = new Node(40);
+
   root->preorder(root);
+  deleteTree(root);
 
   return 0;
 }
