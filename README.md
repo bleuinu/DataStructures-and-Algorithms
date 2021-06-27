@@ -7,6 +7,7 @@
   + [ ] 단일 연결 리스트 (Singly Linked List)
   + [ ] 이중 연결 리스트 (Doubly Linked List)
   + [ ] 원형 연결 리스트 (Circular Linked list)
+- [x] 트리 (Tree)
 - [ ] 이진 트리 (Binary Tree)
 - [ ] 이진 탐색 트리 (Binary Search Tree; BST)
 - [ ] 최소 힙 (Min Heap)
