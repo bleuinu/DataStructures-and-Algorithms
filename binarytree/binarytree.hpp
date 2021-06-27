@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 #include <queue>
 using namespace std;
 
@@ -25,14 +26,15 @@ class BinaryTree {
     BinaryTree(void) : root(nullptr), size(0) {;}
     BinaryTree(int);
     ~BinaryTree(void);
-    void deleteNode(Node *);
+    void destructorHelper(Node *);
 
     void insertNode(int);
+    void deleteNode();
 
     void preorder(Node *);
     void inorder(Node *);
     void postorder(Node *);
-    Node * getRoot(void) { return root; }
+    Node* getRoot(void) { return root; }
 };
 
 BinaryTree::BinaryTree(int data) {
@@ -41,13 +43,13 @@ BinaryTree::BinaryTree(int data) {
 }
 
 BinaryTree::~BinaryTree(void) {
-  deleteNode(root);
+  destructorHelper(root);
 }
 
-void BinaryTree::deleteNode(Node *node) {
+void BinaryTree::destructorHelper(Node *node) {
   if(!node) return;
-  deleteNode(node->left);
-  deleteNode(node->right);
+  destructorHelper(node->left);
+  destructorHelper(node->right);
   delete node;
 }
 
@@ -78,6 +80,59 @@ void BinaryTree::insertNode(int data) {
         return;
       }
     }
+  }
+}
+
+void BinaryTree::deleteNode(void) {
+  if(!root) {
+    cout << "Empty tree...." << endl;
+    return;
+  }
+  
+  if(root->left == nullptr && root->right == nullptr) {
+    delete root;
+    root = nullptr;
+    cout << "delete root" << endl;
+    return;
+  }
+
+  Node *lastLevelLevelOrder = nullptr;
+  Node *parentOfLastNode = nullptr;
+  queue<Node *> q;
+  q.push(root);
+
+  while(!q.empty()) {
+    Node *temp = q.front();
+    q.pop();
+
+    if(temp->left) {
+      q.push(temp->left);
+
+      if(temp->left->left == nullptr && temp->left->right == nullptr) {
+        lastLevelLevelOrder = temp->left;
+        parentOfLastNode = temp;
+      }
+    }
+
+    if(temp->right) {
+      q.push(temp->right);
+      if(temp->right->left == nullptr && temp->right->right == nullptr) {
+        lastLevelLevelOrder = temp->right;
+        parentOfLastNode = temp;
+      }
+    }
+  }
+
+  if(lastLevelLevelOrder && parentOfLastNode) {
+    if(parentOfLastNode->right) {
+      delete parentOfLastNode->right;
+      parentOfLastNode->right = nullptr;
+    } else {
+      delete parentOfLastNode->left;
+      parentOfLastNode->left = nullptr;
+    }
+  } else {
+    cout << "Empty Tree" << endl;
   }
 }
 

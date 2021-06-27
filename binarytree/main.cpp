@@ -11,10 +11,24 @@ int main(void) {
   tree.insertNode(55);
   tree.insertNode(70);
 
-  Node *root = tree.getRoot();
-  tree.preorder(root); cout << endl;
-  tree.inorder(root); cout << endl;
-  tree.postorder(root); cout << endl;
+  tree.preorder(tree.getRoot()); cout << endl;
+  tree.inorder(tree.getRoot()); cout << endl;
+  tree.postorder(tree.getRoot()); cout << endl;
 
+  cout << endl;
+  tree.deleteNode();
+  tree.preorder(tree.getRoot()); cout << endl;
+  tree.deleteNode();
+  tree.preorder(tree.getRoot()); cout << endl;
+
+  tree.deleteNode();
+  tree.preorder(tree.getRoot()); cout << endl;
+  tree.deleteNode();
+  tree.preorder(tree.getRoot()); cout << endl;
+  tree.deleteNode();
+  tree.preorder(tree.getRoot()); cout << endl;
+
+  tree.deleteNode();
+  tree.deleteNode();
   return 0;
 }
