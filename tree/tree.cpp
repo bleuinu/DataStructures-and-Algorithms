@@ -20,6 +20,15 @@ class Node {
     }
 };
 
+/* postorder 방식으로 노드 삭제 */
+void deleteTreeRec(Node *root) {
+  if(!root) return;
+  deleteTreeRec(root->left);
+  deleteTreeRec(root->right);
+  delete root;
+}
+
+/* BFS 방식으로 노드 삭제 */
 void deleteTree(Node *root) {
   queue<Node *> q;
   q.push(root);
@@ -42,7 +51,8 @@ int main() {
   root->left->left = new Node(40);
 
   root->preorder(root);
-  deleteTree(root);
+//  deleteTree(root);
+  deleteTreeRec(root);
 
   return 0;
 }
