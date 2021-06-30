@@ -77,4 +77,4 @@
 - [ ] Link Cut Tree, LCT
 
 ## ETC
-- [ ] Morris Traversal (threaded binary tree)
+- [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/morris-traversal/)
