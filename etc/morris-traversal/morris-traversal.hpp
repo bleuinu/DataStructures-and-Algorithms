@@ -33,7 +33,9 @@ class BinaryTree {
     void deleteNode();
 
     void morrisTraversalPreorder(Node *);
+    void morrisTraversalInorder(Node *);
     void preorder(Node *);
+    void inorder(Node *);
 
     Node* getRoot(void) { return root; }
 };
@@ -145,6 +147,14 @@ void BinaryTree::preorder(Node *node) {
   }
 }
 
+void BinaryTree::inorder(Node *node) {
+  if(node) {
+    inorder(node->left);
+    cout << node->data << ' ';
+    inorder(node->right);
+  }
+}
+
 /*
  * If current does not have left child
  *   a. Add current’s value
@@ -155,7 +165,8 @@ void BinaryTree::preorder(Node *node) {
  *
  * ref: https://leetcode.com/problems/binary-tree-inorder-traversal/solution 
  * */
-void BinaryTree::morrisTraversalPreorder(Node* node) {
+void BinaryTree::morrisTraversalPreorder(Node* _root) {
+  Node *node = _root;
   while(node != nullptr) {
     if(node->left == nullptr) {
       cout << node->data << ' ';
@@ -171,6 +182,28 @@ void BinaryTree::morrisTraversalPreorder(Node* node) {
       cout << node->data << ' ';
         curr->right = node;
         node = node->left;
+      }
+    }
+  }
+}
+
+void BinaryTree::morrisTraversalInorder(Node* _root) {
+  Node *node = _root;
+  while(node != nullptr) {
+    if(node->left == nullptr) {
+      cout << node->data << ' ';
+      node = node->right;
+    } else {
+      Node *curr = node->left;
+      while(curr->right && curr->right != node) curr = curr->right;
+
+      if(curr->right == nullptr) {
+        curr->right = node;
+        node = node->left;
+      } else {
+        curr->right = nullptr;
+        cout << node->data << ' ';
+        node = node->right;
       }
     }
   }
