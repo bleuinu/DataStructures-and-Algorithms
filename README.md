@@ -77,4 +77,4 @@
 - [ ] Link Cut Tree, LCT
 
 ## ETC
-- Morris Traversal (threaded binary tree)
+- [ ] Morris Traversal (threaded binary tree)
