@@ -78,5 +78,5 @@
 
 ## ETC
 - [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/morris-traversal/)
-- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/euclidean/))
-- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/eratosthenes/))
+- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/euclidean/euclidean.cpp)
+- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/eratosthenes/eratosthenes.cpp)
