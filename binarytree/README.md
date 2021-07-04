@@ -1,3 +1,3 @@
 ## Tree
 
-[https://www.ipflegen.com/ko/ds/binarytree/](https://www.ipflegen.com/ko/ds/binarytree/)
+[https://www.j2ieu.com/ko/ds/binarytree/](https://www.j2ieu.com/ko/ds/binarytree/)
