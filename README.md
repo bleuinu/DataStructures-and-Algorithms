@@ -9,7 +9,7 @@
   + [ ] 원형 연결 리스트 (Circular Linked list)
 - [x] 트리 (Tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/tree/)
 - [x] 이진 트리 (Binary Tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/binarytree/)
-- [ ] 이진 탐색 트리 (Binary Search Tree; BST)
+- [x] 이진 탐색 트리 (Binary Search Tree; BST) [🔗](https://github.com/ipflegen/ds-algo/blob/master/bst/)
 - [ ] 최소 힙 (Min Heap)
 - [ ] 최대 힙 (Max Heap)
 - [ ] 자가균형 이진 탐색 트리 (Self-balancing BST)
