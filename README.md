@@ -80,4 +80,5 @@
 - [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/euclidean/)
 - [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/morris-traversal/)
 - [x] Primality Test (소수 판별하기) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/prime/)
+- [x] Prime Factorization (소인수분해) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/prime-factorization/)
 - [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/eratosthenes/)
