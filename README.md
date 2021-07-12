@@ -7,9 +7,9 @@
   + [ ] 단일 연결 리스트 (Singly Linked List)
   + [ ] 이중 연결 리스트 (Doubly Linked List)
   + [ ] 원형 연결 리스트 (Circular Linked list)
-- [x] 트리 (Tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/tree/)
-- [x] 이진 트리 (Binary Tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/binarytree/)
-- [x] 이진 탐색 트리 (Binary Search Tree; BST) [🔗](https://github.com/ipflegen/ds-algo/blob/master/bst/)
+- [x] 트리 (Tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/tree/)
+- [x] 이진 트리 (Binary Tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/binarytree/)
+- [x] 이진 탐색 트리 (Binary Search Tree; BST) [🔗](https://github.com/j2ieu/ds-algo/blob/master/bst/)
 - [ ] 최소 힙 (Min Heap)
 - [ ] 최대 힙 (Max Heap)
 - [ ] 자가균형 이진 탐색 트리 (Self-balancing BST)
@@ -17,7 +17,7 @@
   + [ ] 레드-블랙 트리 (Red-Black Tree)
   + [ ] B-트리 (B-Tree)
   + [ ] 트립 (Treap, Tree + Heap)
-- [x] 무방향/방향 그래프 (Undirected/Dirceted Graph) [🔗](https://github.com/ipflegen/ds-algo/blob/master/graph/)
+- [x] 무방향/방향 그래프 (Undirected/Dirceted Graph) [🔗](https://github.com/j2ieu/ds-algo/blob/master/graph/)
   + [x] 인접 리스트 (Adjacency List)
   + [x] 인접 행렬 (Adjacency Matrix) 
 - [ ] 세그먼트 트리 (Segment Tree)
@@ -77,6 +77,7 @@
 - [ ] Link Cut Tree, LCT
 
 ## ETC
-- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/euclidean/euclidean.cpp)
-- [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/morris-traversal/)
-- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/ipflegen/ds-algo/blob/master/etc/eratosthenes/eratosthenes.cpp)
+- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/euclidean/)
+- [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/morris-traversal/)
+- [x] Primality Test (소수 판별하기) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/prime/)
+- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/eratosthenes/)
