@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+```cpp
 void eratosthenes(int n) {
   vector<int> sieve(n+1, true);
   sieve[0] = sieve[1] = false;
@@ -14,3 +12,4 @@ void eratosthenes(int n) {
     }
   }
 }
+```
