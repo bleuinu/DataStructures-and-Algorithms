@@ -1,36 +1,41 @@
 #include <vector>
 #include <list>
-#include <algorithm>
+using namespace std;
 
 class HashTable {
-  private:
-    static const int TABLE_SIZE = 10;
-    int table[TABLE_SIZE];
-
+private:
+    int prime;
+    vector<list<int>> table;
+    
     int hash(int key) {
-      return key % TABLE_SIZE;
+        return key % prime;
     }
-
-  public:
-    HashTable() {
-      std::fill(table, table + TABLE_SIZE, -1);
+    
+    list<int>::iterator search(int key) {
+        int h = hash(key);
+        return find(table[h].begin(), table[h].end(), key);
     }
-
-    void insert(int key) {
-      int h = hash(key);
-      if(table[h] == -1)
-        table[h] = key;
+    
+public:
+    /** Initialize your data structure here. */
+    HashTable() : prime(10007), table(prime) {}
+    
+    void add(int key) {
+        int h = hash(key);
+        if(!contains(key))
+            table[h].push_back(key);
     }
-
+    
     void remove(int key) {
-      int h = hash(key);
-      int v = search(key);
-      if (v != -1) 
-        table[h] = -1;
+        int h = hash(key);
+        auto it = search(key);
+        if (it != table[h].end())
+            table[h].erase(it);
     }
-
-    bool search(int key) {
-      int h = hash(key);
-      return table[h] != -1;
+    
+    /** Returns true if this set contains the specified element */
+    bool contains(int key) {
+        int h = hash(key);
+        return search(key) != table[h].end();
     }
-};
+;
