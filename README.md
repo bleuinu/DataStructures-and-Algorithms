@@ -11,7 +11,7 @@
 - [x] 이진 트리 (Binary Tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/binarytree/)
 - [x] 이진 탐색 트리 (Binary Search Tree; BST) [🔗](https://github.com/j2ieu/ds-algo/blob/master/bst/)
 - [x] 해시 (Hash) [🔗](https://github.com/j2ieu/ds-algo/blob/master/hash/)
-- [ ] 최소 힙 (Min Heap)
+- [x] 최소 힙 (Min Heap) [🔗](https://github.com/j2ieu/ds-algo/blob/master/heap/minheap.cpp)
 - [ ] 최대 힙 (Max Heap)
 - [ ] 자가균형 이진 탐색 트리 (Self-balancing BST)
   + [ ] AVL트리 (Adelson-Velskii/Landis Tree; AVL Tree)
