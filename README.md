@@ -48,7 +48,7 @@
 - [ ] 분할 정복 (Divide and Conquer)
 - [ ] 중급 다이나믹 프로그래밍 (Intermediate level DP)
 - [ ] 최단 경로 (Shortest Path)
-  + [ ] 다익스트라 (Dijkstra)
+  + [x] 다익스트라 (Dijkstra) [🔗](https://github.com/jeyeyeu/ds-algo/blob/main/graph/dijkstra/Dijkstra.hpp)
   + [ ] 벨만포드 (Bellman-Ford)
   + [ ] 플로이드-와샬 (Floyd-Worshall)
 - [ ] 최소 신장 트리 (Minimum Spanning Tree)
