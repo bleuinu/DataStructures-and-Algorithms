@@ -3,57 +3,53 @@
 
 /* Write a function rightRotate(arr[], D, N)
  * that rightRotates arr[] of size N by D elements */
-void rightRotate(int *arr, int D, const int N) {
-  int *tempArr = malloc(sizeof(int) * N);
-  D = D & N;
-
-  for(int i=0; i<N; ++i) {
-    tempArr[(i+D)%N] = arr[i];
-  }
-
-  for(int i=0; i<N; ++i) {
-    printf("%d ", tempArr[i]);
-  }
-
-  free(tempArr);
+void rightRotateByOne(int *arr, const int N) {
+  int temp = arr[N-1];
+  for(int i=N-1; i>0; --i) 
+    arr[i] = arr[i-1];
+  arr[0] = temp;
 }
 
-/* original array is modified */
-void leftRotate(int *arr, int D, const int N) {
-  D = D & N;
+void rightRotate(int *arr, int d, const int N) {
+  for(int i=0; i<d; ++i)
+    rightRotateByOne(arr, N);
+}
 
-  // Copy first D elements
-  int *tempArr = malloc(sizeof(int) * D);
-  for(int i=0; i<D; ++i) {
-    tempArr[i] = arr[i];
-  }
+// Left rotate helper 
+void leftRotateByOne(int *arr, const int N) {
+  int temp = arr[0];
+  for(int i=0; i<N-1; ++i)
+    arr[i] = arr[i+1];
+  arr[N-1] = temp;
+}
 
-  // shift everything to the left
-  for(int i=0; i<N-D; ++i) {
-    arr[i] = arr[D+i];
-  }
+void leftRotate(int *arr, int d, const int N) {
+  for(int i=0; i<d; ++i)
+    leftRotateByOne(arr, N);
+}
 
-  // move temp saved values to the array
-  for(int i=0; i<D; ++i) {
-    arr[N-D+i] = tempArr[i];
-  }
-
-  for(int i=0; i<N; ++i) {
+void printArr(int *arr, const int N) {
+  for(int i=0; i<N; ++i) 
     printf("%d ", arr[i]);
-  }
-
-  free(tempArr);
+  printf("\n");
 }
 
 int main(void) {
   int arr[] = {1,2,3,4,5,6,7};
-  printf("Right rotation:\n");
-  for(int i=0; i<15; ++i) {
-    rightRotate(arr, i, 7);
-    printf("\n");
+  const int SIZE = sizeof(arr) / sizeof(int);
+
+  printf("Right Rotation\n");
+  for(int i=0; i<SIZE; ++i) {
+    printf("Right rotate %d ----> ", i+1);
+    rightRotate(arr, 1, SIZE);
+    printArr(arr, SIZE);
   }
 
-  printf("\nLeft rotation:\n");
-  leftRotate(arr, 2, 7);
+  printf("Left Rotation\n");
+  for(int i=0; i<SIZE; ++i) {
+    printf("Left rotate %d ----> ", i+1);
+    leftRotate(arr, 1, SIZE);
+    printArr(arr, SIZE);
+  }
   return 0;
 }
