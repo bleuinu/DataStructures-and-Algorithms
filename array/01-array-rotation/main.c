@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /*
+ * Method: Rotate one by one
  * Time complexity O(N*d) 
  * Auxiliary Space O(1) 
  * */
