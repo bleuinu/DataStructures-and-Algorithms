@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Write a function rightRotate(arr[], D, N)
- * that rightRotates arr[] of size N by D elements */
+/*
+ * Time complexity O(N*d) 
+ * Auxiliary Space O(1) 
+ * */
+
+// Right rotate helper
 void rightRotateByOne(int *arr, const int N) {
   int temp = arr[N-1];
   for(int i=N-1; i>0; --i) 
