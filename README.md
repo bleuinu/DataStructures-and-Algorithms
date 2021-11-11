@@ -1,5 +1,5 @@
-## 자료구조
-- [ ] 배열 (Array)
+## Data Structure
+- [x] Arrays
 - [ ] 스택 (Stack)
 - [ ] 큐 (Queue)
 - [ ] 우선순위 큐 (Priority Queue)
@@ -7,24 +7,23 @@
   + [ ] 단일 연결 리스트 (Singly Linked List)
   + [ ] 이중 연결 리스트 (Doubly Linked List)
   + [ ] 원형 연결 리스트 (Circular Linked list)
-- [x] 트리 (Tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/tree/)
-- [x] 이진 트리 (Binary Tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/binarytree/)
-- [x] 이진 탐색 트리 (Binary Search Tree; BST) [🔗](https://github.com/j2ieu/ds-algo/blob/master/bst/)
-- [x] 해시 (Hash) [🔗](https://github.com/j2ieu/ds-algo/blob/master/hash/)
-- [x] 최소 힙 (Min Heap) [🔗](https://github.com/j2ieu/ds-algo/blob/master/heap/minheap.cpp)
+- [ ] 트리 (Tree) 
+- [ ] 이진 트리 (Binary Tree) 
+- [ ] 이진 탐색 트리 (Binary Search Tree; BST) 
+- [ ] 해시 (Hash)
+- [ ] 최소 힙 (Min Heap) 
 - [ ] 최대 힙 (Max Heap)
 - [ ] 자가균형 이진 탐색 트리 (Self-balancing BST)
   + [ ] AVL트리 (Adelson-Velskii/Landis Tree; AVL Tree)
   + [ ] 레드-블랙 트리 (Red-Black Tree)
   + [ ] B-트리 (B-Tree)
   + [ ] 트립 (Treap, Tree + Heap)
-- [x] 무방향/방향 그래프 (Undirected/Dirceted Graph) [🔗](https://github.com/j2ieu/ds-algo/blob/master/graph/)
-  + [x] 인접 리스트 (Adjacency List)
-  + [x] 인접 행렬 (Adjacency Matrix) 
+- [ ] 무방향/방향 그래프 (Undirected/Dirceted Graph)
+  + [ ] 인접 리스트 (Adjacency List)
+  + [ ] 인접 행렬 (Adjacency Matrix) 
 - [ ] 세그먼트 트리 (Segment Tree)
 
-
-## 알고리즘
+## Algorithm
 - [ ] 시간 복잡도 (Time Complexity)
 - [ ] 공간 복잡도 (Space Complexity)
 - [ ] 선형 탐색 (Linear Search)
@@ -48,7 +47,7 @@
 - [ ] 분할 정복 (Divide and Conquer)
 - [ ] 중급 다이나믹 프로그래밍 (Intermediate level DP)
 - [ ] 최단 경로 (Shortest Path)
-  + [x] 다익스트라 (Dijkstra) [🔗](https://github.com/jeyeyeu/ds-algo/blob/main/graph/dijkstra/Dijkstra.hpp)
+  + [ ] 다익스트라 (Dijkstra)
   + [ ] 벨만포드 (Bellman-Ford)
   + [ ] 플로이드-와샬 (Floyd-Worshall)
 - [ ] 최소 신장 트리 (Minimum Spanning Tree)
@@ -78,8 +77,8 @@
 - [ ] Link Cut Tree, LCT
 
 ## ETC
-- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/euclidean/)
-- [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/morris-traversal/)
-- [x] Primality Test (소수 판별하기) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/prime/)
-- [x] Prime Factorization (소인수분해) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/prime-factorization/)
-- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/j2ieu/ds-algo/blob/master/etc/eratosthenes/)
+- [x] GCD: Euclidean Algorithm (유클리드 호제법) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/euclidean/)
+- [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/morris-traversal/)
+- [x] Primality Test (소수 판별하기) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/prime/)
+- [x] Prime Factorization (소인수분해) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/prime-factorization/)
+- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/eratosthenes)
