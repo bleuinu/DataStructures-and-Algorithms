@@ -1,12 +1,13 @@
 ## Data Structure
-- [x] Arrays
-- [ ] 스택 (Stack)
+- [x] [Arrays](./array)
+- [ ] Linked Lists 
+  + [x] [Basic Linked Lists](./linkedlist/00-linkedilst/)
+  + [ ] Singly Linked List
+  + [ ] Doubly Linked List
+  + [ ] Circular Linked list
+<!-- - [ ] 스택 (Stack)
 - [ ] 큐 (Queue)
 - [ ] 우선순위 큐 (Priority Queue)
-- [ ] 링크드 리스트 (Linked List)
-  + [ ] 단일 연결 리스트 (Singly Linked List)
-  + [ ] 이중 연결 리스트 (Doubly Linked List)
-  + [ ] 원형 연결 리스트 (Circular Linked list)
 - [ ] 트리 (Tree) 
 - [ ] 이진 트리 (Binary Tree) 
 - [ ] 이진 탐색 트리 (Binary Search Tree; BST) 
@@ -81,4 +82,4 @@
 - [x] Morris Traversal (threaded binary tree) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/morris-traversal/)
 - [x] Primality Test (소수 판별하기) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/prime/)
 - [x] Prime Factorization (소인수분해) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/prime-factorization/)
-- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/eratosthenes)
+- [x] Sieve of Eratosthenes (에라토스테네스의 체) [🔗](https://github.com/yuueu/ds-algo/tree/main/archive/etc/eratosthenes) -->
