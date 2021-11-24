@@ -2,7 +2,7 @@
 - [x] [Arrays](./array)
 - [ ] Linked Lists 
   + [x] [Basic Linked Lists](./linkedlist/00-linkedilst/)
-  + [ ] Singly Linked List
+  + [x] [Singly Linked List](./linkedlist/01-singly-linkedlist/0-slist.rb)
   + [ ] Doubly Linked List
   + [ ] Circular Linked list
 <!-- - [ ] 스택 (Stack)
