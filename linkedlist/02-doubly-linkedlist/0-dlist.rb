@@ -28,13 +28,9 @@ class DoublyLinkedList
   def push_front(data)
     puts "[push_front] inserting #{data} "
     new_node = Node.new(data)
-    if @head == nil
-      @head = new_node
-    else 
-      new_node.next = @head 
-      @head.prev = new_node
-      @head = new_node
-    end 
+    new_node.next = @head 
+    @head.prev = new_node if @head
+    @head = new_node
 
     @node_count += 1
   end 
@@ -84,9 +80,7 @@ class DoublyLinkedList
     else 
       data = @head.data 
       @head = @head.next
-      if @head != nil 
-        @head.prev = nil
-      end 
+      @head.prev = nil if @head != nil
       @node_count -= 1 
 
       puts "[pop_front] pop #{data}"
