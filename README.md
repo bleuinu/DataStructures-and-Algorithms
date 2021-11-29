@@ -3,7 +3,7 @@
 - [ ] Linked Lists 
   + [x] [Basic Linked Lists](./linkedlist/00-linkedilst/)
   + [x] [Singly Linked List](./linkedlist/01-singly-linkedlist/0-slist.rb)
-  + [ ] Doubly Linked List
+  + [x] [Doubly Linked List](./linkedlist/02-doubly-linkedlist/0-dlist.rb)
   + [ ] Circular Linked list
 <!-- - [ ] 스택 (Stack)
 - [ ] 큐 (Queue)
