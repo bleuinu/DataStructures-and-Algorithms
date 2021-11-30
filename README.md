@@ -8,6 +8,7 @@
    <details>
     <summary>Algorithms</summary>
   <ul>
+    <li> <a href="./linkedlist/algorithm/find_middle_node.rb">Find the middle of a given linked list</a></li>
     <li> <a href="./linkedlist/algorithm/is_palindrome.rb">Check if a singly linked list is palindrome</a></li>
   </ul>
   </details>
