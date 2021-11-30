@@ -201,8 +201,9 @@ class CircularLinkedList
   end 
 end 
 
+=begin
 clist = CircularLinkedList.new 
-SIZE = 500
+SIZE = 100
 SIZE.times do 
   op = rand(8)
 
@@ -227,3 +228,4 @@ SIZE.times do
   clist.print_list 
   puts
 end 
+=end

@@ -160,6 +160,7 @@ class SinglyLinkedList
   end 
 end 
 
+=begin
 slist = SinglyLinkedList.new 
 SIZE = 100 
 SIZE.times do 
@@ -184,3 +185,4 @@ SIZE.times do
   slist.print_list 
   puts
 end 
+=end

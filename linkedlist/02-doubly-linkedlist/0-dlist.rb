@@ -182,6 +182,7 @@ class DoublyLinkedList
   end 
 end 
 
+=begin
 dlist = DoublyLinkedList.new 
 SIZE = 100 
 SIZE.times do 
@@ -208,3 +209,4 @@ SIZE.times do
   dlist.print_list 
   puts
 end 
+=end
