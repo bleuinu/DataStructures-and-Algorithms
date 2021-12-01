@@ -12,9 +12,9 @@
     <li> <a href="./linkedlist/algorithm/is_palindrome.rb">Check if a singly linked list is palindrome</a></li>
   </ul>
   </details>
-
-<!-- - [ ] 스택 (Stack)
-- [ ] 큐 (Queue)
+- [ ] [Stack](./stack)
+- [ ] [Queue](./queue)
+<!--
 - [ ] 우선순위 큐 (Priority Queue)
 - [ ] 트리 (Tree) 
 - [ ] 이진 트리 (Binary Tree) 
