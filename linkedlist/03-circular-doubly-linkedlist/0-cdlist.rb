@@ -182,7 +182,7 @@ class CircularLinkedList
     return if @node_count == 0
     curr = @tail.next
     (@node_count-1).times do 
-      print "#{curr.data} <-> "
+      print "#{curr.data} - "
       curr = curr.next
     end 
     puts "#{curr.data}" if curr
@@ -194,7 +194,7 @@ class CircularLinkedList
 
     curr = @tail
     (@node_count-1).times do
-      print "#{curr.data} <-> "
+      print "#{curr.data} - "
       curr = curr.prev
     end
     puts "#{curr.data}" if curr
