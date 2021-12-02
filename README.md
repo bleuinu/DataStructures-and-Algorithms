@@ -12,7 +12,7 @@
     <li> <a href="./linkedlist/algorithm/is_palindrome.rb">Check if a singly linked list is palindrome</a></li>
   </ul>
   </details>
-- [ ] [Stack](./stack)
+- [x] [Stack](./stack)
 - [ ] [Queue](./queue)
 <!--
 - [ ] 우선순위 큐 (Priority Queue)
