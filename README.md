@@ -20,6 +20,8 @@
   </ul>
   </details>
 - [x] [Queue](./queue)
+- [x] [Circular Queue](./circular_queue/circular_queue_array.rb)
+
 <!--
 - [ ] 우선순위 큐 (Priority Queue)
 - [ ] 트리 (Tree) 
