@@ -13,7 +13,13 @@
   </ul>
   </details>
 - [x] [Stack](./stack)
-- [ ] [Queue](./queue)
+   <details>
+    <summary>Algorithms</summary>
+  <ul>
+    <li> <a href="./stack/algorithm/infix_to_postfix.rb">Infix to Postfix Conversion</a></li>
+  </ul>
+  </details>
+- [x] [Queue](./queue)
 <!--
 - [ ] 우선순위 큐 (Priority Queue)
 - [ ] 트리 (Tree) 

@@ -58,8 +58,8 @@ class String
 end
 
 while true
-print "Enter an expression: "
-expr = gets.chomp 
-break if expr.empty?
-puts "postfix: #{expr.to_postfix}"
+  print "Enter an expression: "
+  expr = gets.chomp 
+  break if expr.empty?
+  puts "postfix: #{expr.to_postfix}"
 end
