@@ -2,37 +2,27 @@ class MyCircularQueue
   def initialize(k)
     @queue = Array.new(k, 0)
     @capacity = k
-    @count = 0
     @head = -1
     @tail = -1
   end
 
   def en_queue(value)
     return false if is_full
-    if is_empty
-      @head = 0
-      @tail = 0
-      @queue[@tail] = value 
-    else
-      @tail += 1
-      @tail = @tail % @capacity if @tail >= @capacity
-      @queue[@tail] = value
-    end
+    @head = 0 if is_empty
+    @tail = (@tail+1) % @capacity
+    @queue[@tail] = value
 
-    @count += 1
     return true
   end
 
   def de_queue()
-    if is_empty
+    return false if is_empty
+    if @head == @tail
       @head = -1
       @tail = -1
-      return false
+      return true
     end
-    @queue[@head] = nil
-    @count -= 1
-    @head+= 1
-    @head = @head % @capacity if @head >= @capacity
+    @head = (@head + 1) % @capacity
     return true
   end
 
@@ -47,10 +37,10 @@ class MyCircularQueue
   end
 
   def is_empty()
-    @count == 0
+    @head == -1
   end
 
   def is_full()
-    @count == @capacity
+    ((@tail + 1) % @capacity) == @head
   end
 end
