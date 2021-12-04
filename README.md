@@ -17,6 +17,9 @@
     <summary>Algorithms</summary>
   <ul>
     <li> <a href="./stack/algorithm/infix_to_postfix.rb">Infix to Postfix Conversion</a></li>
+    <li> <a href="./stack/algorithm/evaluate_postfix.rb">Evaluate Reverse Polish Notation</a></li>
+    <li> <a href="./stack/algorithm/valid_parentheses.rb">Valid Parentheses</a></li>
+    <li> <a href="./stack/algorithm/min_stack.rb">Min Stack</a></li>
   </ul>
   </details>
 - [x] [Queue](./queue)
