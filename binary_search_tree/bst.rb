@@ -16,10 +16,13 @@ class BST
   end
 
   def insert_recur(data)
+    puts "[insert_recur] inserting #{data}"
     @root = insert_recur_helper(@root, data)
   end
 
   def insert_iter(data)
+    puts "[insert_iter] inserting #{data}"
+
     if @root == nil 
       @root = Node.new(data)
       return
@@ -45,6 +48,11 @@ class BST
     end
   end
 
+  def delete_node(data)
+    puts "[delete_node] deleting #{data}"
+    @root = delete_node_helper(@root, data)
+  end
+
   def inorder
     print "inorder: "
     inorder_helper(@root)
@@ -64,6 +72,7 @@ class BST
   end
 
   def search(data)
+    puts "[search] searching for #{data}"
     return true if @root == nil or @root.key == data
 
     prev = nil 
@@ -83,18 +92,11 @@ class BST
   end
 
   def search_recur(data)
+    puts "[search_recur] searching for #{data}"
     return search_recur_helper(@root, data)
   end
 
   private 
-
-  def search_recur_helper(root, data)
-    return false if root == nil
-    return true if root.key == data
-
-    return search_recur_helper(root.left, data) if root.key > data 
-    return search_recur_helper(root.right, data)
-  end
 
   def insert_recur_helper(root, data)
     return Node.new(data) if root == nil 
@@ -128,6 +130,54 @@ class BST
     inorder_helper(root.right)
     print "#{root.key} "
   end
+
+  def search_recur_helper(root, data)
+    return false if root == nil
+    return true if root.key == data
+
+    return search_recur_helper(root.left, data) if root.key > data 
+    return search_recur_helper(root.right, data)
+  end
+
+  def delete_node_helper(root, data)
+    return root if root == nil 
+
+    if data < root.key 
+      root.left = delete_node_helper(root.left, data)
+    elsif data > root.key 
+      root.right = delete_node_helper(root.right, data)
+    else 
+      # node has no child 
+      if root.left == nil and root.right == nil 
+        return nil
+      # node with only one chile or no child 
+      elsif root.left == nil 
+        temp = root.right
+        root = nil
+        return temp
+      elsif root.right == nil 
+        temp = root.left 
+        root = nil 
+        return temp
+      end
+      
+      # node with 2 children - get inorder successor
+      # (smallest in the right subtree)
+      temp = inorder_successor(root.right)
+      root.key = temp.key 
+      root.right = delete_node_helper(root.right, temp.key)
+    end
+    return root
+  end
+
+  def inorder_successor(node) 
+    curr = node
+    while curr && curr.left != nil 
+      curr = curr.left
+    end
+
+    return curr
+  end
 end
  
 bst = BST.new 
@@ -151,3 +201,16 @@ puts "#{bst.search(40)}  #{bst.search_recur(40)}"
 puts "#{bst.search(80)}  #{bst.search_recur(80)}"
 puts "#{bst.search(70)}  #{bst.search_recur(70)}"
 puts "#{bst.search(170)}  #{bst.search_recur(170)}"
+
+puts 
+
+bst.inorder
+bst.delete_node(70)
+bst.inorder
+
+bst.delete_node(10)
+bst.inorder
+bst.delete_node(100)
+bst.inorder
+bst.delete_node(50)
+bst.inorder
