@@ -63,7 +63,38 @@ class BST
     puts
   end
 
+  def search(data)
+    return true if @root == nil or @root.key == data
+
+    prev = nil 
+    curr = @root 
+
+    while curr != nil 
+      return true if curr.key == data
+      if data > curr.key
+        prev = curr
+        curr = curr.right
+      else
+        prev = curr
+        curr = curr.left
+      end
+    end
+    return false
+  end
+
+  def search_recur(data)
+    return search_recur_helper(@root, data)
+  end
+
   private 
+
+  def search_recur_helper(root, data)
+    return false if root == nil
+    return true if root.key == data
+
+    return search_recur_helper(root.left, data) if root.key > data 
+    return search_recur_helper(root.right, data)
+  end
 
   def insert_recur_helper(root, data)
     return Node.new(data) if root == nil 
@@ -110,3 +141,13 @@ bst.insert_iter(80)
 bst.inorder
 bst.preorder
 bst.postorder
+
+puts
+
+puts "#{bst.search(10)}  #{bst.search_recur(10)}"
+puts "#{bst.search(50)}  #{bst.search_recur(50)}"
+puts "#{bst.search(30)}  #{bst.search_recur(30)}"
+puts "#{bst.search(40)}  #{bst.search_recur(40)}"
+puts "#{bst.search(80)}  #{bst.search_recur(80)}"
+puts "#{bst.search(70)}  #{bst.search_recur(70)}"
+puts "#{bst.search(170)}  #{bst.search_recur(170)}"
