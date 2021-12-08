@@ -100,7 +100,7 @@ class BST
 
   def insert_recur_helper(root, data)
     return Node.new(data) if root == nil 
-  
+
     if data > root.key 
       root.right = insert_recur_helper(root.right, data)
     end 
@@ -144,30 +144,46 @@ class BST
 
     if data < root.key 
       root.left = delete_node_helper(root.left, data)
+      return root
     elsif data > root.key 
       root.right = delete_node_helper(root.right, data)
-    else 
-      # node has no child 
-      if root.left == nil and root.right == nil 
-        return nil
-      # node with only one chile or no child 
-      elsif root.left == nil 
-        temp = root.right
-        root = nil
-        return temp
-      elsif root.right == nil 
-        temp = root.left 
-        root = nil 
-        return temp
-      end
-      
-      # node with 2 children - get inorder successor
-      # (smallest in the right subtree)
-      temp = inorder_successor(root.right)
-      root.key = temp.key 
-      root.right = delete_node_helper(root.right, temp.key)
+      return root
     end
-    return root
+
+    # reach here if root is the node to be deleted
+    # if one of the children is empty
+    if root.left == nil 
+      temp = root.right 
+      root = nil 
+      return temp
+    elsif root.right == nil 
+      temp = root.left 
+      root = nil 
+      return temp
+    else 
+      successor_parent = root 
+
+      # find successor 
+      succ = root.right 
+      while succ.left != nil do
+        successor_parent = succ 
+        succ = succ.left 
+      end 
+
+      # delete successor 
+      if successor_parent != root 
+        successor_parent.left = succ.right 
+      else 
+        successor_parent.right = succ.right
+      end
+
+      # copy successor data to root
+      root.key = succ.key
+
+      # delecte successor and return root 
+      succ = nil
+      return root
+    end
   end
 
   def inorder_successor(node) 
@@ -179,7 +195,7 @@ class BST
     return curr
   end
 end
- 
+
 bst = BST.new 
 bst.insert_iter(50)
 bst.insert_iter(30)
