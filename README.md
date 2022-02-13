@@ -74,8 +74,8 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [Total count](https://practice.geeksforgeeks.org/problems/total-count2415/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=2&query=category[]ArraysproblemStatusunsolvedpage2category[]Arrays)
 
 - ### [Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/)
-    - [ ] [Introduction](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
-    - [ ] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
+    - [x] [Introduction](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
+    - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
     - [ ] [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [ ] Gotcha: you need pointer to pointer knowledge:
         (for when you pass a pointer to a function that may change the address where that pointer points)
