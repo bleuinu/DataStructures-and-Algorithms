@@ -78,7 +78,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
     - [x] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [x] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] Implement Singly-Linked List (with tail pointer):
+    - [x] Implement Singly-Linked List (with tail pointer):
       - [x] size() - returns number of data elements in list
       - [x] empty() - bool returns true if empty
       - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
@@ -91,7 +91,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
       - [x] erase(index) - removes node at given index
       - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-      - [ ] reverse() - reverses the list
+      - [x] reverse() - reverses the list
       - [x] remove_value(value) - removes the first item in the list with this value
     - [ ] Doubly-linked List:
       - [ ] [Introduction](https://www.geeksforgeeks.org/doubly-linked-list/)
