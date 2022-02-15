@@ -76,26 +76,23 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 - ### [Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/)
     - [x] [Introduction](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
     - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
-    - [ ] [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [ ] Gotcha: you need pointer to pointer knowledge:
-        (for when you pass a pointer to a function that may change the address where that pointer points)
-        This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
-      - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] Implement Singly-Linked List (with tail pointer & without):
-      - [ ] size() - returns number of data elements in list
-      - [ ] empty() - bool returns true if empty
-      - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-      - [ ] push_front(value) - adds an item to the front of the list
-      - [ ] pop_front() - remove front item and return its value
-      - [ ] push_back(value) - adds an item at the end
-      - [ ] pop_back() - removes end item and returns its value
-      - [ ] front() - get value of front item
-      - [ ] back() - get value of end item
-      - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-      - [ ] erase(index) - removes node at given index
-      - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+    - [x] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+    - [x] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
+    - [ ] Implement Singly-Linked List (with tail pointer):
+      - [x] size() - returns number of data elements in list
+      - [x] empty() - bool returns true if empty
+      - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
+      - [x] push_front(value) - adds an item to the front of the list
+      - [x] pop_front() - remove front item and return its value
+      - [x] push_back(value) - adds an item at the end
+      - [x] pop_back() - removes end item and returns its value
+      - [x] front() - get value of front item
+      - [x] back() - get value of end item
+      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [x] erase(index) - removes node at given index
+      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
       - [ ] reverse() - reverses the list
-      - [ ] remove_value(value) - removes the first item in the list with this value
+      - [x] remove_value(value) - removes the first item in the list with this value
     - [ ] Doubly-linked List:
       - [ ] [Introduction](https://www.geeksforgeeks.org/doubly-linked-list/)
       - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
@@ -116,6 +113,9 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [ ] pop_back() - removes end item and returns its data
       - [ ] reverse() - reverses the list
   - [Practice problems on Linked Lists](https://practice.geeksforgeeks.org/topics/Linked-List/) 
+    - [Count nodes of linked list](https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1/?category[]=Linked%20List&category[]=Linked%20List&page=1&query=category[]Linked%20Listpage1category[]Linked%20List)
+    - [Linked List Length Even or Odd?](https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
+    - [Identical Linked Lists](https://practice.geeksforgeeks.org/problems/identical-linked-lists/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
 
 - ### [Stack](https://www.geeksforgeeks.org/stack-data-structure)
   - [ ] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
