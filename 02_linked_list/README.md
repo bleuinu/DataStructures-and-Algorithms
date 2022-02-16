@@ -16,9 +16,20 @@ Also it's costly to insert or delete an element because we first need to shift a
 2. Extra memory for the pointer itself that references the next node.
 3. No cache friendly.
 
+## Linked List Structures
+### Singly Linked List
 ```c
 struct Node {
     int data;
     struct Node *next;
+}
+```
+
+### Doubly Linked List
+```c
+struct Node {
+    int data;
+    struct Node *next;
+    struct Node *prev;
 }
 ```
