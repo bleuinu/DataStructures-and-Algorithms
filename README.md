@@ -108,7 +108,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
       - [ ] [A Memory Efficient Doubly Linked List | Part 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
     - [ ] Circular-Linked List:
-      - [ ] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
+      - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
       - [ ] push_front(data) - adds an item to the front of the list
       - [ ] pop_front() - remove front item and return its data
       - [ ] push_back(data) - adds an item at the end
