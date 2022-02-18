@@ -107,13 +107,17 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [ ] XOR Linked List
       - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
       - [ ] [A Memory Efficient Doubly Linked List | Part 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
-    - [ ] Circular-Linked List:
+    - [x] Circular-Linked List (singly linked list):
       - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
-      - [ ] push_front(data) - adds an item to the front of the list
-      - [ ] pop_front() - remove front item and return its data
-      - [ ] push_back(data) - adds an item at the end
-      - [ ] pop_back() - removes end item and returns its data
-      - [ ] reverse() - reverses the list
+      - [x] front() - get value of front item
+      - [x] back() - get value of end item
+      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [x] push_front(data) - adds an item to the front of the list
+      - [x] pop_front() - remove front item and return its data
+      - [x] push_back(data) - adds an item at the end
+      - [x] pop_back() - removes end item and returns its data
+      - [x] reverse() - reverses the list
   - [Practice problems on Linked Lists](https://practice.geeksforgeeks.org/topics/Linked-List/) 
     - [Count nodes of linked list](https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1/?category[]=Linked%20List&category[]=Linked%20List&page=1&query=category[]Linked%20Listpage1category[]Linked%20List)
     - [Linked List Length Even or Odd?](https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
