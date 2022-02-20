@@ -93,6 +93,14 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
       - [x] reverse() - reverses the list
       - [x] remove_value(value) - removes the first item in the list with this value
+      - Practice problems
+        - [Count nodes of linked list](https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1/?category[]=Linked%20List&category[]=Linked%20List&page=1&query=category[]Linked%20Listpage1category[]Linked%20List)
+        - [Linked List Length Even or Odd?](https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
+        - [Identical Linked Lists](https://practice.geeksforgeeks.org/problems/identical-linked-lists/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
+        - [Linked List Insertion](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions#)
+        - [Print Linked List](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
+        - [Node at a given index](https://practice.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
+        - [Insert in Middle of Linked List](https://practice.geeksforgeeks.org/problems/insert-in-middle-of-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions#)
     - [x] Doubly-linked List:
       - [x] [Introduction](https://www.geeksforgeeks.org/doubly-linked-list/)
       - [x] push_front(value) - adds an item to the front of the list
@@ -107,14 +115,14 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [x] XOR Linked List
       - [x] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
       - Implement:
-        - [x] traverse - print all values in the list in forward direction
-        - [x] push_front(value) - adds an item to the front of the list
-        - [x] pop_front() - remove front item and return its value
-        - [x] push_back(value) - adds an item at the end
-        - [x] pop_back() - removes end item and returns its value
-        - [x] front() - get value of front item
-        - [x] back() - get value of end item
-        - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [x] traverse - print all values in the list in forward direction
+      - [x] push_front(value) - adds an item to the front of the list
+      - [x] pop_front() - remove front item and return its value
+      - [x] push_back(value) - adds an item at the end
+      - [x] pop_back() - removes end item and returns its value
+      - [x] front() - get value of front item
+      - [x] back() - get value of end item
+      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
     - [x] Circular-Linked List (singly linked list):
       - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
       - [x] front() - get value of front item
@@ -126,10 +134,8 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] push_back(data) - adds an item at the end
       - [x] pop_back() - removes end item and returns its data
       - [x] reverse() - reverses the list
-  - [Practice problems on Linked Lists](https://practice.geeksforgeeks.org/topics/Linked-List/) 
-    - [Count nodes of linked list](https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1/?category[]=Linked%20List&category[]=Linked%20List&page=1&query=category[]Linked%20Listpage1category[]Linked%20List)
-    - [Linked List Length Even or Odd?](https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
-    - [Identical Linked Lists](https://practice.geeksforgeeks.org/problems/identical-linked-lists/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
+      - Practice problems
+        - [Check if a circular linked list](https://practice.geeksforgeeks.org/problems/circular-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
 
 - ### [Stack](https://www.geeksforgeeks.org/stack-data-structure)
   - [ ] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
