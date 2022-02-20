@@ -104,9 +104,17 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
       - [x] reverse() - reverses the list
       - [x] remove_value(value) - removes the first item in the list with this value
-    - [ ] XOR Linked List
-      - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
-      - [ ] [A Memory Efficient Doubly Linked List | Part 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
+    - [x] XOR Linked List
+      - [x] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
+      - Implement:
+        - [x] traverse - print all values in the list in forward direction
+        - [x] push_front(value) - adds an item to the front of the list
+        - [x] pop_front() - remove front item and return its value
+        - [x] push_back(value) - adds an item at the end
+        - [x] pop_back() - removes end item and returns its value
+        - [x] front() - get value of front item
+        - [x] back() - get value of end item
+        - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
     - [x] Circular-Linked List (singly linked list):
       - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
       - [x] front() - get value of front item
