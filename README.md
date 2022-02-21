@@ -138,22 +138,22 @@ I added and removed some parts to make it more suitable for myself to study (e.g
         - [Check if a circular linked list](https://practice.geeksforgeeks.org/problems/circular-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
 
 - ### [Stack](https://www.geeksforgeeks.org/stack-data-structure)
-  - [ ] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
-    - [ ] Implement using linked-list:
-      - [ ] push(data) - adds data at position top
-      - [ ] pop() - returns data and removes recently added element (top)
-      - [ ] peek() - returns data at top of the stack
-      - [ ] empty()
-    - [ ] Implement using fixed-sized array:
-      - [ ] push(data) - adds data at position top
-      - [ ] pop() - returns data and removes recently added element (top)
-      - [ ] peek() - returns data at top of the stack
-      - [ ] empty()
-      - [ ] full()
-    - [ ] Cost:
-      - push: O(1) (amortized, linked list and array)
-      - pop: O(1) (linked list and array)
-      - empty: O(1) (linked list and array)
+  - [x] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+  - [x] Implement using linked-list:
+    - [x] push(data) - adds data at position top
+    - [x] pop() - returns data and removes recently added element (top)
+    - [x] peek() - returns data at top of the stack
+    - [x] empty()
+  - [ ] Implement using fixed-sized array:
+    - [ ] push(data) - adds data at position top
+    - [ ] pop() - returns data and removes recently added element (top)
+    - [ ] peek() - returns data at top of the stack
+    - [ ] empty()
+    - [ ] full()
+  - [ ] Cost:
+    - push: O(1) (amortized, linked list and array)
+    - pop: O(1) (linked list and array)
+    - empty: O(1) (linked list and array)
   - [Practice problems on Stack](https://practice.geeksforgeeks.org/topics/Stack/)
 
 - ### [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
