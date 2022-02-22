@@ -39,7 +39,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 ## Data Structures
 - ### [Arrays](https://www.geeksforgeeks.org/array-data-structure/)
     - [x] [Introduction](https://www.geeksforgeeks.org/introduction-to-arrays/)
-    - [x] Implement a vector (mutable array with automatic resizing):
+    - [x] Implement a vector (mutable array with automatic resizing) - [my implementation](./01_arrays/vector_implementation/main.c):
       - [x] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
       - [x] size() - number of items
       - [x] capacity() - number of items it can hold
@@ -78,7 +78,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
     - [x] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [x] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [x] Implement Singly-Linked List (with tail pointer):
+    - [x] Implement Singly-Linked List (with tail pointer) - [my implementation](./02_linked_list/01_singly_linked_list/main.c):
       - [x] size() - returns number of data elements in list
       - [x] empty() - bool returns true if empty
       - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
@@ -101,7 +101,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
         - [Print Linked List](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
         - [Node at a given index](https://practice.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
         - [Insert in Middle of Linked List](https://practice.geeksforgeeks.org/problems/insert-in-middle-of-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions#)
-    - [x] Doubly-linked List:
+    - [x] Doubly-linked List - [my implementation](./02_linked_list/02_doubly_linked_list/main.c):
       - [x] [Introduction](https://www.geeksforgeeks.org/doubly-linked-list/)
       - [x] push_front(value) - adds an item to the front of the list
       - [x] pop_front() - remove front item and return its value
@@ -112,7 +112,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
       - [x] reverse() - reverses the list
       - [x] remove_value(value) - removes the first item in the list with this value
-    - [x] XOR Linked List
+    - [x] XOR Linked List - [my implementation](./02_linked_list/04_xor_linked_list/main.c)
       - [x] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
       - Implement:
       - [x] traverse - print all values in the list in forward direction
@@ -123,7 +123,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [x] front() - get value of front item
       - [x] back() - get value of end item
       - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-    - [x] Circular-Linked List (singly linked list):
+    - [x] Circular-Linked List (singly linked list) - [my implementation](./02_linked_list/03_circular_linked_list/main.c):
       - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
       - [x] front() - get value of front item
       - [x] back() - get value of end item
@@ -139,23 +139,25 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 
 - ### [Stack](https://www.geeksforgeeks.org/stack-data-structure)
   - [x] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
-  - [x] Implement using linked-list:
+  - [x] Implement using linked-list ([my implementation](./03_stack/01_linkedlist/main.c)): 
     - [x] push(data) - adds data at position top
     - [x] pop() - returns data and removes recently added element (top)
     - [x] peek() - returns data at top of the stack
     - [x] empty()
-  - [ ] Implement using fixed-sized array:
-    - [ ] push(data) - adds data at position top
-    - [ ] pop() - returns data and removes recently added element (top)
-    - [ ] peek() - returns data at top of the stack
-    - [ ] empty()
-    - [ ] full()
-  - [ ] Cost:
+  - [x] Implement using fixed-sized array ([my implementation](./03_stack/02_array/main.c)):
+    - [x] push(data) - adds data at position top
+    - [x] pop() - returns data and removes recently added element (top)
+    - [x] peek() - returns data at top of the stack
+    - [x] empty()
+    - [x] full()
+  - [x] Cost:
     - push: O(1) (amortized, linked list and array)
     - pop: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
   - [Practice problems on Stack](https://practice.geeksforgeeks.org/topics/Stack/)
-
+    - [Implement stack using array](https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions#)
+    - [Implement stack using linked list](https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions)
+    - [Get minimum element from stack](https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1/?page=1&category[]=Stack&sortBy=submissions#)
 - ### [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
   - [ ] [Introduction](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
   - [ ] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
