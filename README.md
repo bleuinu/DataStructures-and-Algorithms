@@ -158,6 +158,8 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [Implement stack using array](https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions#)
     - [Implement stack using linked list](https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions)
     - [Get minimum element from stack](https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1/?page=1&category[]=Stack&sortBy=submissions#)
+    - [Parenthesis checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1/?page=1&category[]=Stack&sortBy=submissions)
+    - [Reverse a string using stack](https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1/?page=2&status[]=unsolved&category[]=Stack&sortBy=submissions)
 - ### [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
   - [ ] [Introduction](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
   - [ ] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
