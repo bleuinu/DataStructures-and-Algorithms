@@ -175,6 +175,9 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - dequeue: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
   - [Practice problems on Queue](https://practice.geeksforgeeks.org/topics/Queue/)
+    - [Queue using two stacks](https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions#)
+    - [Stack using two queues](https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
+    - [Reverse first K elements of queue](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
 
 - ### [Hash table](https://www.geeksforgeeks.org/hashing-data-structure/)
     - [ ] [Introduction](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
