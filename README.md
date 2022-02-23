@@ -161,18 +161,16 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [Parenthesis checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1/?page=1&category[]=Stack&sortBy=submissions)
     - [Reverse a string using stack](https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1/?page=2&status[]=unsolved&category[]=Stack&sortBy=submissions)
 - ### [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
-  - [ ] [Introduction](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
-  - [ ] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
-  - [ ] Implement using linked-list, with tail pointer:
-    - [ ] enqueue(data) - adds data at position at tail
-    - [ ] dequeue() - returns data and removes least recently added element (front)
-    - [ ] empty()
-  - [ ] Implement using fixed-sized array:
-    - [ ] enqueue(data) - adds data at end of available storage
-    - [ ] dequeue() - returns data and removes least recently added element
-    - [ ] empty()
-    - [ ] full()
-  - [ ] Cost:
+  - [x] [Introduction](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
+  - [x] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
+  - [x] Implement a circular queue - [my implementation](./04_queue/01_circular_queue/main.c) : 
+    - [x] enqueue(data) - adds data at position at tail
+    - [x] dequeue() - returns data and removes least recently added element (front)
+    - [x] empty()
+    - [x] full()
+    - [x] front() - gets the first element
+    - [x] rear() - gets the last element
+  - [x] Cost:
     - enqueue: O(1) (amortized, linked list and array)
     - dequeue: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
