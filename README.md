@@ -180,7 +180,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [Reverse first K elements of queue](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
 
 - ### [Hash table](https://www.geeksforgeeks.org/hashing-data-structure/)
-    - [ ] [Introduction](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
+    - [x] [Introduction](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
     - [ ] [Trivial Hashing](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)
     - [ ] [Collision Handling - Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
     - [ ] [Collision Handling - Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
