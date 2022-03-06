@@ -171,20 +171,12 @@ void insert(Vector *vec, int idx, int data) {
   } else if (idx >= vec->size) {
     push_back(vec, data);
   } else {
-    int *temp = (int *)(malloc(vec->capacity * sizeof(int)));
-    for(int i=0; i<idx; ++i) {
-      temp[i] = (vec->arr)[i];
-    }
-
-    temp[idx] = data;
-
-    for(int i=idx; i<vec->size; ++i) {
-      temp[i+1] = (vec->arr)[i];
-    }
-
     ++(vec->size);
-    free(vec->arr);
-    vec->arr = temp;
+    for(int i=vec->size-1; i>idx; --i) {
+      (vec->arr)[i] = (vec->arr)[i-1];
+    }
+
+    (vec->arr)[idx] = data;
   }
 }
 
@@ -196,21 +188,15 @@ int delete(Vector *vec, int idx) {
     return pop_back(vec);
   }
 
-  int *temp = (int *)(malloc(vec->capacity * sizeof(int)));
   int data = (vec->arr)[idx];
 
-  for(int i=0; i<idx; ++i) {
-    temp[i] = (vec->arr)[i];
-  }
-
   for(int i=idx; i<vec->size; ++i) {
-    temp[i] = (vec->arr)[i+1];
+    (vec->arr)[i] = (vec->arr)[i+1];
   }
 
   --(vec->size);
-  free(vec->arr);
-  vec->arr = temp;
-
+  (vec->arr)[vec->size] = INF;
+  
   return data;
 }
 
@@ -243,15 +229,12 @@ void prepend(Vector *vec, int data) {
     resize(vec, vec->capacity << 1);
   }
 
-  int *temp = (int *)(malloc(vec->capacity * sizeof(int)));
-  temp[0] = data;
-  for(int i=0; i<vec->size; ++i) {
-    temp[i+1] = (vec->arr)[i];
+  ++(vec->size);
+  for(int i=(vec->size)-1; i>0; --i) {
+    (vec->arr)[i] = (vec->arr)[i-1];
   }
 
-  ++(vec->size);
-  free(vec->arr);
-  vec->arr = temp;
+  (vec->arr)[0] = data;
 }
 
 /******************************************************* 
