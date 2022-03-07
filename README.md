@@ -180,12 +180,13 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [Reverse first K elements of queue](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
 
 - ### [Hash table](https://www.geeksforgeeks.org/hashing-data-structure/)
-    - [x] [Introduction](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
-    - [ ] [Trivial Hashing](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)
-    - [ ] [Collision Handling - Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
-    - [ ] [Collision Handling - Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
-    - [ ] [Collision Handling - Double Hashing](https://www.geeksforgeeks.org/double-hashing/)
-    - [ ] [Load factor and Rehashing](https://www.geeksforgeeks.org/load-factor-and-rehashing/)
+    - [x] [Introduction](https://www.educative.io/edpresso/what-is-hashing)
+      - what is hashing? collision? where is it used?
+      - extra [resource](https://computersciencewiki.org/index.php/Hashing)
+    - [ ] [Fundamentals of data structures: Hashing](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Hash_tables_and_hashing)
+      - [ ] Hashing tables
+      - [ ] Hashing Algorithms
+      - [ ] Collisions (open and closed addressing)
     - [ ] Implement with array using linear probing
       - hash(k, m) - m is size of hash table
       - add(key, value) - if key already exists, update value
