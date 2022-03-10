@@ -183,18 +183,20 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [x] [Introduction](https://www.educative.io/edpresso/what-is-hashing)
       - what is hashing? collision? where is it used?
       - extra [resource](https://computersciencewiki.org/index.php/Hashing)
-    - [ ] [Fundamentals of data structures: Hashing](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Hash_tables_and_hashing)
-      - [ ] Hashing tables
-      - [ ] Hashing Algorithms
-      - [ ] Collisions (open and closed addressing)
-    - [ ] Implement with array using linear probing
+    - [x] [Fundamentals of data structures: Hashing](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Hash_tables_and_hashing)
+      - [x] Hashing tables
+      - [x] Hashing Algorithms
+      - [x] Collisions (open and closed addressing)
+    - [x] Implement with array using linear probing
       - hash(k, m) - m is size of hash table
       - add(key, value) - if key already exists, update value
       - exists(key)
       - get(key)
       - remove(key)
+      - resources: [1](https://www.sanfoundry.com/c-program-implement-hash-tables-linear-probing/), [2](https://benhoyt.com/writings/hash-table-in-c/)
     - [Practice problems on Hashing](https://practice.geeksforgeeks.org/topics/hashing/)
-
+      - https://leetcode.com/problems/two-sum/  
+      - https://leetcode.com/problems/linked-list-cycle/
 ---
 
 ## Trees
