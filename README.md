@@ -202,7 +202,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 ## Trees
 
 - ### [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
-    - [ ] [Introduction](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)
+    - [x] [Introduction](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)
     - [ ] [Properties](https://www.geeksforgeeks.org/binary-tree-set-2-properties/)
     - [ ] [Types of Binary Tree](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)
     - [ ] [BFS(breadth-first search) and DFS(depth-first search)](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
