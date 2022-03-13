@@ -203,9 +203,9 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 
 - ### [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
     - [x] [Introduction](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)
-    - [ ] [Properties](https://www.geeksforgeeks.org/binary-tree-set-2-properties/)
-    - [ ] [Types of Binary Tree](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)
-    - [ ] [BFS(breadth-first search) and DFS(depth-first search)](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+    - [x] [Properties](https://www.geeksforgeeks.org/binary-tree-set-2-properties/)
+    - [x] [Types of Binary Tree](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)
+    - [x] [BFS(breadth-first search) and DFS(depth-first search)](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
     - BFS notes:
       - level order (BFS, using queue)
       - time complexity: O(n)
@@ -218,7 +218,16 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - inorder (DFS: left, self, right)
       - postorder (DFS: left, right, self)
       - preorder (DFS: self, left, right)
-  - [Practice problem on Binary Tree](https://practice.geeksforgeeks.org/topics/Tree/)
+    - [Practice problem on Binary Tree](https://practice.geeksforgeeks.org/topics/Tree/)
+      - Inorder Traversal
+      - Preorder Traversal
+      - Postorder Traversal
+      - Count Leaves in Binary Tree
+      - Minimum element in BST
+      - Size of Binary Tree
+      - Height of Heap
+      - Sum of Binary Tree
+      - Count Non-Leaf Nodes in Tree
 
 - ### [Binary search tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
     - [ ] [Searching & Insertion](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
