@@ -230,7 +230,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - Count Non-Leaf Nodes in Tree
 
 - ### [Binary search tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
-    - [ ] [Searching & Insertion](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
+    - [x] [Searching & Insertion](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
     - [ ] [Deletion](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/)
     - Deletion Notes: 
       - Node to be deleted is the leaf: simply remove the node.
