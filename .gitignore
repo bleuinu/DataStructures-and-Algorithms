@@ -54,3 +54,4 @@ main
 *.idb
 *.pdb
 
+*.DS_store
