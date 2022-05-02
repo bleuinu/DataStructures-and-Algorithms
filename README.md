@@ -2,8 +2,6 @@
 
 The original credit goes to the [coding-interview-university](https://github.com/jwasham/coding-interview-university).
 
-I added and removed some parts to make it more suitable for myself to study (e.g. added implementations for doubly and circular-linked list, using different resources, etc...).
-
 ---
 
 ## Table of Contents
