@@ -32,7 +32,7 @@ class BST {
         Node* getRoot() { return root; }
 
         void printLevelOrder();
-};
+}; 
 
 void BST::insert(int data) {
     if(root == nullptr) {

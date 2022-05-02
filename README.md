@@ -17,8 +17,7 @@ I added and removed some parts to make it more suitable for myself to study (e.g
   + [Binary Tree](#binary-tree)
   + [Binary Search Tree](#binary-search-tree)
   + [Self Balancing BST](#self-balancing-bst)
-  + [Heap](#heap)
-  + [Priority Queue](#priority-queue)
+  + [Heap, Priority Queue, Binary Heap](#heap)
 - [Graph](#graph) 
   + General Knowledge
     + directed & undirected graph
@@ -37,209 +36,231 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 ---
 
 ## Data Structures
-- ### [Arrays](https://www.geeksforgeeks.org/array-data-structure/)
-    - [x] [Introduction](https://www.geeksforgeeks.org/introduction-to-arrays/)
-    - [x] Implement a vector (mutable array with automatic resizing) - [my implementation](./01_arrays/vector_implementation/main.c):
-      - [x] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
-      - [x] size() - number of items
-      - [x] capacity() - number of items it can hold
-      - [x] is_empty()
-      - [x] at(index) - returns item at given index, blows up if index out of bounds
-      - [x] push(item)
-      - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-      - [x] prepend(item) - inserts item at index 0
-      - [x] pop() - remove from end, return value
-      - [x] delete(index) - delete item at index, shifting all trailing elements left
-      - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
-      - [x] find(item) - looks for value and returns first index with that value, -1 if not found
-      - [x] resize(new_capacity) // private function
-        - [x] when you reach capacity, resize to double the size
-        - [x] when popping an item, if size is 1/4 of capacity, resize to half
-    - [x] Time
-      - O(1) to add/remove at end (amortized for allocations for more space), index, or update
-      - O(n) to insert/remove elsewhere
-    - [x] Space
-      - contiguous in memory, so proximity helps performance
-      - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
-    - [Practice problems on Arrays](https://practice.geeksforgeeks.org/topics/Array/)
-      - [Find minimum and maximum element in an array](https://practice.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=1&query=category[]ArraysproblemStatusunsolvedpage1category[]Arrays)
-      - [Game with nos](https://practice.geeksforgeeks.org/problems/game-with-nos3123/1/?category[]=Arrays&category[]=Arrays&page=1&query=category[]Arrayspage1category[]Arrays)
-      - [Play With OR](https://practice.geeksforgeeks.org/problems/play-with-or5515/1/?category[]=Arrays&category[]=Arrays&page=1&query=category[]Arrayspage1category[]Arrays)
-      - [C++ Arrays (Sum of array) | Set 1](https://practice.geeksforgeeks.org/problems/c-arrays-sum-of-array-set-14805/1/?category[]=Arrays&category[]=Arrays&page=1&query=category[]Arrayspage1category[]Arrays)
-      - [Cyclically rotate an array by one](https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=1&query=category[]ArraysproblemStatusunsolvedpage1category[]Arrays)
-      - [Display longest name](https://practice.geeksforgeeks.org/problems/display-longest-name0853/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=1&query=category[]ArraysproblemStatusunsolvedpage1category[]Arrays)
-      - [Ishaan Loves Chocolates](https://practice.geeksforgeeks.org/problems/ishaan-loves-chocolates2156/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=1&query=category[]ArraysproblemStatusunsolvedpage1category[]Arrays)
-      - [Number of Occurrence](https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=2&query=category[]ArraysproblemStatusunsolvedpage2category[]Arrays)
-      - [Count of smaller elements](https://practice.geeksforgeeks.org/problems/count-of-smaller-elements5947/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=1&query=category[]ArraysproblemStatusunsolvedpage1category[]Arrays)
-      - [Total count](https://practice.geeksforgeeks.org/problems/total-count2415/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&page=2&query=category[]ArraysproblemStatusunsolvedpage2category[]Arrays)
+- ### Arrays
+  - [ ] About Arrays:
+    - [ ] [Introduction to Arrays](https://www.geeksforgeeks.org/introduction-to-arrays/)
+    - [ ] [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+    - [ ] [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
+    - [ ] [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
+  - [ ] Implement a vector (mutable array with automatic resizing):
+    - [ ] size() - number of items
+    - [ ] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
+    - [ ] capacity() - number of items it can hold
+    - [ ] is_empty()
+    - [ ] at(index) - returns item at given index, blows up if index out of bounds
+    - [ ] push(item)
+    - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
+    - [ ] prepend(item) - inserts item at index 0
+    - [ ] pop() - remove from end, return value
+    - [ ] delete(index) - delete item at index, shifting all trailing elements left
+    - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
+    - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
+    - [ ] resize(new_capacity) // private function
+      - [ ] when you reach capacity, resize to double the size
+      - [ ] when popping an item, if size is 1/4 of capacity, resize to half
+  - [ ] Time
+    - O(1) to add/remove at end (amortized for allocations for more space), index, or update
+    - O(n) to insert/remove elsewhere
+  - [ ] Space
+    - contiguous in memory, so proximity helps performance
+    - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
+  - Practice problems on Arrays
+    - TBD
 
-- ### [Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/)
-    - [x] [Introduction](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
-    - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
-    - [x] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [x] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [x] Implement Singly-Linked List (with tail pointer) - [my implementation](./02_linked_list/01_singly_linked_list/main.c):
-      - [x] size() - returns number of data elements in list
-      - [x] empty() - bool returns true if empty
-      - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
-      - [x] push_front(value) - adds an item to the front of the list
-      - [x] pop_front() - remove front item and return its value
-      - [x] push_back(value) - adds an item at the end
-      - [x] pop_back() - removes end item and returns its value
-      - [x] front() - get value of front item
-      - [x] back() - get value of end item
-      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-      - [x] erase(index) - removes node at given index
-      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-      - [x] reverse() - reverses the list
-      - [x] remove_value(value) - removes the first item in the list with this value
-      - Practice problems
-        - [Count nodes of linked list](https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1/?category[]=Linked%20List&category[]=Linked%20List&page=1&query=category[]Linked%20Listpage1category[]Linked%20List)
-        - [Linked List Length Even or Odd?](https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
-        - [Identical Linked Lists](https://practice.geeksforgeeks.org/problems/identical-linked-lists/1/?category[]=Linked%20List&category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1category[]Linked%20List)
-        - [Linked List Insertion](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions#)
-        - [Print Linked List](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
-        - [Node at a given index](https://practice.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
-        - [Insert in Middle of Linked List](https://practice.geeksforgeeks.org/problems/insert-in-middle-of-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions#)
-    - [x] Doubly-linked List - [my implementation](./02_linked_list/02_doubly_linked_list/main.c):
-      - [x] [Introduction](https://www.geeksforgeeks.org/doubly-linked-list/)
-      - [x] push_front(value) - adds an item to the front of the list
-      - [x] pop_front() - remove front item and return its value
-      - [x] push_back(value) - adds an item at the end
-      - [x] pop_back() - removes end item and returns its value
-      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-      - [x] erase(index) - removes node at given index
-      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-      - [x] reverse() - reverses the list
-      - [x] remove_value(value) - removes the first item in the list with this value
-    - [x] XOR Linked List - [my implementation](./02_linked_list/04_xor_linked_list/main.c)
-      - [x] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
-      - Implement:
-      - [x] traverse - print all values in the list in forward direction
-      - [x] push_front(value) - adds an item to the front of the list
-      - [x] pop_front() - remove front item and return its value
-      - [x] push_back(value) - adds an item at the end
-      - [x] pop_back() - removes end item and returns its value
-      - [x] front() - get value of front item
-      - [x] back() - get value of end item
-      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-    - [x] Circular-Linked List (singly linked list) - [my implementation](./02_linked_list/03_circular_linked_list/main.c):
-      - [x] [Introduction](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
-      - [x] front() - get value of front item
-      - [x] back() - get value of end item
-      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-      - [x] push_front(data) - adds an item to the front of the list
-      - [x] pop_front() - remove front item and return its data
-      - [x] push_back(data) - adds an item at the end
-      - [x] pop_back() - removes end item and returns its data
-      - [x] reverse() - reverses the list
-      - Practice problems
-        - [Check if a circular linked list](https://practice.geeksforgeeks.org/problems/circular-linked-list/1/?page=1&difficulty[]=-2&difficulty[]=-1&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
+- ### Linked Lists
+  - [ ] About Linked Lists:
+    - [ ] [Linked List | Set 1 (Introduction)](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
+    - [ ] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
+    - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+    - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+    - [ ] [C code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - just portions about *Node struct* and *memory allocation*.
+  - [ ] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
+    - [ ] [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
+    - [ ] [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
+  - [ ] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+  - [ ] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html) - for passing a pointer to a function that may change the address where that pointer points
+  - [ ] Implement Singly-Linked List (with and without tail pointer)
+    - [ ] size() - returns number of data elements in list
+    - [ ] empty() - bool returns true if empty
+    - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
+    - [ ] push_front(value) - adds an item to the front of the list
+    - [ ] pop_front() - remove front item and return its value
+    - [ ] push_back(value) - adds an item at the end
+    - [ ] pop_back() - removes end item and returns its value
+    - [ ] front() - get value of front item
+    - [ ] back() - get value of end item
+    - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+    - [ ] erase(index) - removes node at given index
+    - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+    - [ ] reverse() - reverses the list
+    - [ ] remove_value(value) - removes the first item in the list with this value
+  - [ ] Doubly-linked List:
+    - [ ] [Doubly Linked List | Set 1 (Introduction and Insertion)](https://www.geeksforgeeks.org/doubly-linked-list/)
+    - [ ] [Doubly Linked List (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
+    - [ ] (**Optional**) Implement Doubly-Linked List
+      - [ ] push_front(value) - adds an item to the front of the list
+      - [ ] pop_front() - remove front item and return its value
+      - [ ] push_back(value) - adds an item at the end
+      - [ ] pop_back() - removes end item and returns its value
+      - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [ ] erase(index) - removes node at given index
+      - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+      - [ ] reverse() - reverses the list
+      - [ ] remove_value(value) - removes the first item in the list with this value
+  - [ ] XOR Linked List
+    - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
+    - [ ] [XOR Linked List](https://iq.opengenus.org/xor-linked-list/)
+    - (**Optional**) Implement:
+      - [ ] traverse - print all values in the list in forward direction
+      - [ ] push_front(value) - adds an item to the front of the list
+      - [ ] pop_front() - remove front item and return its value
+      - [ ] push_back(value) - adds an item at the end
+      - [ ] pop_back() - removes end item and returns its value
+      - [ ] front() - get value of front item
+      - [ ] back() - get value of end item
+      - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+  - [ ] Circular-Linked List (singly linked list)
+    - [ ] [Circular Linked List | Set 1 (Introduction and Applications)](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
+    - [ ] (**Optional**) Implement a circular-linked list:
+      - [ ] front() - get value of front item
+      - [ ] back() - get value of end item
+      - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+      - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [ ] push_front(data) - adds an item to the front of the list
+      - [ ] pop_front() - remove front item and return its data
+      - [ ] push_back(data) - adds an item at the end
+      - [ ] pop_back() - removes end item and returns its data
+      - [ ] reverse() - reverses the list
+  - Linked List practice problems
+    - TBD
 
-- ### [Stack](https://www.geeksforgeeks.org/stack-data-structure)
-  - [x] [Introduction](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
-  - [x] Implement using linked-list ([my implementation](./03_stack/01_linkedlist/main.c)): 
-    - [x] push(data) - adds data at position top
-    - [x] pop() - returns data and removes recently added element (top)
-    - [x] peek() - returns data at top of the stack
-    - [x] empty()
-  - [x] Implement using fixed-sized array ([my implementation](./03_stack/02_array/main.c)):
-    - [x] push(data) - adds data at position top
-    - [x] pop() - returns data and removes recently added element (top)
-    - [x] peek() - returns data at top of the stack
-    - [x] empty()
-    - [x] full()
-  - [x] Cost:
+- ### Stack
+  - [ ] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+  - [ ] [Stack (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+  - [ ] Implement using a linked list:
+    - [ ] push(data) - adds data at position top
+    - [ ] pop() - returns data and removes recently added element (top)
+    - [ ] peek() - returns data at top of the stack
+    - [ ] empty()
+  - [ ] (**Optional**) Implement using a fixed-sized array - optional because it's trivial:
+    - [ ] push(data) - adds data at position top
+    - [ ] pop() - returns data and removes recently added element (top)
+    - [ ] peek() - returns data at top of the stack
+    - [ ] empty()
+    - [ ] full()
+  - [ ] Cost:
     - push: O(1) (amortized, linked list and array)
     - pop: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
-  - [Practice problems on Stack](https://practice.geeksforgeeks.org/topics/Stack/)
-    - [Implement stack using array](https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions#)
-    - [Implement stack using linked list](https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1/?page=1&status[]=unsolved&category[]=Stack&sortBy=submissions)
-    - [Get minimum element from stack](https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1/?page=1&category[]=Stack&sortBy=submissions#)
-    - [Parenthesis checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1/?page=1&category[]=Stack&sortBy=submissions)
-    - [Reverse a string using stack](https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1/?page=2&status[]=unsolved&category[]=Stack&sortBy=submissions)
-- ### [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
-  - [x] [Introduction](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
-  - [x] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
-  - [x] Implement a circular queue - [my implementation](./04_queue/01_circular_queue/main.c) : 
-    - [x] enqueue(data) - adds data at position at tail
-    - [x] dequeue() - returns data and removes least recently added element (front)
-    - [x] empty()
-    - [x] full()
-    - [x] front() - gets the first element
-    - [x] rear() - gets the last element
-  - [x] Cost:
+  - Practice problems on Stack
+    - TBD
+
+- ### Queue
+  - [ ] [Queue | Set 1 (Introduction and Array Implementation)](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
+  - [ ] [Circular Queue (Ring Buffer)](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
+  - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+  - [ ] Implement a queue
+    - [ ] using a linked-list (w/ tail pointer):
+      - [ ] enqueue(data) - adds data at position at tail
+      - [ ] dequeue() - returns data and removes least recently added element (front)
+      - [ ] empty()
+    - [ ] using a fixed-sized array:
+      - [ ] enqueue(data) - adds a data at the end of the list iff space is available
+      - [ ] dequeue() - returns data and removes least recently added element
+      - [ ] empty()
+      - [ ] full()
+  - [ ] (**Optional**) Implement a Circular Queue
+    - [ ] enqueue(data) - adds data at position at tail
+    - [ ] dequeue() - returns data and removes least recently added element (front)
+    - [ ] empty()
+    - [ ] full()
+    - [ ] front() - gets the first element
+    - [ ] rear() - gets the last element
+  - [ ] Cost:
     - enqueue: O(1) (amortized, linked list and array)
     - dequeue: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
-  - [Practice problems on Queue](https://practice.geeksforgeeks.org/topics/Queue/)
-    - [Queue using two stacks](https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions#)
-    - [Stack using two queues](https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
-    - [Reverse first K elements of queue](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1/?page=1&difficulty[]=0&status[]=unsolved&category[]=Queue&sortBy=submissions)
+  - Practice problems on Queue
+    - TBD
 
-- ### [Hash table](https://www.geeksforgeeks.org/hashing-data-structure/)
-    - [x] [Introduction](https://www.educative.io/edpresso/what-is-hashing)
+- ### Hash table
+    - [ ] [What is hashing?](https://www.educative.io/edpresso/what-is-hashing)
       - what is hashing? collision? where is it used?
-      - extra [resource](https://computersciencewiki.org/index.php/Hashing)
-    - [x] [Fundamentals of data structures: Hashing](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Hash_tables_and_hashing)
-      - [x] Hashing tables
-      - [x] Hashing Algorithms
-      - [x] Collisions (open and closed addressing)
-    - [x] Implement with array using linear probing
-      - hash(k, m) - m is size of hash table
-      - add(key, value) - if key already exists, update value
-      - exists(key)
-      - get(key)
-      - remove(key)
-      - resources: [1](https://www.sanfoundry.com/c-program-implement-hash-tables-linear-probing/), [2](https://benhoyt.com/writings/hash-table-in-c/)
-    - [Practice problems on Hashing](https://practice.geeksforgeeks.org/topics/hashing/)
-      - https://leetcode.com/problems/two-sum/  
-      - https://leetcode.com/problems/linked-list-cycle/
+      - [Hashing](https://computersciencewiki.org/index.php/Hashing)
+    - [ ] [Fundamentals of data structures: Hashing](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Hash_tables_and_hashing)
+      - [ ] Hashing tables
+      - [ ] Hashing Algorithms
+      - [ ] Collisions (open and closed addressing)
+  - videos:
+    - [ ] [Hashing with Chaining (video)](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
+    - [ ] [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+    - [ ] [Open Addressing, Cryptographic Hashing (video)](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+    - [ ] [(Advanced) Randomization: Universal & Perfect Hashing (video)](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
+    - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
+  - online courses:
+    - [ ] [Core Hash Tables (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP)
+    - [ ] [Data Structures (video)](https://www.coursera.org/learn/data-structures/home/week/4)
+    - [ ] [Phone Book Problem (video)](https://www.coursera.org/lecture/data-structures/phone-book-problem-NYZZP)
+      - distributed hash tables:
+        - [ ] [Instant Uploads And Storage Optimization In Dropbox (video)](https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb)
+        - [ ] [Distributed Hash Tables (video)](https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H)
+  - [ ] Implement with array using linear probing
+    - [ ] hash(k, m) - m is size of hash table
+    - [ ] add(key, value) - if key already exists, update value
+    - [ ] exists(key)
+    - [ ] get(key)
+    - [ ] remove(key)
+    - extra resources: 
+      - [C Program to Implement Hash Tables with Linear Probing](https://www.sanfoundry.com/c-program-implement-hash-tables-linear-probing/)
+      - [How to implement a hash table (in C)](https://benhoyt.com/writings/hash-table-in-c/)
+  - Practice problems on Hashing
+    - TBD
+
 ---
 
 ## Trees
 
-- ### [Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
-    - [x] [Introduction](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)
-    - [x] [Properties](https://www.geeksforgeeks.org/binary-tree-set-2-properties/)
-    - [x] [Types of Binary Tree](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)
-    - [x] [BFS(breadth-first search) and DFS(depth-first search)](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
-    - BFS notes:
-      - level order (BFS, using queue)
-      - time complexity: O(n)
-      - space complexity: best: O(1), worst: O(n/2)=O(n)
-    - DFS notes:
-      - time complexity: O(n)
-      - space complexity:
-          best: O(log n) - avg. height of tree
-          worst: O(n)
-      - inorder (DFS: left, self, right)
-      - postorder (DFS: left, right, self)
-      - preorder (DFS: self, left, right)
-    - [Practice problem on Binary Tree](https://practice.geeksforgeeks.org/topics/Tree/)
-      - Inorder Traversal
-      - Preorder Traversal
-      - Postorder Traversal
-      - Count Leaves in Binary Tree
-      - Minimum element in BST
-      - Size of Binary Tree
-      - Height of Heap
-      - Sum of Binary Tree
-      - Count Non-Leaf Nodes in Tree
+- ### Tree - Fundamentals
+  - [ ] [Series: Trees(video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
+    - basic tree construction
+    - traversals ([[Inorder Traversal|Inorder]] | [[Preorder Traversal|Preorder]] | [[Postorder Traversal|Postorder]])
+  - [ ] [Properties of binary tree](https://www.geeksforgeeks.org/binary-tree-set-2-properties/)
+  - [ ] [Types of Binary Tree](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)
+  - [ ] [BFS and DFS (video)](https://www.youtube.com/watch?v=uWL6FJhq5fM)
+  - [ ] [BFS vs DFS for Binary Tree](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+  - BFS notes:
+    - level order (BFS, using queue)
+    - time complexity: O(n)
+    - space complexity: best: O(1), worst: O(n/2)=O(n)
+  - DFS notes:
+    - time complexity: O(n)
+    - space complexity:
+        best: O(log n) - avg. height of tree
+        worst: O(n)
+    - inorder (DFS: left, self, right)
+    - postorder (DFS: left, right, self)
+    - preorder (DFS: self, left, right)
 
-- ### [Binary search tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
-    - [x] [Searching & Insertion](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
-    - [ ] [Deletion](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/)
-    - Deletion Notes: 
+- ### Binary search tree (BST)
+  - [ ] [BST Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+  - [ ] [BST Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
+  - C/C++: 
+    - [ ] [Binary search tree - Implementation in C/C++ (video)](https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=28)
+    - [ ] [BST implementation - memory allocation in stack and heap (video)](https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29)
+    - [ ] [Find min and max element in a binary search tree (video)](https://www.youtube.com/watch?v=Ut90klNN264&index=30&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - [ ] [Find height of a binary tree (video)](https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31)
+    - [ ] [Binary tree traversal - breadth-first and depth-first strategies (video)](https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=32)
+    - [ ] [Binary tree: Level Order Traversal (video)](https://www.youtube.com/watch?v=86g8jAQug04&index=33&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - [ ] [Binary tree traversal: Preorder, Inorder, Postorder (video)](https://www.youtube.com/watch?v=gm8DUJJhmY4&index=34&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - [ ] [Check if a binary tree is binary search tree or not (video)](https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - Deletion: 
       - Node to be deleted is the leaf: simply remove the node.
       - Node to be deleted has only one child: copy the child to the node and delete the child node.
-      - Node to be deleted has two children: find **inorder successor**
-        - inorder successor - the minimum value in the right child of the node.
-    - [ ] [Handling duplicate values in BST](https://www.geeksforgeeks.org/how-to-handle-duplicates-in-binary-search-tree/)
-    - [ ] [Advantages of BST over Hash Table](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
-    - [ ] Implement:
+      - Node to be deleted has two children: find **inorder successor** - the minimum value in the right child of the node.
+      - [Delete a node from Binary Search Tree (video)](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
+      - [Inorder Successor in a binary search tree (video)](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - [ ] do research: Advantages of BST over Hash Table
+    - [ ] Implement BST:
       - [ ] insert(data) - insert data into tree
       - [ ] get_node_count() - get count of values stored
       - [ ] print_values() - prints the values in the tree, from min to max
@@ -251,76 +272,87 @@ I added and removed some parts to make it more suitable for myself to study (e.g
       - [ ] is_binary_search_tree()
       - [ ] delete_value()
       - [ ] get_successor - returns next-highest value in tree after given value, -1 if none
-  - [Practice problems on BST](https://practice.geeksforgeeks.org/topics/Binary%20Search%20Tree/?ref=taocp)
+  - Practice problems on BST
+    - TBD
 
 - ### Self Balancing BST
-  - AVL Tree 
+  - [ ] AVL Tree 
     - [Insertion](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)
     - [Deletion](https://www.geeksforgeeks.org/avl-tree-set-2-deletion/)
     - [AVL with duplicate values](https://www.geeksforgeeks.org/avl-with-duplicate-keys/)
     - [visualization](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
-  - Red Black Tree
+    - [ ] Implement
+      - functions to implement -> TBD
+  - [ ] Red Black Tree
     - [Introduction](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)
     - [Insertion](https://www.geeksforgeeks.org/red-black-tree-set-2-insert/)
     - [Deletion](https://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/)
+    - [ ] Implement
+      - functions to implement -> TBD
   
-- ### [Heap](https://www.geeksforgeeks.org/heap-data-structure/)
-    - Resources
-      - [ ] [Array representation of Binary Heap](https://www.geeksforgeeks.org/array-representation-of-binary-heap/)
-      - [ ] [Binary Heap](https://www.geeksforgeeks.org/binary-heap/)
-      - [ ] [How to build min and max heaps](https://www.educative.io/blog/data-structure-heaps-guide)
-    - [ ] Implement a max-heap:
-      - [ ] max_heapify - rearranges the elements in the heap to maintain the max heap property.
-      - [ ] insert(data) - adds data to a heap
-      - [ ] remove_max(data) - removes max data in a heap 
-      - [ ] extract - returns the data and remove it from the heap
-      - [ ] is_empty() - returns true if heap contains no elements
-      - [ ] get_size() - returns the size of the heap
-      - [ ] get_max() - returns the max item, without removing it
-    - [ ] Implement a min-heap:
-      - [ ] min_heapify - rearranges the elements in the heap to maintain the min heap property.
-      - [ ] min() - returns the min item, without removing it
-      - [ ] remove_min(data) - removes min data in a heap 
-  - [Practice problems on Heap](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Heap&page=1&category%5B%5D=Heap)
-
-
-- ### Priority Queue
-  - [ ] [Introduction](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/?ref=lbp)
-  - [ ] Implement using linked-list:
-    - [ ] push(data) - inserts new data into the queue.
-    - [ ] pop() - removes the element with the highest priority from the queue.
-    - [ ] peek() - gets the highest priority element in the queue without removing it from the queue.
-    - Cost notes:
-      - enqueue - O(n)
-      - dequeue - O(1)
-      - peek - O(1)
-  - [ ] Implement using fixed-size array:
-    - [ ] enqueue(data) - inserts new data into the queue.
-    - [ ] dequeue() - removes the element with the highest priority from the queue.
-    - [ ] peek() - gets the highest priority element in the queue without removing it from the queue.
-    - Cost notes:
-      - enqueue - O(1)
-      - dequeue - O(n)
-      - peek - O(n)
-  - [ ] Implement using Binary Heap - max heap:
-    - [ ] insert(p) - Inserts a new element with priority p.
-    - [ ] extractMax() - Extracts an element with maximum priority.
-    - [ ] remove(i) - Removes an element pointed by an iterator i.
-    - [ ] getMax() - Returns an element with maximum priority.
-    - [ ] changePriority(i, p) - Changes the priority of an element pointed by i to p.
-    - Cost notes:
-      - enqueue - O(log n)
-      - dequeue - O(log n)
-      - peek - O(1)
+- ### Heap
+  - Heap, Priority Queue, Binary Heap
+	- [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
+	- [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/2OpTs/introduction)
+	- [Naive Implementations (video)](https://www.coursera.org/learn/data-structures/lecture/z3l9N/naive-implementations)
+	- [Binary Trees (video)](https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees)
+	- [Tree Height Remark (video)](https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark)
+	- [Basic Operations (video)](https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations)
+	- [Complete Binary Trees (video)](https://www.coursera.org/learn/data-structures/lecture/gl5Ni/complete-binary-trees)
+	- [Pseudocode (video)](https://www.coursera.org/learn/data-structures/lecture/HxQo9/pseudocode)
+	- [Heap Sort - jumps to start (video)](https://youtu.be/odNJmw5TOEE?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291)
+	- [Heap Sort (video)](https://www.coursera.org/learn/data-structures/lecture/hSzMO/heap-sort)
+	- [Building a heap (video)](https://www.coursera.org/learn/data-structures/lecture/dwrOS/building-a-heap)
+	- [MIT: Heaps and Heap Sort (video)](https://www.youtube.com/watch?v=B7hVxCmfPtM&index=4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+	- [CS 61B Lecture 24: Priority Queues (video)](https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE)
+	- [Linear Time BuildHeap (max-heap)](https://www.youtube.com/watch?v=MiyLo8adrWw)
+  - [ ] Implement a max-heap:
+    - [ ] insert
+    - [ ] sift_up - needed for insert
+    - [ ] get_max - returns the max item, without removing it
+    - [ ] get_size() - return number of elements stored
+    - [ ] is_empty() - returns true if heap contains no elements
+    - [ ] extract_max - returns the max item, removing it
+    - [ ] sift_down - needed for extract_max
+    - [ ] remove(x) - removes item at index x
+    - [ ] heapify - create a heap from an array of elements, needed for heap_sort
+    - [ ] heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap or min heap
 
 ---
 
 ## [Graph](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
-  - [Graph and its representations](https://www.geeksforgeeks.org/graph-and-its-representations/)
+  - 4 basic ways to represent a graph in memory:
+    - objects and pointers
+    - adjacency matrix
+    - adjacency list
+    - adjacency map
+  - Know pros & cons of each representation
+  - BFS and DFS - know their computational complexity, their trade offs, and how to implement them in real code
+  - When asked a question, look for a graph-based solution first, then move on if none
   - ### Traversals
-    - [Breadth First Search](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
-    - [Depth First Search](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
-    - [Iterative Depth First Search](https://www.geeksforgeeks.org/iterative-depth-first-traversal/)
+    - [ ] [Breadth-First Search](https://www.youtube.com/watch?v=oFVYVzlvk9c&t=14s&ab_channel=MITOpenCourseWare)
+    - [ ] [Depth-First Search](https://www.youtube.com/watch?v=IBfWDYSffUU&t=32s&ab_channel=MITOpenCourseWare)
+  - ### Skiena Lectures - great intro:
+    - [ ] [CSE373 2020 - Lecture 10 - Graph Data Structures (video)](https://www.youtube.com/watch?v=Sjk0xqWWPCc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=10)
+    - [ ] [CSE373 2020 - Lecture 11 - Graph Traversal (video)](https://www.youtube.com/watch?v=ZTwjXj81NVY&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=11)
+    - [ ] [CSE373 2020 - Lecture 12 - Depth First Search (video)](https://www.youtube.com/watch?v=KyordYB3BOs&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=12)
+    - [ ] [CSE373 2020 - Lecture 13 - Minimum Spanning Trees (video)](https://www.youtube.com/watch?v=oolm2VnJUKw&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=13)
+    - [ ] [CSE373 2020 - Lecture 14 - Minimum Spanning Trees (con't) (video)](https://www.youtube.com/watch?v=RktgPx0MarY&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=14)
+    - [ ] [CSE373 2020 - Lecture 15 - Graph Algorithms (con't 2) (video)](https://www.youtube.com/watch?v=MUe5DXRhyAo&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=15)
+  - ### Graphs (review and more):
+    - [ ] [6.006 Single-Source Shortest Paths Problem (video)](https://www.youtube.com/watch?v=Aa2sqUhIn-E&index=15&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+    - [ ] [6.006 Dijkstra (video)](https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare)
+    - [ ] [6.006 Bellman-Ford (video)](https://www.youtube.com/watch?v=f9cVS_URPc0&ab_channel=MITOpenCourseWare)
+    - [ ] [6.006 Speeding Up Dijkstra (video)](https://www.youtube.com/watch?v=CHvQ3q_gJ7E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=18)
+    - [ ] [Aduni: Graph Algorithms I - Topological Sorting, Minimum Spanning Trees, Prim's Algorithm - Lecture 6 (video)](https://www.youtube.com/watch?v=i_AQT_XfvD8&index=6&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
+    - [ ] [Aduni: Graph Algorithms II - DFS, BFS, Kruskal's Algorithm, Union Find Data Structure - Lecture 7 (video)](https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7)
+    - [ ] [Aduni: Graph Algorithms III: Shortest Path - Lecture 8 (video)](https://www.youtube.com/watch?v=DiedsPsMKXc&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=8)
+    - [ ] [Aduni: Graph Alg. IV: Intro to geometric algorithms - Lecture 9 (video)](https://www.youtube.com/watch?v=XIAQRlNkJAw&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=9)
+    - [ ] [CS 61B 2014: Weighted graphs (video)](https://archive.org/details/ucberkeley_webcast_zFbq8vOZ_0k)
+    - [ ] [Greedy Algorithms: Minimum Spanning Tree (video)](https://www.youtube.com/watch?v=tKwnms5iRBU&index=16&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
+    - [ ] [Strongly Connected Components Kosaraju's Algorithm Graph Algorithm (video)](https://www.youtube.com/watch?v=RpgcYiky7uw)
+  - ### Full Coursera Course:  
+    - [Algorithms on Graphs (video)](https://www.coursera.org/learn/algorithms-on-graphs/home/welcome)
   - [ ] Try implementing:
     - [ ] DFS with adjacency list (recursive)
     - [ ] DFS with adjacency list (iterative with stack)
@@ -329,6 +361,13 @@ I added and removed some parts to make it more suitable for myself to study (e.g
     - [ ] BFS with adjacency list
     - [ ] BFS with adjacency matrix
     - [ ] Dijkstra algorithm - single-source shortest path
+    - [ ] minimum spanning tree
+      - DFS-based algorithms (see Aduni videos above):
+      - [ ] check for cycle (needed for topological sort, since we'll check for cycle before starting)
+      - [ ] topological sort
+      - [ ] count connected components in a graph
+      - [ ] list strongly connected components
+      - [ ] check for bipartite graph
   - ### Detect Cycles
     - [ ] [Detect Cycle in a Directed Graph](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)
     - [ ] [Detect Cycle in an Undirected Graph](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)
@@ -341,23 +380,31 @@ I added and removed some parts to make it more suitable for myself to study (e.g
 ---
 
 ## Sorting
-- [ ] [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
+- [ ] Stability in sorting algorithms ("Is Quicksort stable?")
+  - [ ] [Sorting Algorithm Stability](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)
+  - [ ] [Stability In Sorting Algorithms](http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms)
+  - [ ] [Stability In Sorting Algorithms](http://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
+  - [ ] [Sorting Algorithms - Stability](http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf)
+- Which algorithms can be used on linked lists? Which on arrays? Which on both?
+  - [ ] [Merge Sort For Linked List](http://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+- [ ] [Bubble Sort (video)](https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB)
+  - [analyzing bubble sort (video)](https://www.youtube.com/watch?v=ni_zk257Nqo&index=7&list=PL89B61F78B552C1AB)
   - Time complexity: O(n^2)
   - Space Complexity: O(1)
   - stable
-- [ ] [Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
+- [ ] [Selection Sort (video)](https://www.youtube.com/watch?v=6nDMgr0-Yyo&index=8&list=PL89B61F78B552C1AB)
   - Time complexity: O(n^2)
   - Space Complexity: O(1)
   - not stable
-- [ ] [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
+- [ ] [Insertion Sort (video)](https://www.youtube.com/watch?v=c4BRHC7kTaQ&index=2&list=PL89B61F78B552C1AB)
   - Time complexity: O(n^2)
   - Space Complexity: O(1)
   - stable
-- [ ] [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)
+- [ ] [Merge Sort (video)](https://www.youtube.com/watch?v=GCae1WNvnZM&index=3&list=PL89B61F78B552C1AB)
   - Time complexity: O(n log n)
   - Space Complexity: O(n)
   - stable
-- [ ] [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)
+- [ ] [Quick Sort (video)](https://www.youtube.com/watch?v=y_G9BkAm6B8&index=4&list=PL89B61F78B552C1AB)
   - Time complexity: O(n log n)
   - Space Complexity: O(log n)
   - not stable
