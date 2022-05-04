@@ -37,14 +37,14 @@ The original credit goes to the [coding-interview-university](https://github.com
 - ### Arrays
   - [ ] About Arrays:
     - [ ] [Introduction to Arrays](https://www.geeksforgeeks.org/introduction-to-arrays/)
-    - [ ] [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
-    - [ ] [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
-    - [ ] [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
+    - [x] [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+    - [x] [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
+    - [x] [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
   - [ ] Implement a vector (mutable array with automatic resizing):
-    - [ ] size() - number of items
+    - [x] size() - number of items
     - [ ] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
-    - [ ] capacity() - number of items it can hold
-    - [ ] is_empty()
+    - [x] capacity() - number of items it can hold
+    - [x] is_empty()
     - [ ] at(index) - returns item at given index, blows up if index out of bounds
     - [ ] push(item)
     - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
