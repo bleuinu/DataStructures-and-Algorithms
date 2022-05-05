@@ -18,11 +18,11 @@ void print(vector *);
 
 int find(vector *, int);
 int at(vector *, int);
-void remove_all(vector *, int);
 
 void push(vector *, int);
 void insert(vector *, int, int);
 void prepend(vector *, int);
 
+void remove_all(vector *, int);
 int pop(vector *);
 int delete_at(vector *, int);

@@ -5,7 +5,7 @@
 #include "vector.h"
 #include "debug.h"
 
-#define DEFAULT 8
+#define DEFAULT 16
 
 int main(void) {
 	unsigned seed = time(0);
@@ -177,7 +177,7 @@ int main(void) {
 static void resize(vector *v, int new_capacity) {
 	int *new_arr = (int *)malloc(sizeof(int) * new_capacity);
 
-	for(int i=0; i<new_capacity; ++i) {
+	for(int i=0; i<v->size; ++i) {
 		new_arr[i] = (v->arr)[i];
 	}
 
