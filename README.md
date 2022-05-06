@@ -68,14 +68,13 @@ The original credit goes to the [coding-interview-university](https://github.com
     - [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
     - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
     - [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
-
 - ### Linked Lists
   - [ ] About Linked Lists:
     - [ ] [Linked List | Set 1 (Introduction)](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
-    - [ ] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
-    - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-    - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-    - [ ] [C code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - just portions about *Node struct* and *memory allocation*.
+    - [x] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
+    - [x] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+    - [x] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+    - [x] [C code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - just portions about *Node struct* and *memory allocation*.
   - [ ] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
     - [ ] [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
     - [ ] [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
