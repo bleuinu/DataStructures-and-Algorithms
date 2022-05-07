@@ -69,34 +69,35 @@ The original credit goes to the [coding-interview-university](https://github.com
     - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
     - [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
 - ### Linked Lists
-  - [ ] About Linked Lists:
-    - [ ] [Linked List | Set 1 (Introduction)](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
+  - [x] About Linked Lists:
+    - [x] [Singly Linked Lists Tutorial - What is a Linked List?](https://www.youtube.com/watch?v=HB7TcYklBHY)
     - [x] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
     - [x] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
     - [x] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
     - [x] [C code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - just portions about *Node struct* and *memory allocation*.
-  - [ ] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
-    - [ ] [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
-    - [ ] [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-  - [ ] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+  - [x] [Linked List vs Arrays](https://www.geeksforgeeks.org/linked-list-vs-array/?ref=lbp)
+    - [x] [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
+    - [x] [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
+  - [x] Vector vs. List - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo) (this is from [GoingNative 2012 - Day 1 - C++11 style](https://youtu.be/m0H5bUPfwn8?t=2690))
   - [ ] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html) - for passing a pointer to a function that may change the address where that pointer points
-  - [ ] Implement Singly-Linked List (with and without tail pointer)
-    - [ ] size() - returns number of data elements in list
-    - [ ] empty() - bool returns true if empty
-    - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-    - [ ] push_front(value) - adds an item to the front of the list
-    - [ ] pop_front() - remove front item and return its value
-    - [ ] push_back(value) - adds an item at the end
-    - [ ] pop_back() - removes end item and returns its value
-    - [ ] front() - get value of front item
-    - [ ] back() - get value of end item
-    - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-    - [ ] erase(index) - removes node at given index
-    - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-    - [ ] reverse() - reverses the list
-    - [ ] remove_value(value) - removes the first item in the list with this value
+  - [x] Implement Singly-Linked List (with and without tail pointer)
+    - [x] size() - returns number of data elements in list
+    - [x] empty() - bool returns true if empty
+    - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
+    - [x] push_front(value) - adds an item to the front of the list
+    - [x] pop_front() - remove front item and return its value
+    - [x] push_back(value) - adds an item at the end
+    - [x] pop_back() - removes end item and returns its value
+    - [x] front() - get value of front item
+    - [x] back() - get value of end item
+    - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+    - [x] erase(index) - removes node at given index
+    - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+    - [x] reverse() - reverses the list
+      - implemented iteratively
+      - try doing it recursively
+    - [x] remove_value(value) - removes the first item in the list with this value
   - [ ] Doubly-linked List:
-    - [ ] [Doubly Linked List | Set 1 (Introduction and Insertion)](https://www.geeksforgeeks.org/doubly-linked-list/)
     - [ ] [Doubly Linked List (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
     - [ ] (**Optional**) Implement Doubly-Linked List
       - [ ] push_front(value) - adds an item to the front of the list
@@ -133,7 +134,8 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] pop_back() - removes end item and returns its data
       - [ ] reverse() - reverses the list
   - Linked List practice problems
-    - TBD
+    - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
 
 - ### Stack
   - [ ] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
