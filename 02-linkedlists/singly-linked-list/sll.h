@@ -25,7 +25,7 @@ void insert(SLL *, int, int);
 void erase(SLL *, int);
 _Bool remove_value(SLL *, int);
 
-void reverse(SLL **);
+void reverse(SLL *);
 
 void print(SLL *);
 void print_from_n(SLL *, int);

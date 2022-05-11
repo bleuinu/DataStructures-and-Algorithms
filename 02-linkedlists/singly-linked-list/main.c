@@ -114,7 +114,7 @@ int main(void) {
         }
         printf("\n Regular: ");
         print(list);
-        reverse(&list);
+        reverse(list);
         printf("\n Reversed: ");
         print(list);
     #endif 
@@ -191,28 +191,17 @@ void print_from_n(SLL *list, int index) {
     printf("\n");
 }
 
-void reverse(SLL **list) {
+void reverse(SLL *list) {
 #ifdef DEBUG
     printf("[[ inside reverse ]]\n");
 #endif
-    if((*list)->size == 0) {
+    if(list->size == 0) {
         printf("ERROR: empty list\n");
         return;
     }
 
-    // ListNode *curr = (*list)->sentinel->next;
-    // SLL *revList = init();
-
-    // while(curr) {
-    //     push_front(revList, curr->data);
-    //     curr = curr->next;
-    // }
-
-    // _free(list);
-    // *list = revList;
-
     ListNode *prev = NULL;
-    ListNode *curr = (*list)->sentinel->next;
+    ListNode *curr = list->sentinel->next;
     
     while(curr != NULL){
         ListNode *next = curr->next;
@@ -220,8 +209,7 @@ void reverse(SLL **list) {
         prev = curr;
         curr=next;
     }
-    (*list)->sentinel->next = prev;
-    // return prev;
+    list->sentinel->next = prev;
 }
 
 int size(SLL *list) {
