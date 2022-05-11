@@ -134,8 +134,9 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] pop_back() - removes end item and returns its data
       - [ ] reverse() - reverses the list
   - Linked List practice problems
+    - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
     - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-
+    - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
 - ### Stack
   - [ ] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)

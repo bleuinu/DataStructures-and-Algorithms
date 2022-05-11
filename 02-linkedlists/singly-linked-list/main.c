@@ -200,16 +200,28 @@ void reverse(SLL **list) {
         return;
     }
 
+    // ListNode *curr = (*list)->sentinel->next;
+    // SLL *revList = init();
+
+    // while(curr) {
+    //     push_front(revList, curr->data);
+    //     curr = curr->next;
+    // }
+
+    // _free(list);
+    // *list = revList;
+
+    ListNode *prev = NULL;
     ListNode *curr = (*list)->sentinel->next;
-    SLL *revList = init();
-
-    while(curr) {
-        push_front(revList, curr->data);
-        curr = curr->next;
+    
+    while(curr != NULL){
+        ListNode *next = curr->next;
+        curr->next=prev;
+        prev = curr;
+        curr=next;
     }
-
-    _free(list);
-    *list = revList;
+    (*list)->sentinel->next = prev;
+    // return prev;
 }
 
 int size(SLL *list) {
