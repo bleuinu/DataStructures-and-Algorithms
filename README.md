@@ -99,16 +99,16 @@ The original credit goes to the [coding-interview-university](https://github.com
     - [x] remove_value(value) - removes the first item in the list with this value
   - [ ] Doubly-linked List:
     - [ ] [Doubly Linked List (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
-    - [ ] (**Optional**) Implement Doubly-Linked List
-      - [ ] push_front(value) - adds an item to the front of the list
-      - [ ] pop_front() - remove front item and return its value
-      - [ ] push_back(value) - adds an item at the end
-      - [ ] pop_back() - removes end item and returns its value
-      - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-      - [ ] erase(index) - removes node at given index
-      - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-      - [ ] reverse() - reverses the list
-      - [ ] remove_value(value) - removes the first item in the list with this value
+    - [x] (**Optional**) Implement Doubly-Linked List
+      - [x] push_front(value) - adds an item to the front of the list
+      - [x] pop_front() - remove front item and return its value
+      - [x] push_back(value) - adds an item at the end
+      - [x] pop_back() - removes end item and returns its value
+      - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+      - [x] erase(index) - removes node at given index
+      - [x] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+      - [x] reverse() - reverses the list
+      - [x] remove_value(value) - removes the first item in the list with this value
   - [ ] XOR Linked List
     - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
     - [ ] [XOR Linked List](https://iq.opengenus.org/xor-linked-list/)
@@ -134,7 +134,9 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] pop_back() - removes end item and returns its data
       - [ ] reverse() - reverses the list
   - Linked List practice problems
+    - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
     - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+    - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
     - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
     - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
