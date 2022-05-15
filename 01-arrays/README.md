@@ -1,6 +1,6 @@
 # Arrays
 
-Array problems selected from [Leetcode](https://leetcode.com/tag/linked-list/).
+Array problems selected from [Leetcode](https://leetcode.com/tag/array/).
 
 |  #   | Problem | Difficulty | Solution |
 | :--: | :----- | :--------: | :------: |
