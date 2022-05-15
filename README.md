@@ -410,7 +410,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 | :--: | :---- | :--- | :---------:  | :----: | :---: | :----: |
 | 01 | Data Structure | Arrays | [View](./01-arrays) | 12 | 1 | 2 |
 | 02 | Data Structure | Linked Lists | [View](./02-linkedlists) | 10 | 5 | 3 | 
-| 03 | Data Structure | Stack| [View](./03-linkedlists) | 4 | 6 | 4 | 
+| 03 | Data Structure | Stack| [View](./03-stack) | 4 | 6 | 4 | 
 
 
 <!--
