@@ -257,11 +257,11 @@ The original credit goes to the [coding-interview-university](https://github.com
 <ul>
   <li>[ ] Implement a queue</li>
     <ul>
-      <li>[ ] using a linked-list (w/ tail pointer):</li>
+      <li>[x] using a linked-list (w/ tail pointer):</li>
       <ul>
-        <li>[ ] enqueue(data) - adds data at position at tail</li>
-        <li>[ ] dequeue() - returns data and removes least recently added element (front)</li>
-        <li>[ ] empty()</li>
+        <li>[x] enqueue(data) - adds data at position at tail</li>
+        <li>[x] dequeue() - returns data and removes least recently added element (front)</li>
+        <li>[x] empty()</li>
       </ul>
       <li>[ ] using a fixed-sized array:</li>
       <ul>
