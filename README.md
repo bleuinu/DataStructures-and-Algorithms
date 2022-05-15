@@ -406,11 +406,11 @@ The original credit goes to the [coding-interview-university](https://github.com
 ---
 
 ## Practice Problems
-| #    |  Tags  |       | Problems Set | Easy | Medium | Hard |
-| :--: | :---- | :--- | :---------:  | :----: | :---: | :----: |
-| 01 | Data Structure | Arrays | [View](./01-arrays) | 12 | 1 | 2 |
-| 02 | Data Structure | Linked Lists | [View](./02-linkedlists) | 10 | 5 | 3 | 
-| 03 | Data Structure | Stack| [View](./03-stack) | 4 | 6 | 4 | 
+| #    |  Tags  |       | Problems Set | Easy | Medium | Hard | BOJ Problems |
+| :--: | :---- | :--- | :---------:  | :----: | :---: | :----: | :---: |
+| 01 | Data Structure | Arrays | [View](./01-arrays) | 12 | 1 | 2 | 0 |
+| 02 | Data Structure | Linked Lists | [View](./02-linkedlists) | 10 | 5 | 3 | 0 |
+| 03 | Data Structure | Stack| [View](./03-stack) | 4 | 6 | 4 | 10 |
 
 
 <!--
