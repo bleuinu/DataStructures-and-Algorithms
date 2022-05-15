@@ -31,6 +31,7 @@ The original credit goes to the [coding-interview-university](https://github.com
   + quick sort
   + heap sort
   + counting sort
+- [Practice Problems](#practice-problems)
 ---
 
 ## Data Structures
@@ -62,12 +63,7 @@ The original credit goes to the [coding-interview-university](https://github.com
   - [x] Space
     - contiguous in memory, so proximity helps performance
     - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
-  - Practice problems on Arrays
-    - [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
-    - [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/)
-    - [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
-    - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
-    - [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
+
 - ### Linked Lists
   - [x] About Linked Lists:
     - [x] [Singly Linked Lists Tutorial - What is a Linked List?](https://www.youtube.com/watch?v=HB7TcYklBHY)
@@ -97,8 +93,8 @@ The original credit goes to the [coding-interview-university](https://github.com
       - implemented iteratively
       - try doing it recursively
     - [x] remove_value(value) - removes the first item in the list with this value
-  - [ ] Doubly-linked List:
-    - [ ] [Doubly Linked List (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
+  - [x] Doubly-linked List:
+    - [x] [Doubly Linked List (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
     - [x] (**Optional**) Implement Doubly-Linked List
       - [x] push_front(value) - adds an item to the front of the list
       - [x] pop_front() - remove front item and return its value
@@ -110,8 +106,7 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [x] reverse() - reverses the list
       - [x] remove_value(value) - removes the first item in the list with this value
   - [ ] XOR Linked List
-    - [ ] [A Memory Efficient Doubly Linked List | Part 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
-    - [ ] [XOR Linked List](https://iq.opengenus.org/xor-linked-list/)
+    - [x] [XOR Linked List](https://iq.opengenus.org/xor-linked-list/)
     - (**Optional**) Implement:
       - [ ] traverse - print all values in the list in forward direction
       - [ ] push_front(value) - adds an item to the front of the list
@@ -122,7 +117,7 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] back() - get value of end item
       - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
   - [ ] Circular-Linked List (singly linked list)
-    - [ ] [Circular Linked List | Set 1 (Introduction and Applications)](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
+    - [x] [Circular Linked List | Set 1 (Introduction and Applications)](https://www.geeksforgeeks.org/circular-linked-list/?ref=lbp)
     - [ ] (**Optional**) Implement a circular-linked list:
       - [ ] front() - get value of front item
       - [ ] back() - get value of end item
@@ -133,12 +128,6 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] push_back(data) - adds an item at the end
       - [ ] pop_back() - removes end item and returns its data
       - [ ] reverse() - reverses the list
-  - Linked List practice problems
-    - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
-    - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-    - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
-    - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-    - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
 - ### Stack
   - [ ] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
@@ -158,8 +147,6 @@ The original credit goes to the [coding-interview-university](https://github.com
     - push: O(1) (amortized, linked list and array)
     - pop: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
-  - Practice problems on Stack
-    - TBD
 
 - ### Queue
   - [ ] [Queue | Set 1 (Introduction and Array Implementation)](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
@@ -186,8 +173,6 @@ The original credit goes to the [coding-interview-university](https://github.com
     - enqueue: O(1) (amortized, linked list and array)
     - dequeue: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
-  - Practice problems on Queue
-    - TBD
 
 - ### Hash table
     - [ ] [What is hashing?](https://www.educative.io/edpresso/what-is-hashing)
@@ -219,8 +204,6 @@ The original credit goes to the [coding-interview-university](https://github.com
     - extra resources: 
       - [C Program to Implement Hash Tables with Linear Probing](https://www.sanfoundry.com/c-program-implement-hash-tables-linear-probing/)
       - [How to implement a hash table (in C)](https://benhoyt.com/writings/hash-table-in-c/)
-  - Practice problems on Hashing
-    - TBD
 
 ---
 
@@ -278,8 +261,6 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] is_binary_search_tree()
       - [ ] delete_value()
       - [ ] get_successor - returns next-highest value in tree after given value, -1 if none
-  - Practice problems on BST
-    - TBD
 
 - ### Self Balancing BST
   - [ ] AVL Tree 
@@ -381,7 +362,6 @@ The original credit goes to the [coding-interview-university](https://github.com
     - [ ] [Introduction](https://www.geeksforgeeks.org/union-find/)
     - [ ] [Union-Find Algorithm](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
     - [ ] [Union-Find Algorithm - optimized path compression](https://www.geeksforgeeks.org/union-find-algorithm-union-rank-find-optimized-path-compression/)
-  - [Practice problems on Graph](https://practice.geeksforgeeks.org/topics/Graph/?ref=taocp)
 
 ---
 
@@ -421,6 +401,15 @@ The original credit goes to the [coding-interview-university](https://github.com
 - [ ] [Counting Sort](https://www.geeksforgeeks.org/counting-sort/)
   - Time complexity: O(n + k), k = max non-negative value
   - Space Complexity: O(k)
+
+---
+
+## Practice Problems
+| #    |  Tags  |       | Problems Set | Easy | Medium | Hard |
+| :--: | :---- | :--- | :---------:  | :----: | :---: | :----: |
+| 01 | Data Structure | Arrays | [View](./01-arrays) | 12 | 1 | 2 |
+| 02 | Data Structure | Linked Lists | [View](./02-linkedlists) | 10 | 5 | 3 | 
+
 
 <!--
 - [ ] 우선순위 큐 (Priority Queue)
