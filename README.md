@@ -130,22 +130,23 @@ The original credit goes to the [coding-interview-university](https://github.com
       - [ ] reverse() - reverses the list
 
 - ### Stack
-  - [ ] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
-  - [ ] [Stack (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
-  - [ ] Implement using a linked list:
-    - [ ] push(data) - adds data at position top
-    - [ ] pop() - returns data and removes recently added element (top)
-    - [ ] peek() - returns data at top of the stack
-    - [ ] empty()
+  - [x] [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+  - [x] [Stack (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+  - [x] Implement using a linked list:
+    - [x] push(data) - adds data at position top
+    - [x] pop() - returns data and removes recently added element (top)
+    - [x] peek() - returns data at top of the stack
+    - [x] empty()
   - [ ] (**Optional**) Implement using a fixed-sized array - optional because it's trivial:
     - [ ] push(data) - adds data at position top
     - [ ] pop() - returns data and removes recently added element (top)
     - [ ] peek() - returns data at top of the stack
     - [ ] empty()
     - [ ] full()
-  - [ ] Cost:
+  - [x] Cost:
     - push: O(1) (amortized, linked list and array)
     - pop: O(1) (linked list and array)
+    - top: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
 
 - ### Queue
