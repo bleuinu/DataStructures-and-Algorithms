@@ -692,6 +692,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 | 01  | Data Structure | Arrays       |   [View](./01-arrays)    |  12  |   1    |  2   |      0       |
 | 02  | Data Structure | Linked Lists | [View](./02-linkedlists) |  10  |   5    |  3   |      0       |
 | 03  | Data Structure | Stack        |    [View](./03-stack)    |  4   |   6    |  4   |      10      |
+| 03  | Data Structure | Queue        |    [View](./04-queue)    |  2   |   4    |  2   |      10      |
 
 <!--
 - [ ] 우선순위 큐 (Priority Queue)

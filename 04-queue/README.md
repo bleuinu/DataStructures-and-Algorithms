@@ -5,7 +5,14 @@ Problems selected from [Leetcode/queue](https://leetcode.com/tag/queue/)
 
 |  #   | Problem | Difficulty | Solution |
 | :--: | :----- | :--------: | :------: |
-| <a href="" target="_blank">20</a>  | Valid Parentheses | Easy | | 
+| <a href="https://leetcode.com/problems/implement-stack-using-queues/" target="_blank">225</a>  | Implement Stack using Queues | Easy | | 
+| <a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank">239</a>  | Sliding Window Maximum | Hard | | 
+| <a href="https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/" target="_blank">862</a>  | Shortest Subarray with Sum at Least K | Hard | | 
+| <a href="https://leetcode.com/problems/maximum-sum-circular-subarray/" target="_blank">918</a>  | Maximum Sum Circular Subarray | Medium | | 
+| <a href="https://leetcode.com/problems/reveal-cards-in-increasing-order/" target="_blank">950</a>  | Reveal Cards In Increasing Order | Medium | | 
+| <a href="https://leetcode.com/problems/product-of-the-last-k-numbers/" target="_blank">1352</a>  | Product of the Last K Numbers | Medium | | 
+| <a href="https://leetcode.com/problems/time-needed-to-buy-tickets" target="_blank">2073</a>  | Time Needed to Buy Tickets | Easy | | 
+| <a href="https://leetcode.com/problems/find-the-winner-of-the-circular-game/" target="_blank">18237</a>  | Find the Winner of the Circular Game | Medium | | 
 
 ---
 
