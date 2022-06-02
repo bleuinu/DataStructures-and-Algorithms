@@ -1,42 +1,33 @@
-class Stack<T> {
-    count: number;
-    storage: Array<T>;
-
-    constructor() {
+var Stack = /** @class */ (function () {
+    function Stack() {
         this.count = 0;
         this.storage = [];
     }
-
-    push(val: T) {
+    Stack.prototype.push = function (val) {
         this.storage[this.count] = val;
         this.count++;
-    }
-
-    pop() {
+    };
+    Stack.prototype.pop = function () {
         if (this.count == 0) {
             return undefined;
         }
-
         this.count--;
-        let val = this.storage[this.count];
+        var val = this.storage[this.count];
         delete this.storage[this.count];
         return val;
-    }
-
-    size() {
+    };
+    Stack.prototype.size = function () {
         return this.count;
-    }
-
-    peek() {
+    };
+    Stack.prototype.peek = function () {
         return this.storage[this.count - 1];
-    }
-
-    isEmpty() {
+    };
+    Stack.prototype.isEmpty = function () {
         return this.count == 0;
-    }
-}
-
-const mystack = new Stack<number>();
+    };
+    return Stack;
+}());
+var mystack = new Stack();
 mystack.push(1);
 mystack.push(2);
 console.log(mystack.isEmpty());
