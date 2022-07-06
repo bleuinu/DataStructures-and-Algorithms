@@ -226,13 +226,13 @@ The original credit goes to the [coding-interview-university](https://github.com
   </ul>
 </ul>
 <ul>
-  <li>[ ] (<b>Optional</b>) Implement using a fixed-sized array - optional because it's trivial:</li>
+  <li>[x] (<b>Optional</b>) Implement using a fixed-sized array - optional because it's trivial:</li>
   <ul>
-    <li>[ ] push(data) - adds data at position top</li>
-    <li>[ ] pop() - returns data and removes recently added element (top)</li>
-    <li>[ ] peek() - returns data at top of the stack</li>
-    <li>[ ] empty()</li>
-    <li>[ ] full()</li>
+    <li>[x] push(data) - adds data at position top</li>
+    <li>[x] pop() - returns data and removes recently added element (top)</li>
+    <li>[x] peek() - returns data at top of the stack</li>
+    <li>[x] empty()</li>
+    <li>[x] full()</li>
   </ul>
 </ul>
 <ul>
