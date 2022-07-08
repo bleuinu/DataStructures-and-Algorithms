@@ -11,7 +11,6 @@ end
 class Stack 
     def initialize 
         @head = nil
-        @size = 0
     end 
 
     def push(data)
@@ -22,7 +21,6 @@ class Stack
             temp.next = @head
             @head = temp
         end
-        @size += 1
     end 
 
     def pop 
@@ -33,9 +31,7 @@ class Stack
             data = @head.data
             temp = @head
             @head = @head.next
-            temp.next = nil
             temp = nil
-            @size -= 1
             return data
         end
     end 
@@ -49,7 +45,7 @@ class Stack
     end 
 
     def empty?
-        @size == 0
+        @head == nil
     end 
 
     def to_s
@@ -65,6 +61,6 @@ class Stack
             str = "%d " % temp.data + str
             temp = temp.next
         end 
-        puts "#{str} (size: #{@size})"
+        puts str
     end
 end 
