@@ -17,6 +17,10 @@ class Queue
 
         @arr[@tail] = item
         @tail += 1
+
+        if @tail == @SIZE
+            @tail = 0
+        end
     end 
 
     def dequeue
@@ -48,7 +52,7 @@ class Queue
     end
 
     def full?
-        @tail == @SIZE-1
+        (@head == 0 and @tail == @SIZE-1) or (@head == @tail + 1)
     end
 
     def to_s
@@ -57,6 +61,10 @@ class Queue
         while head != @tail 
             str += "#{@arr[head]} "
             head += 1
+
+            if head == @SIZE 
+                head = 0
+            end
         end 
 
         str
