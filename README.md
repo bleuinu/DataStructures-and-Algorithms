@@ -263,12 +263,12 @@ The original credit goes to the [coding-interview-university](https://github.com
         <li>[x] dequeue() - returns data and removes least recently added element (front)</li>
         <li>[x] empty()</li>
       </ul>
-      <li>[ ] using a fixed-sized array:</li>
+      <li>[x] using a fixed-sized array:</li>
       <ul>
-        <li>[ ] enqueue(data) - adds a data at the end of the list iff space is available</li>
-        <li>[ ] dequeue() - returns data and removes least recently added element</li>
-        <li>[ ] empty()</li>
-        <li>[ ] full()</li>
+        <li>[x] enqueue(data) - adds a data at the end of the list iff space is available</li>
+        <li>[x] dequeue() - returns data and removes least recently added element</li>
+        <li>[x] empty()</li>
+        <li>[x] full()</li>
       </ul>
     </ul>
 </ul>
