@@ -22,18 +22,13 @@ class Queue
     def dequeue
         if self.empty?
             puts "Queue is empty..."
+            @head = -1
+            @tail = -1
             return
         end
 
         item = @arr[@head]
-        if @head == @tail 
-            puts "Queue is empty..."
-            @head = -1
-            @tail = -1
-            return
-        else
-            @head += 1
-        end 
+        @head += 1
         item
     end 
 
@@ -44,7 +39,7 @@ class Queue
     end
 
     def empty?
-        @head == -1 && @tail == -1
+        (@head == -1 && @tail == -1) or (@head == @tail)
     end
 
     def full?
