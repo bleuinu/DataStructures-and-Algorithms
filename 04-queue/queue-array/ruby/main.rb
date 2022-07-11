@@ -1,8 +1,8 @@
 class Queue
     def initialize(size)
         @SIZE = size
-        @head = -1
-        @tail = -1
+        @front = -1
+        @rear = -1
         @arr = [nil] * @SIZE
     end 
 
@@ -11,49 +11,84 @@ class Queue
             puts "Queue is full.."
             return
         elsif self.empty?
-            @head = 0
-            @tail = 0
+            @front = 0
         end
 
-        @arr[@tail] = item
-        @tail += 1
+        @rear += 1
+        @arr[@rear] = item
     end 
 
     def dequeue
         if self.empty?
             puts "Queue is empty..."
-            @head = -1
-            @tail = -1
             return
         end
 
-        item = @arr[@head]
-        @head += 1
+        item = @arr[@front]
+        if @front == @rear
+            @front = -1
+            @rear = -1
+        else
+            @front += 1
+        end
+        
         item
     end 
 
     def front
         if !self.empty?
-            @arr[@head]
+            @arr[@front]
         end
     end
 
     def empty?
-        (@head == -1 && @tail == -1) or (@head == @tail)
+        (@front == -1 && @rear == -1)
     end
 
     def full?
-        @tail == @SIZE-1
+        @rear == @SIZE-1
     end
 
     def to_s
-        head = @head
+        head = @front
         str = ""
-        while head != @tail 
+        while head != @rear 
             str += "#{@arr[head]} "
             head += 1
         end 
-
-        str
+        
+        str += "#{@arr[head]} "
     end
 end
+
+
+q = Queue.new(5)
+q.enqueue(1)
+puts q.to_s
+q.enqueue(2)
+puts q.to_s
+q.enqueue(3)
+puts q.to_s
+q.enqueue(4)
+puts q.to_s
+q.enqueue(5)
+puts q.to_s
+
+q.dequeue
+puts q.to_s
+q.dequeue
+puts q.to_s
+q.dequeue
+puts q.to_s
+
+q.enqueue(10)
+puts q.to_s
+q.enqueue(11)
+puts q.to_s
+q.enqueue(12)
+puts q.to_s
+
+q.dequeue
+puts q.to_s
+q.enqueue(17)
+puts q.to_s
