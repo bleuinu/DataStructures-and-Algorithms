@@ -57,32 +57,3 @@ class Queue
         str
     end
 end
-
-q = Queue.new(8)
-puts "empty? #{q.empty?}"
-puts "full? #{q.full?}"
-puts 
-
-5.times do
-    q.enqueue(1)
-    puts q.to_s
-end
-
-puts
-puts "empty? #{q.empty?}"
-puts "full? #{q.full?}"
-puts
-
-3.times do
-    q.dequeue
-    puts q.to_s
-end
-
-puts
-
-6.times do 
-    q.enqueue(rand(1..50))
-    puts q.to_s
-end
-
-puts "front: #{q.front}"
