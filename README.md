@@ -255,7 +255,7 @@ The original credit goes to the [coding-interview-university](https://github.com
   <li>[ ] <a href="https://en.wikipedia.org/wiki/Circular_buffer">Circular buffer/FIFO</a></li>
 </ul>
 <ul>
-  <li>[ ] Implement a queue</li>
+  <li>[x] Implement a queue</li>
     <ul>
       <li>[x] using a linked-list (w/ tail pointer):</li>
       <ul>
