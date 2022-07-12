@@ -97,6 +97,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 </details>
 
 <a id="linked-lists"></a>
+
 <details>
 <summary>Linked Lists</summary>
 <ul>
@@ -210,6 +211,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 </details>
 
 <a id="stack"></a>
+
 <details>
 <summary>Stack</summary>
 <ul>
@@ -247,38 +249,38 @@ The original credit goes to the [coding-interview-university](https://github.com
 </details>
 
 <a id="queue"></a>
+
 <details>
 <summary>Queue</summary>
 <ul>
-  <li>[ ] <a href="https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/">Queue | Set 1 (Introduction and Array Implementation)</a></li>
-  <li>[ ] <a href="https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/">Circular Queue (Ring Buffer)</a></li>
-  <li>[ ] <a href="https://en.wikipedia.org/wiki/Circular_buffer">Circular buffer/FIFO</a></li>
+  <li>[x] <a href="https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/">Queue | Set 1 (Introduction and Array Implementation)</a></li>
+  <li>[x] <a href="https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/">Circular Queue (Ring Buffer)</a></li>
+  <li>[x] <a href="https://en.wikipedia.org/wiki/Circular_buffer">Circular buffer/FIFO</a></li>
 </ul>
 <ul>
   <li>[x] Implement a queue</li>
     <ul>
       <li>[x] using a linked-list (w/ tail pointer):</li>
       <ul>
-        <li>[x] enqueue(data) - adds data at position at tail</li>
-        <li>[x] dequeue() - returns data and removes least recently added element (front)</li>
-        <li>[x] empty()</li>
+        <li>[x] enqueue(data) - add data at the end of the queue </li>
+        <li>[x] dequeue() - remove and return the first element in the queue </li>
+        <li>[x] empty() - check if queue is empty </li>
       </ul>
       <li>[x] using a fixed-sized array:</li>
       <ul>
         <li>[x] enqueue(data) - adds a data at the end of the list iff space is available</li>
-        <li>[x] dequeue() - returns data and removes least recently added element</li>
-        <li>[x] empty()</li>
-        <li>[x] full()</li>
+        <li>[x] dequeue() - remove and return the first element in the queue</li>
+        <li>[x] empty() - check if queue is empty </li>
+        <li>[x] full() - check if queue is full </li>
       </ul>
     </ul>
 </ul>
 <ul>
-  <li>[x] (<b>Optional</b>) Implement a Circular Queue
+  <li>[x] Implement a Circular Queue - LinkedList
     <ul>
-      <li>[x] enqueue(data) - adds data at position at tail</li>
-      <li>[x] dequeue() - returns data and removes least recently added element (front)</li>
-      <li>[x] empty()</li>
-      <li>[x] full()</li>
+      <li>[x] enqueue(data) - add data at the end of the queue </li>
+      <li>[x] dequeue() - remove and return the first element in the queue </li>
+      <li>[x] empty() - check if queue is empty</li>
       <li>[x] front() - gets the first element</li>
       <li>[x] rear() - gets the last element</li>
     </ul>
@@ -292,9 +294,36 @@ The original credit goes to the [coding-interview-university](https://github.com
       <li>empty: O(1) (linked list and array)</li>
     </ul>
 </ul>
+<ul>
+  <li>[x] Implement a Double-Ended Queue - LinkedList
+    <ul>
+    <li>
+    resource: <a href="https://www.programiz.com/dsa/deque">https://www.programiz.com/dsa/deque</a>
+    </li>
+    </ul>
+    <ul>
+      <li>[x] addFront(data) - add new data in front of the queue</li>
+      <li>[x] addRear(data) - add data at the end of the queue </li>
+      <li>[x] removeFront(data) - remove and return the first element in the queue </li>
+      <li>[x] removeRear(data) - remove and return the last element in the queue </li>
+      <li>[x] empty() - check if queue is empty </li>
+      <li>[x] front() - gets the first element</li>
+      <li>[x] rear() - gets the last element</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Cost:</li>
+        <ul>
+        <li>All operations are constant except `removeRear`.</li>
+        </ul>
+    </ul>
+  </li>
+</ul>
 </details>
 
 <a id="hash-table"></a>
+
 <details>
 <summary>Hash Table</summary>
 <ul>
@@ -357,6 +386,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 ## Trees
 
 <a id="tree"></a>
+
 <details>
 <summary>Tree - Fundamentals</summary>
 <ul>
@@ -394,6 +424,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 </details>
 
 <a id="bst"></a>
+
 <details>
 <summary>Binary Search Tree (BST)</summary>
 <ul>
@@ -474,6 +505,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 </details>
 
 <a id="heap"></a>
+
 <details>
 <summary>Heap</summary>
 <ul>
@@ -517,6 +549,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 ## Graph
 
 <a id="graph"></a>
+
 <details>
 <summary>Graph</summary>
 <ul>
@@ -612,6 +645,7 @@ The original credit goes to the [coding-interview-university](https://github.com
 ## Sorting Algorithms
 
 <a id="sorts"></a>
+
 <details>
 <summary>Sorting</summary>
 <ul>
