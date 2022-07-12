@@ -273,19 +273,19 @@ The original credit goes to the [coding-interview-university](https://github.com
     </ul>
 </ul>
 <ul>
-  <li>[ ] (<b>Optional</b>) Implement a Circular Queue
+  <li>[x] (<b>Optional</b>) Implement a Circular Queue
     <ul>
-      <li>[ ] enqueue(data) - adds data at position at tail</li>
-      <li>[ ] dequeue() - returns data and removes least recently added element (front)</li>
-      <li>[ ] empty()</li>
-      <li>[ ] full()</li>
-      <li>[ ] front() - gets the first element</li>
-      <li>[ ] rear() - gets the last element</li>
+      <li>[x] enqueue(data) - adds data at position at tail</li>
+      <li>[x] dequeue() - returns data and removes least recently added element (front)</li>
+      <li>[x] empty()</li>
+      <li>[x] full()</li>
+      <li>[x] front() - gets the first element</li>
+      <li>[x] rear() - gets the last element</li>
     </ul>
   </li>
 </ul>
 <ul>
-  <li>[ ] Cost:</li>
+  <li>[x] Cost:</li>
     <ul>
       <li>enqueue: O(1) (amortized, linked list and array)</li>
       <li>dequeue: O(1) (linked list and array)</li>
