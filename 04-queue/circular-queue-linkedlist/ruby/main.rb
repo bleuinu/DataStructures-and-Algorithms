@@ -1,0 +1,75 @@
+class Node 
+    attr_accessor :next
+    attr_reader :data
+
+    def initialize(data) 
+        @data = data
+        @next = nil
+    end
+end
+
+class Queue
+    def initialize
+        @front = nil
+        @rear = nil
+    end
+
+    def enqueue(data)
+        if self.empty?
+            @front = Node.new(data)
+            @rear = @front
+            @front.next = @rear
+        else 
+            node = Node.new(data)
+            node.next = @rear.next
+            @rear.next = Node.new(data)
+            @rear = @rear.next
+        end
+    end
+
+    def dequeue
+        if self.empty?
+            puts "Queue is empty..."
+            return
+        end
+
+        item = @front.data
+        if @front == @rear 
+            @front = nil
+            @rear = nil
+        else
+            temp = @front
+            @front = @front.next
+            temp.next = nil
+        end
+        item
+    end
+
+    def front
+        if !self.empty?
+            @front.data
+        end
+    end
+
+    def rear
+        if !self.empty?
+            @rear.data
+        end
+    end
+
+    def empty?
+        @front == nil
+    end
+
+    def to_s
+        temp = @front
+
+        str = []
+        while temp != @rear do
+            str.push(temp.data)
+            temp = temp.next
+        end 
+        if temp then str.push(temp.data) end
+        str.join(' ')
+    end
+end
